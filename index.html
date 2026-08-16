@@ -135,7 +135,99 @@
    ============================================================ */
 const DB = {
   subjects: [
-    // Aguardando o envio das primeiras matérias e conteúdos.
+    {
+      id: "literatura",
+      name: "Literatura",
+      emoji: "📖",
+      contents: [
+        {
+          id: "arcadismo",
+          title: "Arcadismo",
+          sections: [
+            {
+              heading: "Temas Clássicos",
+              body: `• Inutilia Truncat → CORTAR O INÚTIL
+• Fugere Urbem → FUGIR DA CIDADE
+• Locus Amoenus → LOCAL AGRADÁVEL
+• Aurea Mediocritas → VIDA HARMONIOSA
+• Carpe Diem → APROVEITA O DIA – RACIONALIDADE
+
+→ No Brasil: 1768–1836 → INCONFIDÊNCIA MINEIRA.`,
+            },
+            {
+              heading: "Autores Líricos",
+              body: `I) Cláudio Manuel da Costa: Obras Poéticas
+
+II) Tomás Antônio Gonzaga
+LIRAS MARÍLIA DIRCEU
+* 1ª PARTE: ARCADE
+* 2ª PARTE: PRÉ-ROMÂNTICA
+* CARTAS CHILENAS (CRÍTICAS)`,
+            },
+            {
+              heading: "Autores Épicos",
+              body: `I) Basílio da Gama: O Uruguai → LUTA SETE POVOS
+
+II) Frei Santa Rita Durão: O Caramuru → BAHIA
+
+OBS: POSSUEM ELEMENTOS ROMÂNTICOS: INDÍGENAS E A MORTE.`,
+            },
+          ],
+          quiz: [
+            {
+              q: "No Arcadismo, a expressão latina 'Inutilia Truncat' está ligada a qual ideia?",
+              options: ["Cortar o inútil", "Fugir da cidade", "Local agradável", "Aproveitar o dia"],
+              correct: 0,
+            },
+            {
+              q: "A expressão 'Fugere Urbem' representa o tema de:",
+              options: ["Vida harmoniosa", "Fugir da cidade", "Cortar o inútil", "Local agradável"],
+              correct: 1,
+            },
+            {
+              q: "'Locus Amoenus' é o tema árcade que significa:",
+              options: ["Aproveitar o dia", "Vida harmoniosa", "Local agradável", "Fugir da cidade"],
+              correct: 2,
+            },
+            {
+              q: "'Aurea Mediocritas' está associada a qual ideia?",
+              options: ["Vida harmoniosa", "Cortar o inútil", "Local agradável", "Aproveitar o dia"],
+              correct: 0,
+            },
+            {
+              q: "'Carpe Diem' está ligado à ideia de:",
+              options: ["Fugir da cidade", "Local agradável", "Aproveitar o dia, com racionalidade", "Vida harmoniosa"],
+              correct: 2,
+            },
+            {
+              q: "No Brasil, o período do Arcadismo é situado entre:",
+              options: ["1500–1600", "1768–1836", "1836–1881", "1900–1922"],
+              correct: 1,
+            },
+            {
+              q: "O Arcadismo no Brasil está diretamente relacionado a qual evento histórico?",
+              options: ["Proclamação da República", "Independência do Brasil", "Inconfidência Mineira", "Revolução Pernambucana"],
+              correct: 2,
+            },
+            {
+              q: "'Obras Poéticas' é uma obra de qual autor lírico do Arcadismo?",
+              options: ["Tomás Antônio Gonzaga", "Basílio da Gama", "Cláudio Manuel da Costa", "Frei Santa Rita Durão"],
+              correct: 2,
+            },
+            {
+              q: "'O Uruguai', obra que narra a luta dos Sete Povos, é de autoria de:",
+              options: ["Frei Santa Rita Durão", "Basílio da Gama", "Tomás Antônio Gonzaga", "Cláudio Manuel da Costa"],
+              correct: 1,
+            },
+            {
+              q: "'O Caramuru', obra épica ambientada na Bahia, foi escrita por:",
+              options: ["Frei Santa Rita Durão", "Basílio da Gama", "Tomás Antônio Gonzaga", "Cláudio Manuel da Costa"],
+              correct: 0,
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 
