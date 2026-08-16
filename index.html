@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>Revisão de Lucas M</title>
+<meta name="description" content="Plataforma pessoal de estudos e revisão escolar de Lucas M." />
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#3E2F20" />
+<link rel="icon" href="icon-192.png" type="image/png" />
+<link rel="apple-touch-icon" href="icon-192.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Lucas M" />
+
+<!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Tailwind via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: "#F4EEE1",
+          sand: "#C9B18C",
+          beige: "#E4D9C4",
+          bark: "#5C4630",
+          espresso: "#3E2F20",
+          ochre: "#A8763E",
+          correct: "#5B7553",
+          wrong: "#A6493A",
+        },
+        fontFamily: {
+          display: ["Fraunces", "serif"],
+          body: ["Inter", "sans-serif"],
+        },
+        borderRadius: {
+          card: "1.25rem",
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background-color: #F4EEE1; }
+  .font-display { font-family: 'Fraunces', serif; }
+  ::selection { background-color: #C9B18C; color: #3E2F20; }
+
+  .card-hover {
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -12px rgba(62, 47, 32, 0.28);
+    border-color: #A8763E;
+  }
+
+  .quiz-option {
+    transition: background-color .15s ease, border-color .15s ease, transform .1s ease;
+  }
+  .quiz-option:active { transform: scale(0.98); }
+
+  .fade-in { animation: fadeIn .35s ease both; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #F4EEE1; }
+  ::-webkit-scrollbar-thumb { background: #C9B18C; border-radius: 999px; }
+</style>
+</head>
+
+<body class="text-espresso antialiased min-h-screen flex flex-col">
+
+<!-- Cabeçalho fixo -->
+<header class="sticky top-0 z-30 bg-cream/90 backdrop-blur border-b border-sand/60">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between gap-4">
+    <a href="#home" class="flex items-center gap-3 group">
+      <span class="w-10 h-10 rounded-full bg-espresso text-cream flex items-center justify-center font-display text-lg shadow-sm group-hover:bg-ochre transition-colors">L</span>
+      <span class="font-display text-lg sm:text-xl tracking-tight">Revisão de <span class="text-ochre">Lucas M</span></span>
+    </a>
+    <nav id="breadcrumb" class="hidden sm:flex items-center gap-2 text-sm text-bark/70 font-medium"></nav>
+  </div>
+</header>
+
+<!-- Conteúdo principal, injetado dinamicamente -->
+<main id="app" class="flex-1 w-full max-w-5xl mx-auto px-5 sm:px-8 py-8 sm:py-12"></main>
+
+<footer class="border-t border-sand/60 py-6">
+  <p class="max-w-5xl mx-auto px-5 sm:px-8 text-xs text-bark/50 text-center">
+    Revisão de Lucas M — plataforma pessoal de estudos.
+  </p>
+</footer>
+
+<script>
+/* ============================================================
+   BASE DE CONTEÚDO
+   ------------------------------------------------------------
+   Nenhuma matéria foi enviada ainda. Este objeto é o único
+   lugar do arquivo que deve crescer quando novos conteúdos
+   forem enviados — o restante do código (renderização, rotas,
+   quiz) já está pronto para qualquer matéria futura.
+
+   Estrutura esperada para cada matéria adicionada no futuro:
+
+   {
+     id: "identificador-unico-sem-espaco",
+     name: "Nome da Matéria",
+     emoji: "📘",
+     contents: [
+       {
+         id: "identificador-unico-do-conteudo",
+         title: "Título do conteúdo",
+         sections: [
+           { heading: "Subtítulo opcional", body: "Texto explicativo..." },
+           { heading: "Exemplo", body: "Texto do exemplo..." }
+         ],
+         quiz: [
+           // exatamente 10 perguntas por conteúdo
+           { q: "Pergunta 1?", options: ["A", "B", "C", "D"], correct: 0 }
+         ]
+       }
+     ]
+   }
+   ============================================================ */
+const DB = {
+  subjects: [
+    // Aguardando o envio das primeiras matérias e conteúdos.
+  ],
+};
+
+/* ============================================================
+   UTILITÁRIOS
+   ============================================================ */
+const app = document.getElementById("app");
+const breadcrumb = document.getElementById("breadcrumb");
+
+function el(html) {
+  const t = document.createElement("template");
+  t.innerHTML = html.trim();
+  return t.content.firstElementChild;
+}
+
+function findSubject(id) {
+  return DB.subjects.find((s) => s.id === id);
+}
+function findContent(subjectId, contentId) {
+  const subject = findSubject(subjectId);
+  if (!subject) return null;
+  return subject.contents.find((c) => c.id === contentId);
+}
+
+/* ============================================================
+   ROTEADOR (baseado em hash, sem recarregar a página)
+   ============================================================ */
+function parseHash() {
+  const raw = location.hash.replace(/^#\/?/, "");
+  const parts = raw.split("/").filter(Boolean);
+  if (parts.length === 0 || parts[0] === "home") return { view: "home" };
+  if (parts[0] === "materia" && parts[1]) {
+    if (parts[2] === "conteudo" && parts[3]) {
+      return { view: "content", subjectId: parts[1], contentId: parts[3] };
+    }
+    return { view: "subject", subjectId: parts[1] };
+  }
+  return { view: "home" };
+}
+
+function navigate(hash) {
+  location.hash = hash;
+}
+
+function router() {
+  const route = parseHash();
+  window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+
+  if (route.view === "home") return renderHome();
+  if (route.view === "subject") return renderSubjectPage(route.subjectId);
+  if (route.view === "content") return renderContentPage(route.subjectId, route.contentId);
+  renderHome();
+}
+window.addEventListener("hashchange", router);
+
+/* ============================================================
+   RENDER: HOME
+   ============================================================ */
+function renderHome() {
+  breadcrumb.innerHTML = "";
+  app.innerHTML = "";
+  app.classList.add("fade-in");
+
+  const hero = el(`
+    <section class="mb-10 sm:mb-14">
+      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-ochre mb-3">Painel de estudos</p>
+      <h1 class="font-display text-3xl sm:text-5xl leading-tight text-espresso mb-3">
+        Tudo o que você precisa revisar, em um só lugar.
+      </h1>
+      <p class="text-bark/70 max-w-xl leading-relaxed">
+        Escolha uma matéria abaixo para acessar os conteúdos e treinar com os quizzes de revisão.
+      </p>
+    </section>
+  `);
+  app.appendChild(hero);
+
+  if (DB.subjects.length === 0) {
+    app.appendChild(el(`
+      <section class="rounded-card border border-dashed border-sand bg-beige/40 px-6 py-14 text-center">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-sand/50 flex items-center justify-center text-2xl">📚</div>
+        <h2 class="font-display text-xl text-espresso mb-2">Nenhuma matéria por aqui ainda</h2>
+        <p class="text-bark/60 max-w-md mx-auto leading-relaxed text-sm">
+          Assim que a primeira matéria e o primeiro conteúdo forem enviados,
+          eles vão aparecer nesta tela, organizados em cartões como este.
+        </p>
+      </section>
+    `));
+    return;
+  }
+
+  const grid = el(`<section class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5"></section>`);
+  DB.subjects.forEach((subject) => {
+    const card = el(`
+      <a href="#/materia/${subject.id}"
+         class="card-hover group block rounded-card bg-white/60 border border-sand/70 p-6 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-3xl">${subject.emoji || "📘"}</span>
+          <span class="text-bark/40 group-hover:text-ochre transition-colors text-lg">→</span>
+        </div>
+        <h3 class="font-display text-xl text-espresso mb-1">${subject.name}</h3>
+        <p class="text-sm text-bark/60">${subject.contents.length} conteúdo${subject.contents.length === 1 ? "" : "s"}</p>
+      </a>
+    `);
+    grid.appendChild(card);
+  });
+  app.appendChild(grid);
+}
+
+/* ============================================================
+   RENDER: PÁGINA DA MATÉRIA
+   ============================================================ */
+function renderSubjectPage(subjectId) {
+  const subject = findSubject(subjectId);
+  app.innerHTML = "";
+  app.classList.add("fade-in");
+
+  if (!subject) {
+    app.appendChild(backLink());
+    app.appendChild(el(`<p class="text-bark/60 mt-6">Matéria não encontrada.</p>`));
+    return;
+  }
+
+  breadcrumb.innerHTML = `
+    <a href="#home" class="hover:text-ochre transition-colors">Início</a>
+    <span class="text-bark/30">/</span>
+    <span class="text-espresso">${subject.name}</span>
+  `;
+
+  app.appendChild(backLink());
+
+  const header = el(`
+    <section class="mt-6 mb-8 sm:mb-10 flex items-center gap-4">
+      <span class="text-4xl">${subject.emoji || "📘"}</span>
+      <div>
+        <p class="uppercase tracking-[0.2em] text-xs font-semibold text-ochre mb-1">Matéria</p>
+        <h1 class="font-display text-2xl sm:text-4xl text-espresso">${subject.name}</h1>
+      </div>
+    </section>
+  `);
+  app.appendChild(header);
+
+  const grid = el(`<section class="grid grid-cols-1 sm:grid-cols-2 gap-4"></section>`);
+  subject.contents.forEach((content) => {
+    const card = el(`
+      <a href="#/materia/${subject.id}/conteudo/${content.id}"
+         class="card-hover group block rounded-card bg-white/60 border border-sand/70 p-5 shadow-sm">
+        <h3 class="font-display text-lg text-espresso mb-1">${content.title}</h3>
+        <p class="text-sm text-bark/60">Ver conteúdo e treinar →</p>
+      </a>
+    `);
+    grid.appendChild(card);
+  });
+  app.appendChild(grid);
+}
+
+/* ============================================================
+   RENDER: PÁGINA DE CONTEÚDO + TREINO (QUIZ)
+   ============================================================ */
+function renderContentPage(subjectId, contentId) {
+  const subject = findSubject(subjectId);
+  const content = findContent(subjectId, contentId);
+  app.innerHTML = "";
+  app.classList.add("fade-in");
+
+  if (!subject || !content) {
+    app.appendChild(backLink());
+    app.appendChild(el(`<p class="text-bark/60 mt-6">Conteúdo não encontrado.</p>`));
+    return;
+  }
+
+  breadcrumb.innerHTML = `
+    <a href="#home" class="hover:text-ochre transition-colors">Início</a>
+    <span class="text-bark/30">/</span>
+    <a href="#/materia/${subject.id}" class="hover:text-ochre transition-colors">${subject.name}</a>
+    <span class="text-bark/30">/</span>
+    <span class="text-espresso">${content.title}</span>
+  `;
+
+  app.appendChild(backLink(`#/materia/${subject.id}`, `Voltar para ${subject.name}`));
+
+  const header = el(`
+    <section class="mt-6 mb-8">
+      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-ochre mb-2">${subject.name}</p>
+      <h1 class="font-display text-2xl sm:text-4xl text-espresso">${content.title}</h1>
+    </section>
+  `);
+  app.appendChild(header);
+
+  const sectionsWrap = el(`<article class="space-y-6 mb-14"></article>`);
+  (content.sections || []).forEach((sec) => {
+    const secEl = el(`
+      <div class="rounded-card bg-white/60 border border-sand/70 p-6 shadow-sm">
+        ${sec.heading ? `<h2 class="font-display text-lg text-espresso mb-2">${sec.heading}</h2>` : ""}
+        <div class="text-bark/80 leading-relaxed whitespace-pre-line text-[15px]"></div>
+      </div>
+    `);
+    secEl.querySelector("div.text-bark\\/80").textContent = sec.body || "";
+    sectionsWrap.appendChild(secEl);
+  });
+  app.appendChild(sectionsWrap);
+
+  app.appendChild(renderQuizSection(content));
+}
+
+function backLink(href = "#home", label = "Voltar ao início") {
+  return el(`
+    <a href="${href}" class="inline-flex items-center gap-2 text-sm font-medium text-bark/70 hover:text-ochre transition-colors">
+      <span aria-hidden="true">←</span> ${label}
+    </a>
+  `);
+}
+
+/* ============================================================
+   ENGINE DO QUIZ (Treino) — 10 perguntas, 1 tentativa cada
+   ============================================================ */
+function renderQuizSection(content) {
+  const questions = content.quiz || [];
+
+  const section = el(`
+    <section class="rounded-card bg-espresso text-cream p-6 sm:p-8">
+      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-sand mb-1">Treino</p>
+      <h2 class="font-display text-2xl mb-1">Teste o que você aprendeu</h2>
+      <p class="text-cream/60 text-sm mb-6">
+        ${questions.length} pergunta${questions.length === 1 ? "" : "s"} · uma tentativa por pergunta
+      </p>
+      <div class="quiz-list space-y-4"></div>
+      <div class="quiz-score mt-8 hidden rounded-card bg-cream/10 border border-cream/20 px-5 py-4 text-center"></div>
+    </section>
+  `);
+
+  const list = section.querySelector(".quiz-list");
+  const scoreBox = section.querySelector(".quiz-score");
+  let answered = 0;
+  let correctCount = 0;
+
+  questions.forEach((question, qIndex) => {
+    const qCard = el(`
+      <div class="rounded-card bg-cream/5 border border-cream/15 p-5">
+        <p class="font-medium mb-4 leading-snug">${qIndex + 1}. ${question.q}</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 opts"></div>
+        <p class="feedback mt-3 text-sm font-medium hidden"></p>
+      </div>
+    `);
+    const optsWrap = qCard.querySelector(".opts");
+    const feedback = qCard.querySelector(".feedback");
+    let locked = false;
+
+    question.options.forEach((optionText, optIndex) => {
+      const btn = el(`
+        <button type="button"
+          class="quiz-option text-left px-4 py-3 rounded-xl border border-cream/25 bg-transparent hover:bg-cream/10 text-sm">
+          ${optionText}
+        </button>
+      `);
+      btn.addEventListener("click", () => {
+        if (locked) return;
+        locked = true;
+        answered++;
+
+        const isCorrect = optIndex === question.correct;
+        if (isCorrect) correctCount++;
+
+        [...optsWrap.children].forEach((b, i) => {
+          b.classList.remove("hover:bg-cream/10");
+          b.disabled = true;
+          if (i === question.correct) {
+            b.classList.add("bg-correct/80", "border-correct", "text-cream");
+          } else if (i === optIndex && !isCorrect) {
+            b.classList.add("bg-wrong/80", "border-wrong", "text-cream");
+          } else {
+            b.classList.add("opacity-50");
+          }
+        });
+
+        feedback.classList.remove("hidden");
+        feedback.textContent = isCorrect
+          ? "Certo! Boa."
+          : `Errado. A resposta correta é: ${question.options[question.correct]}`;
+        feedback.classList.add(isCorrect ? "text-correct" : "text-wrong");
+
+        if (answered === questions.length) {
+          scoreBox.classList.remove("hidden");
+          scoreBox.innerHTML = `
+            <p class="font-display text-xl">${correctCount} de ${questions.length} corretas</p>
+            <p class="text-cream/60 text-sm mt-1">Revise o conteúdo acima nos pontos que errou.</p>
+          `;
+        }
+      });
+      optsWrap.appendChild(btn);
+    });
+
+    list.appendChild(qCard);
+  });
+
+  if (questions.length === 0) {
+    list.appendChild(el(`<p class="text-cream/60 text-sm">O treino deste conteúdo ainda será adicionado.</p>`));
+  }
+
+  return section;
+}
+
+/* ============================================================
+   INICIALIZAÇÃO
+   ============================================================ */
+router();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {
+      /* instalação como PWA segue funcionando mesmo sem o service worker */
+    });
+  });
+}
+</script>
+</body>
+</html>
