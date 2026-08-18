@@ -1787,6 +1787,415 @@ Fórmula:
         },
       ],
     },
+    {
+      id: "geografia",
+      name: "Geografia",
+      emoji: "🌎",
+      contents: [
+        {
+          id: "climatologia",
+          title: "Climatologia",
+          noShuffle: true,
+          extraQuizLabel: "Questões estilo Anglo",
+          extraQuizHeading: "10 questões extras, no estilo de prova",
+          sections: [
+            {
+              heading: "1. Tempo × Clima",
+              body: `🌦️ Tempo
+É o estado momentâneo da atmosfera.
+Exemplo de ideia: hoje está frio, amanhã pode esquentar.
+
+🌍 Clima
+É a sucessão habitual dos vários estados de tempo.
+
+🎯 Na questão
+Se falar de uma condição agora ou em determinado momento → pense em TEMPO.
+Se falar do comportamento habitual de uma região → pense em CLIMA.`,
+            },
+            {
+              heading: "2. Elementos do clima",
+              body: `Os elementos mostram como está o clima.
+
+Os principais trabalhados no material são:
+🌡️ Temperatura
+💧 Umidade
+🌧️ Precipitação
+💨 Pressão atmosférica`,
+            },
+            {
+              heading: "🌡️ Temperatura",
+              body: `Amplitude térmica
+É a diferença entre a temperatura máxima e mínima.
+
+Fórmula:
+AMPLITUDE = MÁXIMA − MÍNIMA
+
+Exemplo:
+Máxima = 30°C
+Mínima = 10°C
+30 − 10 = 20°C
+👉 Amplitude térmica = 20°C.
+
+🎯 Na questão
+Se aparecerem temperatura máxima e mínima, provavelmente você precisa calcular a amplitude térmica.
+
+Isoterma → linha que une pontos de mesma temperatura.`,
+            },
+            {
+              heading: "💧 Umidade",
+              body: `É a quantidade de vapor de água presente na atmosfera.
+
+Umidade relativa
+É expressa em %.
+Quando está próxima de 100%, a atmosfera está chegando ao ponto de saturação, podendo ocorrer precipitação.
+
+🎯 Na questão
+Se aparecer "Umidade relativa de 90%" → significa que o ar está muito próximo da saturação.
+
+Isoígra → pontos de igual umidade.
+Isoieta → pontos de igual pluviosidade.`,
+            },
+            {
+              heading: "🌧️ Precipitação",
+              body: `É a água que cai da atmosfera.
+
+Principais formas:
+Orvalho → condensação do vapor de água na superfície.
+Geada → congelamento do orvalho durante uma noite/madrugada fria e sem nuvens.
+Neve → temperatura baixa, próxima de 0°C, e umidade elevada.
+Granizo → "chuva de pedra", formada por blocos de gelo em nuvens altas.
+Chuva → precipitação líquida.`,
+            },
+            {
+              heading: "🌧️ Os 3 tipos de chuva",
+              body: `Essa parte é muito importante para analisar questões.
+
+☀️ Chuva convectiva
+Pense: CALOR → AR SOBE → RESFRIA → CONDENSA → CHUVA
+Características: curta duração; alta intensidade; pequenas áreas; comum na Amazônia.
+🎯 Como reconhecer? Se a questão falar de calor intenso + ar subindo + chuva forte e rápida → CONVECTIVA.`,
+              visual: `
+<div class="flex flex-col items-center gap-1 max-w-[190px] mx-auto text-center">
+  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">☀️ Calor</div>
+  <span class="text-ochre text-sm">↓</span>
+  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">Ar sobe</div>
+  <span class="text-ochre text-sm">↓</span>
+  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">Resfria</div>
+  <span class="text-ochre text-sm">↓</span>
+  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">Condensa</div>
+  <span class="text-ochre text-sm">↓</span>
+  <div class="w-full rounded-lg bg-espresso text-cream px-3 py-2 text-xs font-medium">🌧️ Chuva — curta, forte, área pequena</div>
+</div>`,
+            },
+            {
+              heading: "",
+              body: `🌡️ Chuva frontal
+Pense: AR QUENTE + AR FRIO → ENCONTRO → CHUVA
+Ocorre no encontro de massas de ar com características diferentes.
+Características: contínua; intensidade baixa a moderada; grande área; comum em grande parte do Brasil, principalmente Sul e Sudeste.
+🎯 Como reconhecer? Se aparecer frente + massa de ar quente + massa de ar fria → FRONTAL.`,
+              visual: `
+<div class="max-w-[220px] mx-auto">
+  <div class="flex items-center justify-center gap-2">
+    <div class="rounded-lg bg-cream border border-sand px-2.5 py-2 text-[11px] text-bark font-medium text-center">Ar quente</div>
+    <span class="text-ochre text-base">↔</span>
+    <div class="rounded-lg bg-cream border border-sand px-2.5 py-2 text-[11px] text-bark font-medium text-center">Ar frio</div>
+  </div>
+  <div class="flex justify-center my-1"><span class="text-ochre text-sm">↓ encontro</span></div>
+  <div class="rounded-lg bg-espresso text-cream px-3 py-2 text-[11px] font-medium text-center">🌧️ Chuva frontal — contínua, grande área</div>
+</div>`,
+            },
+            {
+              heading: "",
+              body: `⛰️ Chuva orográfica
+Pense: AR ÚMIDO → MONTANHA → SOBE → ESFRIA → CONDENSA → CHUVA
+A massa de ar úmida encontra uma barreira do relevo e é forçada a subir.
+Barlavento → lado que recebe o ar úmido.
+Sotavento → lado oposto à chegada do ar.
+🎯 Como reconhecer? Se a questão falar de montanha + serra + relevo + ar úmido subindo → OROGRÁFICA.`,
+              visual: `
+<svg viewBox="0 0 300 170" class="w-full max-w-sm mx-auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arOro-1" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#A8763E"/></marker>
+  </defs>
+  <polygon points="20,150 150,25 280,150" fill="none" stroke="#5C4630" stroke-width="2.5"/>
+  <line x1="45" y1="140" x2="128" y2="42" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arOro-1)"/>
+  <text x="35" y="90" font-size="9.5" fill="#5C4630" transform="rotate(-52 35,90)">sobe · esfria · condensa</text>
+  <line x1="172" y1="42" x2="255" y2="140" stroke="#5C4630" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="200" y="100" font-size="9.5" fill="#5C4630" transform="rotate(52 200,100)">desce seco</text>
+  <text x="15" y="164" font-size="10.5" fill="#5C4630" font-weight="600">Barlavento</text>
+  <text x="228" y="164" font-size="10.5" fill="#5C4630" font-weight="600">Sotavento</text>
+  <text x="120" y="18" font-size="10" fill="#A8763E" font-weight="600">🌧️ chuva</text>
+</svg>`,
+            },
+            {
+              heading: "💨 Pressão atmosférica",
+              body: `É o peso exercido pela atmosfera sobre a superfície terrestre.
+Aqui existem algumas relações que você precisa saber.
+
+🌡️ Temperatura × pressão
+Temperatura ↑ → Pressão ↓
+Temperatura ↓ → Pressão ↑
+🧠 Pense: Ar quente sobe → menor pressão. Ar frio desce → maior pressão.
+
+⛰️ Altitude × pressão
+Altitude ↑ → Pressão ↓
+Altitude ↓ → Pressão ↑
+🎯 Na questão: Se uma cidade está em uma altitude muito elevada → menor pressão atmosférica.`,
+            },
+            {
+              heading: "💨 Ventos",
+              body: `O vento é ar em movimento.
+A regra mais importante é: ALTA PRESSÃO → BAIXA PRESSÃO (AP → BP)
+Os ventos sopram das áreas de Alta Pressão para as áreas de Baixa Pressão.
+
+🧠 Macete: Alta → Baixa
+Se uma questão perguntar "para onde o vento vai?", procure primeiro as áreas de pressão.`,
+              visual: `
+<div class="flex items-center justify-center gap-3">
+  <div class="w-16 h-16 rounded-full bg-beige border-2 border-sand flex items-center justify-center text-sm font-bold text-bark">AP</div>
+  <span class="text-ochre text-2xl">→</span>
+  <div class="w-16 h-16 rounded-full bg-espresso text-cream flex items-center justify-center text-sm font-bold">BP</div>
+</div>
+<p class="text-center text-[11px] text-bark/60 mt-2">O vento sopra da Alta Pressão para a Baixa Pressão</p>`,
+            },
+            {
+              heading: "🌍 6. Fatores climáticos",
+              body: `Agora muda a lógica:
+Elementos → mostram como está o clima.
+Fatores → ajudam a explicar por que o clima é daquele jeito.
+
+Os principais fatores trabalhados no material são:
+Latitude, Altitude, Relevo, Continentalidade e maritimidade, Correntes marítimas, Vegetação, Massas de ar.`,
+            },
+            {
+              heading: "📍 Latitude",
+              body: `Latitude é a distância em relação ao Equador (0°).
+
+Regra principal:
+MAIOR LATITUDE → MENOR TEMPERATURA
+MENOR LATITUDE → MAIOR TEMPERATURA
+Além disso: Maior latitude → maior amplitude térmica. Menor latitude → menor amplitude térmica.
+
+🎯 Como analisar?
+Se uma questão comparar Cidade A → 10° S e Cidade B → 50° S: a cidade B está em maior latitude, logo tende a apresentar menor temperatura média.`,
+              visual: `
+<div class="flex items-center justify-between gap-1 text-[10px] text-bark font-medium max-w-sm mx-auto">
+  <div class="text-center flex-1">
+    <div class="w-11 h-11 rounded-full bg-cream border border-sand flex items-center justify-center mx-auto mb-1 text-base">❄️</div>
+    Polo<br/>menor T°
+  </div>
+  <span class="text-ochre text-lg">↔</span>
+  <div class="text-center flex-1">
+    <div class="w-14 h-14 rounded-full bg-beige border border-sand flex items-center justify-center mx-auto mb-1 text-lg">🌤️</div>
+    Latitude média
+  </div>
+  <span class="text-ochre text-lg">↔</span>
+  <div class="text-center flex-1">
+    <div class="w-16 h-16 rounded-full bg-espresso text-cream flex items-center justify-center mx-auto mb-1 text-xl">☀️</div>
+    Equador<br/>maior T°
+  </div>
+</div>`,
+            },
+            {
+              heading: "⛰️ Altitude",
+              body: `É a altura em relação ao nível do mar.
+
+Regra:
+ALTITUDE ↑ → TEMPERATURA ↓
+ALTITUDE ↓ → TEMPERATURA ↑
+
+🎯 Na questão
+Duas cidades possuem a mesma latitude, mas: Cidade A → baixa altitude; Cidade B → alta altitude.
+👉 A cidade B tende a ser mais fria.`,
+              visual: `
+<div class="flex flex-col items-center gap-2 max-w-[260px] mx-auto text-center">
+  <div class="w-full rounded-lg bg-espresso text-cream px-3 py-2 text-xs font-medium">Alta altitude → menor temperatura, menor pressão</div>
+  <span class="text-ochre text-sm">↕ altitude</span>
+  <div class="w-full rounded-lg bg-beige border border-sand px-3 py-2 text-xs font-medium text-bark">Baixa altitude → maior temperatura, maior pressão</div>
+</div>`,
+            },
+            {
+              heading: "⛰️ Relevo",
+              body: `O relevo pode funcionar como BARREIRA ou "CORREDOR".
+Ele influencia a circulação das massas de ar.
+
+🎯 Na questão
+Se aparecer serra + montanha + massa de ar sendo impedida ou obrigada a subir → pense em relevo.
+E também pode aparecer relacionado à chuva orográfica.`,
+            },
+            {
+              heading: "🌊 Continentalidade × Maritimidade",
+              body: `Essa comparação é muito importante.
+
+🏠 Continentalidade
+Influência do continente.
+→ menor umidade
+→ maior amplitude térmica
+
+🌊 Maritimidade
+Influência do oceano.
+→ maior umidade
+→ menor amplitude térmica
+
+🧠 Como imaginar?
+Continente = temperaturas variam mais.
+Oceano = temperaturas variam menos.
+
+🎯 Questão clássica: "Uma cidade localizada próxima ao litoral apresenta menor amplitude térmica." 👉 Pense: MARITIMIDADE.`,
+              visual: `
+<div class="grid grid-cols-2 gap-3 text-center text-xs max-w-sm mx-auto">
+  <div class="rounded-xl bg-cream border border-sand px-3 py-4">
+    <p class="font-semibold text-bark mb-1">🏠 Continentalidade</p>
+    <p class="text-bark/70">Menor umidade<br/>Maior amplitude térmica</p>
+  </div>
+  <div class="rounded-xl bg-cream border border-sand px-3 py-4">
+    <p class="font-semibold text-bark mb-1">🌊 Maritimidade</p>
+    <p class="text-bark/70">Maior umidade<br/>Menor amplitude térmica</p>
+  </div>
+</div>`,
+            },
+            {
+              heading: "🌊 Correntes marítimas",
+              body: `São massas de água que circulam pelos oceanos.
+
+🔥 Corrente quente
+Tende a deixar o litoral: mais quente e mais úmido.
+
+❄️ Corrente fria
+Tende a deixar o litoral: mais seco, favorecendo a ocorrência de desertos.
+
+Exemplo importante:
+Corrente de Humboldt (ou do Peru) → corrente fria → Pacífico Sul → contribui para a formação do deserto do Atacama.
+
+🎯 Na questão: Atacama + corrente marítima → pense imediatamente em Humboldt → corrente fria.`,
+            },
+            {
+              heading: "🌳 Vegetação",
+              body: `A vegetação interfere no clima porque impede a incidência total dos raios solares na superfície.
+
+Com o desmatamento:
+↓ umidade
+↓ chuvas
+↑ temperatura
+
+🎯 Como reconhecer?
+Se a questão relacionar desmatamento + aumento da temperatura + redução da umidade → pense em vegetação.`,
+            },
+            {
+              heading: "💨 Massas de ar",
+              body: `São grandes porções da atmosfera que se deslocam levando as características da região onde se formaram.
+
+Elas podem ser:
+Pela temperatura → Quentes: Tropical (T) e Equatorial (E). Frias: Polar (P).
+Pela umidade → Secas: continentais (c). Úmidas: oceânicas.
+
+🧠 Como interpretar uma sigla?
+Se aparecer algo como "mTa", pense: m = massa, T = Tropical, a = atlântica.
+A ideia é descobrir de onde vem a massa e quais características ela carrega.`,
+            },
+            {
+              heading: "🌎 El Niño e La Niña",
+              body: `O material apresenta os fenômenos El Niño e La Niña.
+Para a revisão, reconheça que são fenômenos relacionados às condições do Oceano Pacífico e que interferem nas condições climáticas.`,
+            },
+            {
+              heading: "🏆 Mapa mental para questões",
+              body: `Quando aparecer uma questão de Climatologia, pense assim:
+
+🌡️ "Está falando de temperatura?" → Latitude / altitude / continentalidade / maritimidade
+🌧️ "Está falando de chuva?" → Convectiva / frontal / orográfica
+💨 "Está falando de vento?" → Alta pressão → Baixa pressão
+⛰️ "Tem montanha ou serra?" → Relevo → chuva orográfica
+🌊 "Tem oceano influenciando?" → Maritimidade
+🏠 "Está longe do oceano?" → Continentalidade
+🌊 "Tem corrente marítima?" → Quente = mais quente/úmido · Fria = mais seco
+📍 "Comparou duas latitudes?" → Maior latitude = menor temperatura
+⛰️ "Comparou duas altitudes?" → Maior altitude = menor temperatura
+🌳 "Falou de desmatamento?" → Menor umidade + menor chuva + maior temperatura`,
+            },
+            {
+              heading: "⚡ 10 relações para decorar",
+              body: `1. Maior latitude → menor temperatura
+2. Maior altitude → menor temperatura
+3. Maior altitude → menor pressão
+4. Maior temperatura → menor pressão
+5. Alta pressão → Baixa pressão
+6. Continentalidade → maior amplitude térmica
+7. Maritimidade → menor amplitude térmica
+8. Corrente quente → mais quente e úmido
+9. Corrente fria → mais seco
+10. Desmatamento → menor umidade, menor chuva e maior temperatura`,
+            },
+            {
+              heading: "🧠 O segredo para a prova",
+              body: `Não tente decorar Climatologia como uma lista enorme. Leia o que a questão está descrevendo e procure a "pista":
+
+calor subindo → convectiva
+frente quente + fria → frontal
+montanha → orográfica
+alta → baixa → vento
+altitude → temperatura
+latitude → temperatura
+oceano → maritimidade
+continente → continentalidade
+corrente fria → ar mais seco
+
+Isso transforma a matéria em relações que você consegue identificar na questão, em vez de apenas decorar definições.`,
+            },
+          ],
+          quiz: [
+            { q: "O que é 'tempo', segundo o conteúdo?", options: ["Estado momentâneo da atmosfera", "Sucessão habitual dos estados de tempo", "Média histórica de temperaturas", "Um fenômeno oceânico"], correct: 0 },
+            { q: "O que é 'clima'?", options: ["A sucessão habitual dos vários estados de tempo", "O estado da atmosfera em um único dia", "A quantidade de chuva em um mês", "A temperatura mínima de uma região"], correct: 0 },
+            { q: "Se uma questão descrever uma condição 'agora' ou em um momento específico, ela está tratando de:", options: ["Tempo", "Clima", "Latitude", "Pressão"], correct: 0 },
+            { q: "Se a questão descrever o comportamento habitual de uma região, ela está tratando de:", options: ["Clima", "Tempo", "Umidade", "Vento"], correct: 0 },
+            { q: "Quais são os principais elementos do clima citados no material?", options: ["Temperatura, umidade, precipitação e pressão atmosférica", "Latitude, altitude, relevo e vegetação", "Massas de ar, correntes marítimas e vegetação", "El Niño e La Niña"], correct: 0 },
+            { q: "Como se calcula a amplitude térmica?", options: ["Máxima menos mínima", "Máxima mais mínima", "Máxima dividida pela mínima", "Mínima menos máxima"], correct: 0 },
+            { q: "Se a máxima do dia foi 30°C e a mínima 10°C, qual é a amplitude térmica?", options: ["20°C", "40°C", "10°C", "30°C"], correct: 0 },
+            { q: "O que é uma isoterma?", options: ["Linha que une pontos de mesma temperatura", "Linha que une pontos de mesma umidade", "Linha que une pontos de mesma pluviosidade", "Linha que une pontos de mesma pressão"], correct: 0 },
+            { q: "O que é umidade relativa?", options: ["A quantidade de vapor de água na atmosfera, expressa em %", "A quantidade de chuva acumulada em um mês", "A pressão exercida pelo ar", "A diferença entre temperatura máxima e mínima"], correct: 0 },
+            { q: "Se a umidade relativa está próxima de 100%, isso significa que:", options: ["A atmosfera está próxima da saturação, podendo chover", "A atmosfera está seca", "A pressão está muito alta", "A temperatura está no seu ponto máximo"], correct: 0 },
+            { q: "O que é isoígra?", options: ["Pontos de igual umidade", "Pontos de igual temperatura", "Pontos de igual pluviosidade", "Pontos de igual pressão"], correct: 0 },
+            { q: "O que é isoieta?", options: ["Pontos de igual pluviosidade", "Pontos de igual umidade", "Pontos de igual temperatura", "Pontos de igual altitude"], correct: 0 },
+            { q: "O orvalho se forma por:", options: ["Condensação do vapor de água na superfície", "Congelamento do vapor em nuvens altas", "Sublimação da neve", "Evaporação da água do solo"], correct: 0 },
+            { q: "A geada se forma quando:", options: ["Ocorre o congelamento do orvalho em noite fria e sem nuvens", "A temperatura sobe rapidamente pela manhã", "Há muita nebulosidade durante a noite", "O vento sopra forte durante o dia"], correct: 0 },
+            { q: "A neve se forma em condições de:", options: ["Temperatura baixa, próxima de 0°C, e umidade elevada", "Temperatura alta e baixa umidade", "Pressão atmosférica muito baixa apenas", "Vento forte sem variação de temperatura"], correct: 0 },
+            { q: "O granizo é formado por:", options: ["Blocos de gelo em nuvens altas", "Vapor de água condensado na superfície", "Gotas de chuva congeladas no solo", "Neve derretida"], correct: 0 },
+            { q: "Se uma questão mencionar 'calor intenso + ar subindo + chuva forte e rápida', o tipo de chuva é:", options: ["Convectiva", "Frontal", "Orográfica", "Nenhuma das anteriores"], correct: 0 },
+            { q: "A chuva convectiva é caracterizada por:", options: ["Curta duração, alta intensidade e pequenas áreas", "Longa duração e grande área", "Ocorrer apenas em regiões polares", "Baixa intensidade constante"], correct: 0 },
+            { q: "A chuva frontal ocorre por causa:", options: ["Do encontro de massas de ar com características diferentes", "Do relevo forçando o ar a subir", "Do calor intenso fazendo o ar subir rapidamente", "Da proximidade com o oceano apenas"], correct: 0 },
+            { q: "Se uma questão mencionar 'montanha + serra + relevo + ar úmido subindo', o tipo de chuva é:", options: ["Orográfica", "Convectiva", "Frontal", "Nenhuma das anteriores"], correct: 0 },
+            { q: "Na chuva orográfica, o lado que recebe o ar úmido é chamado de:", options: ["Barlavento", "Sotavento", "Isoieta", "Isoterma"], correct: 0 },
+            { q: "Na chuva orográfica, o lado oposto à chegada do ar é chamado de:", options: ["Sotavento", "Barlavento", "Isoígra", "Isoterma"], correct: 0 },
+            { q: "Qual é a relação entre temperatura e pressão atmosférica?", options: ["Temperatura alta → pressão baixa", "Temperatura alta → pressão alta", "Não existe relação entre elas", "Temperatura baixa → pressão baixa"], correct: 0 },
+            { q: "Qual é a relação entre altitude e pressão atmosférica?", options: ["Altitude alta → pressão baixa", "Altitude alta → pressão alta", "Não existe relação entre elas", "Altitude baixa → pressão baixa"], correct: 0 },
+            { q: "Segundo a regra apresentada, os ventos sopram:", options: ["Da alta pressão para a baixa pressão", "Da baixa pressão para a alta pressão", "Sempre do oceano para o continente", "Sempre de norte para sul"], correct: 0 },
+            { q: "O que os 'elementos do clima' mostram, segundo o material?", options: ["Como está o clima", "Por que o clima é daquele jeito", "A localização exata de uma região", "A previsão do tempo para amanhã"], correct: 0 },
+            { q: "O que os 'fatores climáticos' ajudam a explicar?", options: ["Por que o clima é daquele jeito", "Como está o clima no momento", "Apenas a quantidade de chuva", "Apenas a temperatura do dia"], correct: 0 },
+            { q: "Qual é a regra principal sobre latitude e temperatura?", options: ["Maior latitude → menor temperatura", "Maior latitude → maior temperatura", "A latitude não influencia a temperatura", "Menor latitude → menor temperatura"], correct: 0 },
+            { q: "Qual é a relação entre latitude e amplitude térmica?", options: ["Maior latitude → maior amplitude térmica", "Maior latitude → menor amplitude térmica", "Não há relação", "Latitude só influencia a pressão"], correct: 0 },
+            { q: "Qual é a relação entre altitude e temperatura?", options: ["Altitude alta → temperatura baixa", "Altitude alta → temperatura alta", "Não há relação entre elas", "Altitude baixa → temperatura baixa"], correct: 0 },
+            { q: "O relevo pode funcionar, segundo o material, como:", options: ["Barreira ou corredor para as massas de ar", "Apenas como fonte de umidade", "Apenas como fonte de calor", "Elemento que não influencia o clima"], correct: 0 },
+            { q: "A continentalidade está associada a:", options: ["Menor umidade e maior amplitude térmica", "Maior umidade e menor amplitude térmica", "Nenhuma variação de temperatura", "Apenas à proximidade do oceano"], correct: 0 },
+            { q: "A maritimidade está associada a:", options: ["Maior umidade e menor amplitude térmica", "Menor umidade e maior amplitude térmica", "Nenhuma variação de temperatura", "Apenas ao relevo montanhoso"], correct: 0 },
+            { q: "Uma corrente marítima fria tende a deixar o litoral:", options: ["Mais seco, favorecendo desertos", "Mais quente e úmido", "Sem alteração climática", "Com maior amplitude térmica apenas"], correct: 0 },
+            { q: "A Corrente de Humboldt, citada no material, está relacionada à formação de qual deserto?", options: ["Deserto do Atacama", "Deserto do Saara", "Deserto de Gobi", "Deserto da Patagônia"], correct: 0 },
+          ],
+          extraQuiz: [
+            { q: "O desmatamento de uma região tende a causar:", options: ["Menor umidade, menor chuva e maior temperatura", "Maior umidade e mais chuva", "Menor temperatura apenas", "Aumento da pressão atmosférica apenas"], correct: 0 },
+            { q: "Uma massa de ar identificada pela sigla 'mTa' é:", options: ["Massa Tropical Atlântica", "Massa Temperada Ártica", "Massa Tropical Antártica", "Massa Templada Amazônica"], correct: 0 },
+            { q: "Segundo a classificação por temperatura, quais massas de ar são consideradas quentes?", options: ["Tropical (T) e Equatorial (E)", "Polar (P) e Tropical (T)", "Apenas Polar (P)", "Apenas Equatorial (E)"], correct: 0 },
+            { q: "Quanto à umidade, as massas de ar secas são chamadas de:", options: ["Continentais (c)", "Oceânicas", "Equatoriais", "Polares"], correct: 0 },
+            { q: "O El Niño e La Niña são fenômenos relacionados a:", options: ["Condições do Oceano Pacífico que interferem no clima", "Condições do Oceano Atlântico apenas", "Correntes de ar na Antártida", "Mudanças na órbita da Terra"], correct: 0 },
+            { q: "Duas cidades têm a mesma latitude, mas uma está em maior altitude que a outra. Qual delas tende a ser mais fria?", options: ["A cidade de maior altitude", "A cidade de menor altitude", "Ambas terão a mesma temperatura", "Não é possível saber sem outros dados"], correct: 0 },
+            { q: "Uma cidade litorânea, comparada a uma cidade do interior na mesma latitude, tende a apresentar:", options: ["Menor amplitude térmica", "Maior amplitude térmica", "A mesma amplitude térmica", "Menor umidade"], correct: 0 },
+            { q: "Se uma questão comparar uma cidade a 10°S com outra a 50°S, qual tende a ter menor temperatura média?", options: ["A cidade a 50°S", "A cidade a 10°S", "As duas terão a mesma temperatura", "Depende apenas da altitude"], correct: 0 },
+            { q: "Uma corrente marítima quente tende a deixar o litoral:", options: ["Mais quente e mais úmido", "Mais seco e frio", "Sem nenhuma alteração", "Com menor umidade apenas"], correct: 0 },
+            { q: "Ao identificar em uma questão os termos 'frente', 'massa de ar quente' e 'massa de ar fria' juntos, o tipo de chuva a ser considerado é:", options: ["Frontal", "Convectiva", "Orográfica", "Nenhuma das anteriores"], correct: 0 },
+          ],
+        },
+      ],
+    },
   ],
 };
 
@@ -1992,7 +2401,17 @@ function renderContentPage(subjectId, contentId) {
   });
   app.appendChild(sectionsWrap);
 
-  app.appendChild(renderQuizSection(content));
+  app.appendChild(renderQuizSection(content.quiz, { noShuffle: content.noShuffle }));
+
+  if (content.extraQuiz && content.extraQuiz.length) {
+    app.appendChild(
+      renderQuizSection(content.extraQuiz, {
+        noShuffle: content.noShuffle,
+        label: content.extraQuizLabel || "Questões extras",
+        heading: content.extraQuizHeading || "Mais um round de revisão",
+      })
+    );
+  }
 }
 
 function backLink(href = "#home", label = "Voltar ao início") {
@@ -2015,7 +2434,8 @@ function shuffleArray(array) {
   return arr;
 }
 
-function shuffleQuestions(questions) {
+function shuffleQuestions(questions, noShuffle) {
+  if (noShuffle) return questions.slice();
   return shuffleArray(questions).map((question) => {
     const order = shuffleArray(question.options.map((_, i) => i));
     return {
@@ -2026,13 +2446,16 @@ function shuffleQuestions(questions) {
   });
 }
 
-function renderQuizSection(content) {
-  const originalQuestions = content.quiz || [];
+function renderQuizSection(questions, opts = {}) {
+  const originalQuestions = questions || [];
+  const label = opts.label || "Treino";
+  const heading = opts.heading || "Teste o que você aprendeu";
+  const noShuffle = !!opts.noShuffle;
 
   const section = el(`
     <section class="rounded-card bg-espresso text-cream p-6 sm:p-8">
-      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-sand mb-1">Treino</p>
-      <h2 class="font-display text-2xl mb-1">Teste o que você aprendeu</h2>
+      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-sand mb-1">${label}</p>
+      <h2 class="font-display text-2xl mb-1">${heading}</h2>
       <p class="quiz-meta text-cream/60 text-sm mb-6"></p>
       <div class="quiz-list space-y-4"></div>
       <div class="quiz-score mt-8 hidden rounded-card bg-cream/10 border border-cream/20 px-5 py-4 text-center"></div>
@@ -2054,14 +2477,16 @@ function renderQuizSection(content) {
       return;
     }
 
-    const questions = shuffleQuestions(originalQuestions);
-    meta.textContent = `${questions.length} pergunta${questions.length === 1 ? "" : "s"} · uma tentativa por pergunta · ordem embaralhada a cada tentativa`;
+    const questions = shuffleQuestions(originalQuestions, noShuffle);
+    const orderNote = noShuffle ? "" : " · ordem embaralhada a cada tentativa";
+    meta.textContent = `${questions.length} pergunta${questions.length === 1 ? "" : "s"} · uma tentativa por pergunta${orderNote}`;
 
     let answered = 0;
     let correctCount = 0;
 
     questions.forEach((question, qIndex) => {
       const qCard = el(`
+
         <div class="rounded-card bg-cream/5 border border-cream/15 p-5">
           <p class="font-medium mb-4 leading-snug">${qIndex + 1}. ${question.q}</p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 opts"></div>
