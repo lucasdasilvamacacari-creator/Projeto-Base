@@ -229,718 +229,417 @@ OBS: POSSUEM ELEMENTOS ROMÂNTICOS: INDÍGENAS E A MORTE.`,
       ],
     },
     {
-      id: "fisica-a",
-      name: "Física-A",
-      emoji: "🌀",
+      id: "geografia",
+      name: "Geografia",
+      emoji: "🌎",
       contents: [
         {
-          id: "dinamica-mcu",
-          title: "Dinâmica dos movimentos circulares e uniformes (MCU)",
+          id: "climatologia",
+          title: "Climatologia",
+          noShuffle: true,
+          extraQuizLabel: "Questões estilo Anglo",
+          extraQuizHeading: "10 questões extras, no estilo de prova",
           sections: [
             {
-              heading: "1. Dinâmica do movimento circular",
-              body: `Aceleração → alguém que altera o valor da velocidade.
-Dividi em 2:
+              heading: "1. Tempo × Clima",
+              body: `🌦️ Tempo
+É o estado momentâneo da atmosfera.
+Exemplo de ideia: hoje está frio, amanhã pode esquentar.
 
-At — Aceleração tangencial
-→ Altera o valor da velocidade.
+🌍 Clima
+É a sucessão habitual dos vários estados de tempo.
+
+🎯 Na questão
+Se falar de uma condição agora ou em determinado momento → pense em TEMPO.
+Se falar do comportamento habitual de uma região → pense em CLIMA.`,
+            },
+            {
+              heading: "2. Elementos do clima",
+              body: `Os elementos mostram como está o clima.
+
+Os principais trabalhados no material são:
+🌡️ Temperatura
+💧 Umidade
+🌧️ Precipitação
+💨 Pressão atmosférica`,
+            },
+            {
+              heading: "🌡️ Temperatura",
+              body: `Amplitude térmica
+É a diferença entre a temperatura máxima e mínima.
+
 Fórmula:
-At = ΔV / Δt
+AMPLITUDE = MÁXIMA − MÍNIMA
 
-Ac — Aceleração centrípeta
-→ Altera a direção e o sentido da velocidade.
-→ Aponta para o centro.
-Fórmula:
-Ac = V² / R`,
+Exemplo:
+Máxima = 30°C
+Mínima = 10°C
+30 − 10 = 20°C
+👉 Amplitude térmica = 20°C.
+
+🎯 Na questão
+Se aparecerem temperatura máxima e mínima, provavelmente você precisa calcular a amplitude térmica.
+
+Isoterma → linha que une pontos de mesma temperatura.`,
+            },
+            {
+              heading: "💧 Umidade",
+              body: `É a quantidade de vapor de água presente na atmosfera.
+
+Umidade relativa
+É expressa em %.
+Quando está próxima de 100%, a atmosfera está chegando ao ponto de saturação, podendo ocorrer precipitação.
+
+🎯 Na questão
+Se aparecer "Umidade relativa de 90%" → significa que o ar está muito próximo da saturação.
+
+Isoígra → pontos de igual umidade.
+Isoieta → pontos de igual pluviosidade.`,
+            },
+            {
+              heading: "🌧️ Precipitação",
+              body: `É a água que cai da atmosfera.
+
+Principais formas:
+Orvalho → condensação do vapor de água na superfície.
+Geada → congelamento do orvalho durante uma noite/madrugada fria e sem nuvens.
+Neve → temperatura baixa, próxima de 0°C, e umidade elevada.
+Granizo → "chuva de pedra", formada por blocos de gelo em nuvens altas.
+Chuva → precipitação líquida.`,
+            },
+            {
+              heading: "🌧️ Os 3 tipos de chuva",
+              body: `Essa parte é muito importante para analisar questões.
+
+☀️ Chuva convectiva
+Pense: CALOR → AR SOBE → RESFRIA → CONDENSA → CHUVA
+Características: curta duração; alta intensidade; pequenas áreas; comum na Amazônia.
+🎯 Como reconhecer? Se a questão falar de calor intenso + ar subindo + chuva forte e rápida → CONVECTIVA.`,
               visual: `
-<svg viewBox="0 0 320 240" class="w-full max-w-sm mx-auto" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <marker id="arrowV-a" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#3E2F20"/>
-    </marker>
-    <marker id="arrowAc-a" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#A8763E"/>
-    </marker>
-  </defs>
-  <circle cx="160" cy="125" r="85" fill="none" stroke="#C9B18C" stroke-width="2" stroke-dasharray="6 5"/>
-  <circle cx="160" cy="125" r="3.5" fill="#3E2F20"/>
-  <text x="168" y="121" font-size="11" fill="#5C4630">centro</text>
-  <circle cx="228" cy="72" r="6" fill="#A8763E"/>
-  <line x1="228" y1="72" x2="192" y2="38" stroke="#3E2F20" stroke-width="2.5" marker-end="url(#arrowV-a)"/>
-  <text x="196" y="30" font-size="13" fill="#3E2F20" font-weight="600">V</text>
-  <line x1="228" y1="72" x2="185" y2="102" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arrowAc-a)"/>
-  <text x="178" y="118" font-size="13" fill="#A8763E" font-weight="600">Ac</text>
-  <text x="45" y="225" font-size="11" fill="#5C4630">V é tangente à trajetória · Ac aponta sempre para o centro</text>
-</svg>`,
-            },
-            {
-              heading: "2. Força resultante no movimento circular",
-              body: `Para o corpo percorrer uma trajetória circular, "alguém" deve puxá-lo para o centro. Esse "alguém" será chamado de resultante.
-
-Fcp = m · V² / R
-
-Importante: sempre que o movimento for circular e uniforme, a resultante das forças será a resultante centrípeta.
-R = Rcp
-
-* Sempre na bundinha
-* Decomposição
-* Ajuda – paralinha`,
-            },
-            {
-              heading: "3. Exemplos",
-              body: `I) Rampa
-MCU → R = Rcp
-P − N = m · V² / R
-
-II) Looping
-MCU → Rcp
-N − P = m · V² / R
-
-III) Globo da Morte
-MCU → Rcp
-R = Rcp
-P + N = m · V² / R
-
-Se o corpo perde o contato:
-N = 0
-Então:
-P + 0 = m · V² / R
-mg = m · V² / R
-g = V² / R
-V² = gR
-V = √gR
-→ Velocidade mínima para completar a volta.`,
-              visual: `
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-  <div class="text-center">
-    <svg viewBox="0 0 200 190" class="w-full" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <marker id="arrowP-r" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#5C4630"/></marker>
-        <marker id="arrowN-r" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#A8763E"/></marker>
-      </defs>
-      <path d="M20,150 Q100,45 180,150" fill="none" stroke="#C9B18C" stroke-width="3"/>
-      <circle cx="100" cy="65" r="6" fill="#3E2F20"/>
-      <line x1="100" y1="65" x2="100" y2="112" stroke="#5C4630" stroke-width="2.5" marker-end="url(#arrowP-r)"/>
-      <text x="106" y="105" font-size="12" fill="#5C4630" font-weight="600">P</text>
-      <line x1="100" y1="65" x2="100" y2="32" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arrowN-r)"/>
-      <text x="106" y="30" font-size="12" fill="#A8763E" font-weight="600">N</text>
-      <circle cx="100" cy="140" r="2.5" fill="#5C4630"/>
-      <text x="108" y="145" font-size="10" fill="#5C4630">centro (Rcp)</text>
-    </svg>
-    <p class="text-xs text-bark/60 mt-1 font-medium">Rampa — P − N = mV²/R</p>
-  </div>
-  <div class="text-center">
-    <svg viewBox="0 0 200 190" class="w-full" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <marker id="arrowP-l" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#5C4630"/></marker>
-        <marker id="arrowN-l" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#A8763E"/></marker>
-      </defs>
-      <circle cx="100" cy="100" r="70" fill="none" stroke="#C9B18C" stroke-width="2" stroke-dasharray="5 4"/>
-      <circle cx="100" cy="100" r="3" fill="#3E2F20"/>
-      <text x="106" y="96" font-size="10" fill="#5C4630">centro</text>
-      <circle cx="100" cy="170" r="6" fill="#3E2F20"/>
-      <line x1="100" y1="170" x2="100" y2="122" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arrowN-l)"/>
-      <text x="106" y="140" font-size="12" fill="#A8763E" font-weight="600">N</text>
-      <line x1="100" y1="170" x2="100" y2="185" stroke="#5C4630" stroke-width="2.5"/>
-      <text x="106" y="188" font-size="12" fill="#5C4630" font-weight="600">P</text>
-    </svg>
-    <p class="text-xs text-bark/60 mt-1 font-medium">Looping — N − P = mV²/R</p>
-  </div>
-  <div class="text-center">
-    <svg viewBox="0 0 200 190" class="w-full" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <marker id="arrowP-g" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#5C4630"/></marker>
-        <marker id="arrowN-g" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#A8763E"/></marker>
-      </defs>
-      <circle cx="100" cy="100" r="70" fill="none" stroke="#C9B18C" stroke-width="2" stroke-dasharray="5 4"/>
-      <circle cx="100" cy="100" r="3" fill="#3E2F20"/>
-      <text x="106" y="118" font-size="10" fill="#5C4630">centro</text>
-      <circle cx="100" cy="30" r="6" fill="#3E2F20"/>
-      <line x1="92" y1="30" x2="92" y2="70" stroke="#5C4630" stroke-width="2.5" marker-end="url(#arrowP-g)"/>
-      <text x="66" y="55" font-size="12" fill="#5C4630" font-weight="600">P</text>
-      <line x1="108" y1="30" x2="108" y2="60" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arrowN-g)"/>
-      <text x="114" y="50" font-size="12" fill="#A8763E" font-weight="600">N</text>
-    </svg>
-    <p class="text-xs text-bark/60 mt-1 font-medium">Globo da Morte — P + N = mV²/R</p>
-  </div>
-</div>`,
-            },
-          ],
-          quiz: [
-            {
-              q: "O que a aceleração tangencial (At) altera no movimento circular?",
-              options: ["O valor da velocidade", "A direção da velocidade", "Apenas o sentido do movimento", "O raio da trajetória"],
-              correct: 0,
-            },
-            {
-              q: "Qual é a fórmula da aceleração tangencial?",
-              options: ["At = ΔV / Δt", "At = V² / R", "At = m · V² / R", "At = √(gR)"],
-              correct: 0,
-            },
-            {
-              q: "A aceleração centrípeta (Ac) é responsável por alterar:",
-              options: ["Apenas o valor da velocidade", "A direção e o sentido da velocidade", "A massa do corpo", "O tempo de percurso"],
-              correct: 1,
-            },
-            {
-              q: "Para onde aponta a aceleração centrípeta?",
-              options: ["Para fora da trajetória", "Tangente à trajetória", "Para o centro da trajetória", "Não tem direção definida"],
-              correct: 2,
-            },
-            {
-              q: "Qual é a fórmula da aceleração centrípeta?",
-              options: ["Ac = V² / R", "Ac = ΔV / Δt", "Ac = m · g", "Ac = √(gR)"],
-              correct: 0,
-            },
-            {
-              q: "No MCU, a força resultante sobre o corpo é chamada de:",
-              options: ["Força tangencial", "Força centrípeta", "Força de atrito", "Força elástica"],
-              correct: 1,
-            },
-            {
-              q: "No exemplo da Rampa, qual é a equação da resultante centrípeta?",
-              options: ["P − N = mV²/R", "N − P = mV²/R", "P + N = mV²/R", "N = mV²/R"],
-              correct: 0,
-            },
-            {
-              q: "No exemplo do Looping, a equação correta é:",
-              options: ["P − N = mV²/R", "N − P = mV²/R", "P + N = mV²/R", "N = 0"],
-              correct: 1,
-            },
-            {
-              q: "No Globo da Morte, quando o corpo perde o contato (N = 0), qual é a velocidade mínima para completar a volta?",
-              options: ["V = √(gR)", "V = gR", "V = g/R", "V = R/g"],
-              correct: 0,
-            },
-            {
-              q: "No Globo da Morte, antes de perder o contato, a equação da resultante centrípeta é:",
-              options: ["P − N = mV²/R", "N − P = mV²/R", "P + N = mV²/R", "N − P = 0"],
-              correct: 2,
-            },
-          ],
-        },
-      ],
-    },
-    {
-      id: "matematica-b",
-      name: "Matemática B",
-      emoji: "📐",
-      contents: [
-        {
-          id: "semelhanca-triangulos",
-          title: "Semelhança de Triângulos",
-          sections: [
-            {
-              heading: "O que é semelhança de triângulos?",
-              body: `Dois triângulos são semelhantes quando possuem a mesma forma, mesmo que tenham tamanhos diferentes.
-Isso significa que:
-
-• Os ângulos correspondentes são iguais.
-• Os lados correspondentes são proporcionais.`,
-              visual: `
-<svg viewBox="0 0 320 180" class="w-full max-w-md mx-auto" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="20,150 150,150 70,40" fill="none" stroke="#5C4630" stroke-width="2.5"/>
-  <polygon points="210,150 288,150 240,84" fill="none" stroke="#5C4630" stroke-width="2.5"/>
-  <path d="M38,150 Q20,150 27.4,133.6" stroke="#A8763E" stroke-width="2" fill="none"/>
-  <path d="M132,150 Q150,150 139.4,135.4" stroke="#3E2F20" stroke-width="2" fill="none"/>
-  <path d="M228,150 Q210,150 217.4,133.6" stroke="#A8763E" stroke-width="2" fill="none"/>
-  <path d="M270,150 Q288,150 277.4,135.4" stroke="#3E2F20" stroke-width="2" fill="none"/>
-  <text x="8" y="165" font-size="12" fill="#5C4630" font-weight="600">A</text>
-  <text x="152" y="165" font-size="12" fill="#5C4630" font-weight="600">B</text>
-  <text x="66" y="32" font-size="12" fill="#5C4630" font-weight="600">C</text>
-  <text x="198" y="165" font-size="12" fill="#5C4630" font-weight="600">A'</text>
-  <text x="290" y="165" font-size="12" fill="#5C4630" font-weight="600">B'</text>
-  <text x="236" y="76" font-size="12" fill="#5C4630" font-weight="600">C'</text>
-  <text x="60" y="178" font-size="10.5" fill="#5C4630">Mesma forma · ângulos iguais (cores) · tamanhos diferentes</text>
-</svg>`,
-            },
-            {
-              heading: "Como analisar se dois triângulos são semelhantes?",
-              body: `Primeiro, procure ângulos iguais e depois compare os lados correspondentes.
-É importante colocar os lados na mesma ordem de correspondência antes de montar a proporção.`,
-            },
-            {
-              heading: "Casos de semelhança",
-              body: `1. AA — Ângulo Ângulo
-Se dois ângulos de um triângulo são iguais aos dois ângulos correspondentes de outro, os triângulos são semelhantes.
-
-2. LAL — Lado Ângulo Lado
-Se dois lados são proporcionais e o ângulo entre esses dois lados é igual, os triângulos são semelhantes.
-
-3. LLL — Lado Lado Lado
-Se os três lados correspondentes são proporcionais, os triângulos são semelhantes.`,
-              visual: `
-<div class="grid grid-cols-3 gap-3">
-  <div class="text-center">
-    <svg viewBox="0 0 110 100" class="w-full" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="15,80 95,80 55,15" fill="none" stroke="#5C4630" stroke-width="2"/>
-      <path d="M31,80 Q15,80 23.4,66.4" stroke="#A8763E" stroke-width="2" fill="none"/>
-      <path d="M46.6,28.6 Q55,15 63.4,28.6" stroke="#A8763E" stroke-width="2" fill="none"/>
-    </svg>
-    <p class="text-xs text-bark/60 mt-1 font-medium">AA</p>
-  </div>
-  <div class="text-center">
-    <svg viewBox="0 0 110 100" class="w-full" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="15,80 95,80 55,15" fill="none" stroke="#5C4630" stroke-width="2"/>
-      <path d="M31,80 Q15,80 23.4,66.4" stroke="#A8763E" stroke-width="2" fill="none"/>
-      <line x1="52" y1="76" x2="58" y2="84" stroke="#3E2F20" stroke-width="2"/>
-      <line x1="29.9" y1="44.4" x2="40.1" y2="50.6" stroke="#3E2F20" stroke-width="2"/>
-    </svg>
-    <p class="text-xs text-bark/60 mt-1 font-medium">LAL</p>
-  </div>
-  <div class="text-center">
-    <svg viewBox="0 0 110 100" class="w-full" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="15,80 95,80 55,15" fill="none" stroke="#5C4630" stroke-width="2"/>
-      <line x1="52" y1="76" x2="58" y2="84" stroke="#3E2F20" stroke-width="2"/>
-      <line x1="29.9" y1="44.4" x2="40.1" y2="50.6" stroke="#3E2F20" stroke-width="2"/>
-      <line x1="80.1" y1="44.4" x2="69.9" y2="50.6" stroke="#3E2F20" stroke-width="2"/>
-    </svg>
-    <p class="text-xs text-bark/60 mt-1 font-medium">LLL</p>
-  </div>
-</div>
-<p class="text-[11px] text-bark/50 text-center mt-2">Marcações em ocre = ângulos iguais · marcações em marrom = lados proporcionais</p>`,
-            },
-            {
-              heading: "Como saber qual caso usar?",
-              body: `AA: procure dois ângulos iguais.
-LAL: procure dois lados proporcionais + o ângulo entre eles.
-LLL: compare os três lados correspondentes.
-
-Dica: não compare os lados simplesmente pela posição no desenho. Primeiro descubra quais lados e ângulos realmente correspondem.`,
-            },
-          ],
-          quiz: [
-            {
-              q: "Dois triângulos são semelhantes quando:",
-              options: ["Possuem a mesma forma, mesmo com tamanhos diferentes", "Possuem exatamente o mesmo tamanho", "Têm a mesma área", "Têm o mesmo perímetro"],
-              correct: 0,
-            },
-            {
-              q: "Em triângulos semelhantes, os ângulos correspondentes são:",
-              options: ["Iguais", "Proporcionais, mas diferentes", "Sempre retos", "Sempre agudos"],
-              correct: 0,
-            },
-            {
-              q: "Em triângulos semelhantes, os lados correspondentes são:",
-              options: ["Iguais", "Proporcionais", "Paralelos", "Perpendiculares"],
-              correct: 1,
-            },
-            {
-              q: "No caso AA de semelhança, o que precisa ser igual?",
-              options: ["Dois ângulos correspondentes", "Três lados", "Dois lados e um ângulo", "Apenas um ângulo"],
-              correct: 0,
-            },
-            {
-              q: "No caso LAL, quais elementos precisam corresponder?",
-              options: ["Dois lados proporcionais e o ângulo entre eles igual", "Três lados proporcionais", "Dois ângulos iguais", "Um lado e dois ângulos"],
-              correct: 0,
-            },
-            {
-              q: "No caso LLL, a condição para semelhança é:",
-              options: ["Os três lados correspondentes são proporcionais", "Dois ângulos são iguais", "Apenas um lado é igual", "A altura é igual"],
-              correct: 0,
-            },
-            {
-              q: "Antes de montar uma proporção entre lados de triângulos semelhantes, é importante:",
-              options: ["Colocar os lados na mesma ordem de correspondência", "Somar todos os lados", "Multiplicar os ângulos", "Ignorar a correspondência"],
-              correct: 0,
-            },
-            {
-              q: "Para verificar o caso AA, a estratégia correta é:",
-              options: ["Procurar dois ângulos iguais", "Procurar dois lados proporcionais", "Comparar os três lados", "Medir a altura do triângulo"],
-              correct: 0,
-            },
-            {
-              q: "Para verificar o caso LAL, deve-se procurar:",
-              options: ["Dois lados proporcionais mais o ângulo entre eles", "Três ângulos iguais", "Apenas um lado proporcional", "A soma dos ângulos"],
-              correct: 0,
-            },
-            {
-              q: "Segundo a dica do conteúdo, antes de comparar os lados pela posição no desenho, deve-se:",
-              options: ["Descobrir quais lados e ângulos realmente correspondem", "Assumir que os lados na mesma posição sempre correspondem", "Ignorar os ângulos", "Medir apenas o maior lado"],
-              correct: 0,
-            },
-          ],
-        },
-        {
-          id: "triangulo-retangulo-1",
-          title: "Triângulo Retângulo 1",
-          sections: [
-            {
-              heading: "Módulo 10 · Triângulo retângulo dividido pela altura",
-              body: `Um triângulo retângulo pode ser dividido pela altura relativa à hipotenusa, formando dois novos triângulos retângulos.
-
-Na representação do caderno:
-• a → hipotenusa
-• b e c → catetos
-• h → altura
-• m e n → partes da hipotenusa
-
-Relação dos ângulos
-α + β + 90° = 180°`,
-              visual: `
-<svg viewBox="0 0 300 220" class="w-full max-w-md mx-auto" xmlns="http://www.w3.org/2000/svg">
-  <line x1="30" y1="170" x2="270" y2="170" stroke="#5C4630" stroke-width="2.5"/>
-  <line x1="30" y1="170" x2="110" y2="57" stroke="#5C4630" stroke-width="2.5"/>
-  <line x1="270" y1="170" x2="110" y2="57" stroke="#5C4630" stroke-width="2.5"/>
-  <line x1="110" y1="170" x2="110" y2="57" stroke="#A8763E" stroke-width="2" stroke-dasharray="5 4"/>
-  <circle cx="30" cy="170" r="3" fill="#3E2F20"/>
-  <circle cx="270" cy="170" r="3" fill="#3E2F20"/>
-  <circle cx="110" cy="57" r="3" fill="#3E2F20"/>
-  <circle cx="110" cy="170" r="3" fill="#A8763E"/>
-  <text x="18" y="188" font-size="12" fill="#3E2F20" font-weight="600">A</text>
-  <text x="266" y="188" font-size="12" fill="#3E2F20" font-weight="600">B</text>
-  <text x="103" y="46" font-size="12" fill="#3E2F20" font-weight="600">C</text>
-  <text x="115" y="185" font-size="11" fill="#A8763E" font-weight="600">H</text>
-  <text x="145" y="188" font-size="13" fill="#5C4630" font-weight="600">a</text>
-  <text x="55" y="107" font-size="13" fill="#5C4630" font-weight="600">b</text>
-  <text x="185" y="107" font-size="13" fill="#5C4630" font-weight="600">c</text>
-  <text x="118" y="115" font-size="13" fill="#A8763E" font-weight="600">h</text>
-  <text x="65" y="188" font-size="12" fill="#5C4630" font-weight="600">m</text>
-  <text x="185" y="188" font-size="12" fill="#5C4630" font-weight="600">n</text>
-  <path d="M110,150 L120,150 L120,160" fill="none" stroke="#A8763E" stroke-width="1.5"/>
-  <text x="65" y="20" font-size="10.5" fill="#5C4630">a = hipotenusa · b, c = catetos · h = altura · m, n = partes de a</text>
-</svg>`,
-            },
-            {
-              heading: "Teorema de Pitágoras",
-              body: `a² = b² + c²
-Onde:
-• a = hipotenusa
-• b e c = catetos
-
-Não esquecer:
-a² = b² + c²
-Também podemos isolar:
-b² = a² − c²
-c² = a² − b²`,
-            },
-            {
-              heading: "Relações do triângulo retângulo",
-              body: `Relação hipotenusa-divisão
-a = m + n
-A hipotenusa inteira é formada pelas duas partes: m + n
-
-Relação cateto-hipotenusa
-Para o cateto b: b² = a · m
-Para o cateto c: c² = a · n
-
-Relação da altura
-h² = m · n
-
-Relação envolvendo altura, catetos e hipotenusa
-b · c = a · h`,
-            },
-            {
-              heading: "Resumo das relações",
-              body: `Teorema de Pitágoras: a² = b² + c²
-Hipotenusa-divisão: a = m + n
-Cateto-hipotenusa: b² = a · m  |  c² = a · n
-Altura: h² = m · n
-Altura-catetos: b · c = a · h`,
-            },
-            {
-              heading: "🔎 Como analisar o desenho",
-              body: `Quando aparecer um triângulo retângulo dividido pela altura, faça nesta ordem:
-
-1. Identifique a hipotenusa → a
-É sempre o lado oposto ao ângulo de 90°.
-
-2. Identifique os catetos → b e c
-São os dois lados que formam o ângulo de 90°.
-
-3. Identifique a altura → h
-É a linha que sai do ângulo de 90° e chega perpendicularmente à hipotenusa.
-
-4. Identifique as partes da hipotenusa → m e n
-A hipotenusa fica dividida em: a = m + n
-
-5. Escolha a relação de acordo com o que a questão está pedindo.
-Se aparecerem os três lados → Pitágoras: a² = b² + c²
-Se aparecer cateto + hipotenusa + parte da hipotenusa → cateto-hipotenusa: b² = a · m ou c² = a · n
-Se aparecer altura + duas partes da hipotenusa → altura: h² = m · n
-Se aparecerem os dois catetos + hipotenusa + altura → altura-catetos: b · c = a · h`,
-            },
-            {
-              heading: "🧠 Ouro para a prova",
-              body: `Primeiro descubra quem é quem no desenho.
-a = hipotenusa
-b e c = catetos
-h = altura
-m e n = divisões da hipotenusa`,
-            },
-          ],
-          quiz: [
-            {
-              q: "No triângulo retângulo dividido pela altura relativa à hipotenusa, o que a altura forma?",
-              options: ["Dois novos triângulos retângulos", "Um triângulo equilátero", "Um quadrado", "Um triângulo obtuso"],
-              correct: 0,
-            },
-            {
-              q: "Qual é a relação entre os ângulos α, β e o ângulo reto no triângulo retângulo?",
-              options: ["α + β + 90° = 180°", "α + β = 180°", "α − β = 90°", "α · β = 90°"],
-              correct: 0,
-            },
-            {
-              q: "O Teorema de Pitágoras é representado por:",
-              options: ["a² = b² + c²", "a = b + c", "a² = b · c", "h² = m · n"],
-              correct: 0,
-            },
-            {
-              q: "Na relação hipotenusa-divisão, a hipotenusa é formada por:",
-              options: ["a = m + n", "a = m · n", "a = m − n", "a = m/n"],
-              correct: 0,
-            },
-            {
-              q: "Qual é a relação cateto-hipotenusa para o cateto b?",
-              options: ["b² = a · m", "b² = a · n", "b² = m · n", "b² = a² − c²"],
-              correct: 0,
-            },
-            {
-              q: "E para o cateto c, a relação cateto-hipotenusa é:",
-              options: ["c² = a · n", "c² = a · m", "c² = m · n", "c² = a² − b²"],
-              correct: 0,
-            },
-            {
-              q: "A relação da altura no triângulo retângulo é dada por:",
-              options: ["h² = m · n", "h² = a · m", "h² = b · c", "h² = a² − b²"],
-              correct: 0,
-            },
-            {
-              q: "A relação que envolve altura, catetos e hipotenusa é:",
-              options: ["b · c = a · h", "b + c = a + h", "b² + c² = a · h", "b · c = m · n"],
-              correct: 0,
-            },
-            {
-              q: "Para identificar a hipotenusa em um triângulo retângulo, deve-se procurar:",
-              options: ["O lado oposto ao ângulo de 90°", "O menor lado do triângulo", "O lado que forma o ângulo reto", "A altura do triângulo"],
-              correct: 0,
-            },
-            {
-              q: "A altura de um triângulo retângulo, ao ser traçada relativa à hipotenusa, chega até ela:",
-              options: ["Perpendicularmente", "Paralelamente", "Formando um ângulo de 45°", "Formando um ângulo obtuso"],
-              correct: 0,
-            },
-          ],
-        },
-      ],
-    },
-    {
-      id: "quimica-a",
-      name: "Química-A",
-      emoji: "🧪",
-      contents: [
-        {
-          id: "estequiometria",
-          title: "Estequiometria",
-          sections: [
-            {
-              heading: "1. Ordem para resolver uma questão",
-              body: `Na aula, a sequência apresentada foi:
-
-① Equação balanceada
-Primeiro, deixe a equação balanceada.
-
-② Proporção em mol
-Depois, observe os números que aparecem na equação e monte a proporção em mol.
-
-③ Conversão de unidades
-Se o exercício fornecer uma quantidade em outra unidade, faça a conversão necessária.
-
-④ Dúvida do exercício
-Por fim, utilize a proporção para descobrir o valor que o exercício está pedindo.`,
-              visual: `
-<div class="flex flex-col items-center gap-1.5 max-w-xs mx-auto">
-  <div class="w-full rounded-xl bg-cream border border-sand px-4 py-3 flex items-center gap-3">
-    <span class="w-7 h-7 rounded-full bg-espresso text-cream flex items-center justify-center text-xs font-bold shrink-0">1</span>
-    <span class="text-sm text-bark font-medium">Equação balanceada</span>
-  </div>
-  <span class="text-ochre text-lg leading-none">↓</span>
-  <div class="w-full rounded-xl bg-cream border border-sand px-4 py-3 flex items-center gap-3">
-    <span class="w-7 h-7 rounded-full bg-espresso text-cream flex items-center justify-center text-xs font-bold shrink-0">2</span>
-    <span class="text-sm text-bark font-medium">Proporção em mol</span>
-  </div>
-  <span class="text-ochre text-lg leading-none">↓</span>
-  <div class="w-full rounded-xl bg-cream border border-sand px-4 py-3 flex items-center gap-3">
-    <span class="w-7 h-7 rounded-full bg-espresso text-cream flex items-center justify-center text-xs font-bold shrink-0">3</span>
-    <span class="text-sm text-bark font-medium">Conversão de unidades</span>
-  </div>
-  <span class="text-ochre text-lg leading-none">↓</span>
-  <div class="w-full rounded-xl bg-cream border border-sand px-4 py-3 flex items-center gap-3">
-    <span class="w-7 h-7 rounded-full bg-espresso text-cream flex items-center justify-center text-xs font-bold shrink-0">4</span>
-    <span class="text-sm text-bark font-medium">Dúvida do exercício</span>
-  </div>
-</div>`,
-            },
-            {
-              heading: "2. Exemplo da aula",
-              body: `Equação:
-C₂H₆O + 3O₂ → 2CO₂ + 3H₂O
-
-A equação mostra a proporção:`,
-              visual: `
-<div class="overflow-x-auto">
-  <table class="w-full text-sm border-collapse">
-    <thead>
-      <tr class="border-b-2 border-espresso/70">
-        <th class="text-left py-2 pr-4 font-display text-bark">Substância</th>
-        <th class="text-left py-2 font-display text-bark">Quantidade</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="border-b border-sand/60"><td class="py-2 pr-4 text-bark/80">C₂H₆O</td><td class="py-2 text-bark/80">1 mol</td></tr>
-      <tr class="border-b border-sand/60"><td class="py-2 pr-4 text-bark/80">O₂</td><td class="py-2 text-bark/80">3 mols</td></tr>
-      <tr class="border-b border-sand/60"><td class="py-2 pr-4 text-bark/80">CO₂</td><td class="py-2 text-bark/80">2 mols</td></tr>
-      <tr><td class="py-2 pr-4 text-bark/80">H₂O</td><td class="py-2 text-bark/80">3 mols</td></tr>
-    </tbody>
-  </table>
+<div class="flex flex-col items-center gap-1 max-w-[190px] mx-auto text-center">
+  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">☀️ Calor</div>
+  <span class="text-ochre text-sm">↓</span>
+  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">Ar sobe</div>
+  <span class="text-ochre text-sm">↓</span>
+  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">Resfria</div>
+  <span class="text-ochre text-sm">↓</span>
+  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">Condensa</div>
+  <span class="text-ochre text-sm">↓</span>
+  <div class="w-full rounded-lg bg-espresso text-cream px-3 py-2 text-xs font-medium">🌧️ Chuva — curta, forte, área pequena</div>
 </div>`,
             },
             {
               heading: "",
-              body: `Portanto:
-1 mol de C₂H₆O → 2 mols de CO₂
-Essa é a proporção que será utilizada no exemplo.`,
+              body: `🌡️ Chuva frontal
+Pense: AR QUENTE + AR FRIO → ENCONTRO → CHUVA
+Ocorre no encontro de massas de ar com características diferentes.
+Características: contínua; intensidade baixa a moderada; grande área; comum em grande parte do Brasil, principalmente Sul e Sudeste.
+🎯 Como reconhecer? Se aparecer frente + massa de ar quente + massa de ar fria → FRONTAL.`,
+              visual: `
+<div class="max-w-[220px] mx-auto">
+  <div class="flex items-center justify-center gap-2">
+    <div class="rounded-lg bg-cream border border-sand px-2.5 py-2 text-[11px] text-bark font-medium text-center">Ar quente</div>
+    <span class="text-ochre text-base">↔</span>
+    <div class="rounded-lg bg-cream border border-sand px-2.5 py-2 text-[11px] text-bark font-medium text-center">Ar frio</div>
+  </div>
+  <div class="flex justify-center my-1"><span class="text-ochre text-sm">↓ encontro</span></div>
+  <div class="rounded-lg bg-espresso text-cream px-3 py-2 text-[11px] font-medium text-center">🌧️ Chuva frontal — contínua, grande área</div>
+</div>`,
             },
             {
-              heading: "3. Conversão de mol para massa",
-              body: `No exemplo, precisamos saber a massa correspondente a 1 mol de C₂H₆O e a 2 mols de CO₂.
-
-C₂H₆O
-12 · 2 + 1 · 6 + 16
-= 46 g/mol
-
-Portanto:
-1 mol de C₂H₆O = 46 g
-
-CO₂
-12 + 16 · 2
-= 44 g/mol
-
-Como a equação apresenta 2 mols de CO₂:
-2 · 44 g = 88 g
-
-Então temos:
-46 g de C₂H₆O → 88 g de CO₂`,
+              heading: "",
+              body: `⛰️ Chuva orográfica
+Pense: AR ÚMIDO → MONTANHA → SOBE → ESFRIA → CONDENSA → CHUVA
+A massa de ar úmida encontra uma barreira do relevo e é forçada a subir.
+Barlavento → lado que recebe o ar úmido.
+Sotavento → lado oposto à chegada do ar.
+🎯 Como reconhecer? Se a questão falar de montanha + serra + relevo + ar úmido subindo → OROGRÁFICA.`,
+              visual: `
+<svg viewBox="0 0 300 170" class="w-full max-w-sm mx-auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arOro-1" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#A8763E"/></marker>
+  </defs>
+  <polygon points="20,150 150,25 280,150" fill="none" stroke="#5C4630" stroke-width="2.5"/>
+  <line x1="45" y1="140" x2="128" y2="42" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arOro-1)"/>
+  <text x="35" y="90" font-size="9.5" fill="#5C4630" transform="rotate(-52 35,90)">sobe · esfria · condensa</text>
+  <line x1="172" y1="42" x2="255" y2="140" stroke="#5C4630" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="200" y="100" font-size="9.5" fill="#5C4630" transform="rotate(52 200,100)">desce seco</text>
+  <text x="15" y="164" font-size="10.5" fill="#5C4630" font-weight="600">Barlavento</text>
+  <text x="228" y="164" font-size="10.5" fill="#5C4630" font-weight="600">Sotavento</text>
+  <text x="120" y="18" font-size="10" fill="#A8763E" font-weight="600">🌧️ chuva</text>
+</svg>`,
             },
             {
-              heading: "4. Aplicando no exercício",
-              body: `O exemplo fornece:
-46 g de C₂H₆O → 2 · 44 g de CO₂
+              heading: "💨 Pressão atmosférica",
+              body: `É o peso exercido pela atmosfera sobre a superfície terrestre.
+Aqui existem algumas relações que você precisa saber.
 
-E pergunta quanto de CO₂ será produzido a partir de:
-2,3 × 10³ g de C₂H₆O
+🌡️ Temperatura × pressão
+Temperatura ↑ → Pressão ↓
+Temperatura ↓ → Pressão ↑
+🧠 Pense: Ar quente sobe → menor pressão. Ar frio desce → maior pressão.
 
-Montando a proporção:
-46 g → 2 · 44 g
-2,3 × 10³ g → ?
-
-Agora fazemos a multiplicação cruzada:
-? = (2,3 · 10³ · 2 · 44) / 46
-
-Resultado:
-? = 4,4 · 10³ g`,
+⛰️ Altitude × pressão
+Altitude ↑ → Pressão ↓
+Altitude ↓ → Pressão ↑
+🎯 Na questão: Se uma cidade está em uma altitude muito elevada → menor pressão atmosférica.`,
             },
             {
-              heading: "🧠 O OURO DA ESTEQUIOMETRIA",
-              body: `Quando aparecer uma questão desse tipo, pense sempre na sequência:
+              heading: "💨 Ventos",
+              body: `O vento é ar em movimento.
+A regra mais importante é: ALTA PRESSÃO → BAIXA PRESSÃO (AP → BP)
+Os ventos sopram das áreas de Alta Pressão para as áreas de Baixa Pressão.
 
-EQUAÇÃO BALANCEADA
-↓
-PROPORÇÃO EM MOL
-↓
-CONVERSÃO DE UNIDADES
-↓
-PROPORÇÃO PARA ENCONTRAR O ?
-
-No exemplo:
-C₂H₆O + 3O₂ → 2CO₂ + 3H₂O
-1 mol C₂H₆O → 2 mol CO₂
-46 g C₂H₆O → 88 g CO₂
-2,3 × 10³ g C₂H₆O → 4,4 × 10³ g CO₂`,
+🧠 Macete: Alta → Baixa
+Se uma questão perguntar "para onde o vento vai?", procure primeiro as áreas de pressão.`,
+              visual: `
+<div class="flex items-center justify-center gap-3">
+  <div class="w-16 h-16 rounded-full bg-beige border-2 border-sand flex items-center justify-center text-sm font-bold text-bark">AP</div>
+  <span class="text-ochre text-2xl">→</span>
+  <div class="w-16 h-16 rounded-full bg-espresso text-cream flex items-center justify-center text-sm font-bold">BP</div>
+</div>
+<p class="text-center text-[11px] text-bark/60 mt-2">O vento sopra da Alta Pressão para a Baixa Pressão</p>`,
             },
             {
-              heading: "🔎 Como analisar uma questão",
-              body: `Antes de fazer qualquer conta, procure:
+              heading: "🌍 6. Fatores climáticos",
+              body: `Agora muda a lógica:
+Elementos → mostram como está o clima.
+Fatores → ajudam a explicar por que o clima é daquele jeito.
 
-1. Qual é a equação?
-→ Balanceie.
+Os principais fatores trabalhados no material são:
+Latitude, Altitude, Relevo, Continentalidade e maritimidade, Correntes marítimas, Vegetação, Massas de ar.`,
+            },
+            {
+              heading: "📍 Latitude",
+              body: `Latitude é a distância em relação ao Equador (0°).
 
-2. Qual é a proporção em mol?
-→ Olhe os números da equação.
+Regra principal:
+MAIOR LATITUDE → MENOR TEMPERATURA
+MENOR LATITUDE → MAIOR TEMPERATURA
+Além disso: Maior latitude → maior amplitude térmica. Menor latitude → menor amplitude térmica.
 
-3. Qual unidade o exercício forneceu?
-→ Veja se precisa converter.
+🎯 Como analisar?
+Se uma questão comparar Cidade A → 10° S e Cidade B → 50° S: a cidade B está em maior latitude, logo tende a apresentar menor temperatura média.`,
+              visual: `
+<div class="flex items-center justify-between gap-1 text-[10px] text-bark font-medium max-w-sm mx-auto">
+  <div class="text-center flex-1">
+    <div class="w-11 h-11 rounded-full bg-cream border border-sand flex items-center justify-center mx-auto mb-1 text-base">❄️</div>
+    Polo<br/>menor T°
+  </div>
+  <span class="text-ochre text-lg">↔</span>
+  <div class="text-center flex-1">
+    <div class="w-14 h-14 rounded-full bg-beige border border-sand flex items-center justify-center mx-auto mb-1 text-lg">🌤️</div>
+    Latitude média
+  </div>
+  <span class="text-ochre text-lg">↔</span>
+  <div class="text-center flex-1">
+    <div class="w-16 h-16 rounded-full bg-espresso text-cream flex items-center justify-center mx-auto mb-1 text-xl">☀️</div>
+    Equador<br/>maior T°
+  </div>
+</div>`,
+            },
+            {
+              heading: "⛰️ Altitude",
+              body: `É a altura em relação ao nível do mar.
 
-4. O que ele está perguntando?
-→ Esse será o ? da proporção.
+Regra:
+ALTITUDE ↑ → TEMPERATURA ↓
+ALTITUDE ↓ → TEMPERATURA ↑
 
-Assim você não sai fazendo conta aleatoriamente: segue a ordem da aula.`,
+🎯 Na questão
+Duas cidades possuem a mesma latitude, mas: Cidade A → baixa altitude; Cidade B → alta altitude.
+👉 A cidade B tende a ser mais fria.`,
+              visual: `
+<div class="flex flex-col items-center gap-2 max-w-[260px] mx-auto text-center">
+  <div class="w-full rounded-lg bg-espresso text-cream px-3 py-2 text-xs font-medium">Alta altitude → menor temperatura, menor pressão</div>
+  <span class="text-ochre text-sm">↕ altitude</span>
+  <div class="w-full rounded-lg bg-beige border border-sand px-3 py-2 text-xs font-medium text-bark">Baixa altitude → maior temperatura, maior pressão</div>
+</div>`,
+            },
+            {
+              heading: "⛰️ Relevo",
+              body: `O relevo pode funcionar como BARREIRA ou "CORREDOR".
+Ele influencia a circulação das massas de ar.
+
+🎯 Na questão
+Se aparecer serra + montanha + massa de ar sendo impedida ou obrigada a subir → pense em relevo.
+E também pode aparecer relacionado à chuva orográfica.`,
+            },
+            {
+              heading: "🌊 Continentalidade × Maritimidade",
+              body: `Essa comparação é muito importante.
+
+🏠 Continentalidade
+Influência do continente.
+→ menor umidade
+→ maior amplitude térmica
+
+🌊 Maritimidade
+Influência do oceano.
+→ maior umidade
+→ menor amplitude térmica
+
+🧠 Como imaginar?
+Continente = temperaturas variam mais.
+Oceano = temperaturas variam menos.
+
+🎯 Questão clássica: "Uma cidade localizada próxima ao litoral apresenta menor amplitude térmica." 👉 Pense: MARITIMIDADE.`,
+              visual: `
+<div class="grid grid-cols-2 gap-3 text-center text-xs max-w-sm mx-auto">
+  <div class="rounded-xl bg-cream border border-sand px-3 py-4">
+    <p class="font-semibold text-bark mb-1">🏠 Continentalidade</p>
+    <p class="text-bark/70">Menor umidade<br/>Maior amplitude térmica</p>
+  </div>
+  <div class="rounded-xl bg-cream border border-sand px-3 py-4">
+    <p class="font-semibold text-bark mb-1">🌊 Maritimidade</p>
+    <p class="text-bark/70">Maior umidade<br/>Menor amplitude térmica</p>
+  </div>
+</div>`,
+            },
+            {
+              heading: "🌊 Correntes marítimas",
+              body: `São massas de água que circulam pelos oceanos.
+
+🔥 Corrente quente
+Tende a deixar o litoral: mais quente e mais úmido.
+
+❄️ Corrente fria
+Tende a deixar o litoral: mais seco, favorecendo a ocorrência de desertos.
+
+Exemplo importante:
+Corrente de Humboldt (ou do Peru) → corrente fria → Pacífico Sul → contribui para a formação do deserto do Atacama.
+
+🎯 Na questão: Atacama + corrente marítima → pense imediatamente em Humboldt → corrente fria.`,
+            },
+            {
+              heading: "🌳 Vegetação",
+              body: `A vegetação interfere no clima porque impede a incidência total dos raios solares na superfície.
+
+Com o desmatamento:
+↓ umidade
+↓ chuvas
+↑ temperatura
+
+🎯 Como reconhecer?
+Se a questão relacionar desmatamento + aumento da temperatura + redução da umidade → pense em vegetação.`,
+            },
+            {
+              heading: "💨 Massas de ar",
+              body: `São grandes porções da atmosfera que se deslocam levando as características da região onde se formaram.
+
+Elas podem ser:
+Pela temperatura → Quentes: Tropical (T) e Equatorial (E). Frias: Polar (P).
+Pela umidade → Secas: continentais (c). Úmidas: oceânicas.
+
+🧠 Como interpretar uma sigla?
+Se aparecer algo como "mTa", pense: m = massa, T = Tropical, a = atlântica.
+A ideia é descobrir de onde vem a massa e quais características ela carrega.`,
+            },
+            {
+              heading: "🌎 El Niño e La Niña",
+              body: `O material apresenta os fenômenos El Niño e La Niña.
+Para a revisão, reconheça que são fenômenos relacionados às condições do Oceano Pacífico e que interferem nas condições climáticas.`,
+            },
+            {
+              heading: "🏆 Mapa mental para questões",
+              body: `Quando aparecer uma questão de Climatologia, pense assim:
+
+🌡️ "Está falando de temperatura?" → Latitude / altitude / continentalidade / maritimidade
+🌧️ "Está falando de chuva?" → Convectiva / frontal / orográfica
+💨 "Está falando de vento?" → Alta pressão → Baixa pressão
+⛰️ "Tem montanha ou serra?" → Relevo → chuva orográfica
+🌊 "Tem oceano influenciando?" → Maritimidade
+🏠 "Está longe do oceano?" → Continentalidade
+🌊 "Tem corrente marítima?" → Quente = mais quente/úmido · Fria = mais seco
+📍 "Comparou duas latitudes?" → Maior latitude = menor temperatura
+⛰️ "Comparou duas altitudes?" → Maior altitude = menor temperatura
+🌳 "Falou de desmatamento?" → Menor umidade + menor chuva + maior temperatura`,
+            },
+            {
+              heading: "⚡ 10 relações para decorar",
+              body: `1. Maior latitude → menor temperatura
+2. Maior altitude → menor temperatura
+3. Maior altitude → menor pressão
+4. Maior temperatura → menor pressão
+5. Alta pressão → Baixa pressão
+6. Continentalidade → maior amplitude térmica
+7. Maritimidade → menor amplitude térmica
+8. Corrente quente → mais quente e úmido
+9. Corrente fria → mais seco
+10. Desmatamento → menor umidade, menor chuva e maior temperatura`,
+            },
+            {
+              heading: "🧠 O segredo para a prova",
+              body: `Não tente decorar Climatologia como uma lista enorme. Leia o que a questão está descrevendo e procure a "pista":
+
+calor subindo → convectiva
+frente quente + fria → frontal
+montanha → orográfica
+alta → baixa → vento
+altitude → temperatura
+latitude → temperatura
+oceano → maritimidade
+continente → continentalidade
+corrente fria → ar mais seco
+
+Isso transforma a matéria em relações que você consegue identificar na questão, em vez de apenas decorar definições.`,
             },
           ],
           quiz: [
-            {
-              q: "Qual é o primeiro passo para resolver uma questão de estequiometria, segundo a aula?",
-              options: ["Deixar a equação balanceada", "Converter unidades", "Montar a proporção em mol", "Responder a dúvida do exercício"],
-              correct: 0,
-            },
-            {
-              q: "Depois de balancear a equação, o que se deve fazer?",
-              options: ["Montar a proporção em mol observando os números da equação", "Converter a temperatura", "Calcular a densidade", "Somar as massas atômicas"],
-              correct: 0,
-            },
-            {
-              q: "A conversão de unidades deve ser feita quando:",
-              options: ["O exercício fornecer uma quantidade em outra unidade", "A equação não estiver balanceada", "O produto for um gás", "Sempre, independentemente do exercício"],
-              correct: 0,
-            },
-            {
-              q: "Na equação C₂H₆O + 3O₂ → 2CO₂ + 3H₂O, qual é a proporção em mol entre C₂H₆O e CO₂?",
-              options: ["1 mol de C₂H₆O para 2 mols de CO₂", "1 mol de C₂H₆O para 3 mols de CO₂", "2 mols de C₂H₆O para 1 mol de CO₂", "3 mols de C₂H₆O para 2 mols de CO₂"],
-              correct: 0,
-            },
-            {
-              q: "Qual é a massa molar do C₂H₆O calculada no exemplo?",
-              options: ["46 g/mol", "44 g/mol", "88 g/mol", "12 g/mol"],
-              correct: 0,
-            },
-            {
-              q: "Qual é a massa molar do CO₂ calculada no exemplo?",
-              options: ["44 g/mol", "46 g/mol", "88 g/mol", "28 g/mol"],
-              correct: 0,
-            },
-            {
-              q: "Como a equação apresenta 2 mols de CO₂, qual é a massa total correspondente?",
-              options: ["88 g", "44 g", "46 g", "92 g"],
-              correct: 0,
-            },
-            {
-              q: "Para descobrir o valor de '?' a partir de 2,3 × 10³ g de C₂H₆O, qual operação é usada?",
-              options: ["Multiplicação cruzada", "Soma direta", "Divisão pela massa molar apenas", "Regra de três inversa"],
-              correct: 0,
-            },
-            {
-              q: "Qual é o resultado final de CO₂ produzido a partir de 2,3 × 10³ g de C₂H₆O, segundo o exemplo?",
-              options: ["4,4 × 10³ g", "8,8 × 10³ g", "2,3 × 10³ g", "4,6 × 10² g"],
-              correct: 0,
-            },
-            {
-              q: "Segundo o 'ouro da estequiometria', qual é a sequência correta para resolver a questão?",
-              options: [
-                "Equação balanceada → Proporção em mol → Conversão de unidades → Proporção para encontrar o ?",
-                "Conversão de unidades → Equação balanceada → Proporção em mol → Resposta",
-                "Proporção em mol → Equação balanceada → Resposta → Conversão",
-                "Resposta → Proporção → Conversão → Equação",
-              ],
-              correct: 0,
-            },
+            { q: "O que é 'tempo', segundo o conteúdo?", options: ["Estado momentâneo da atmosfera", "Sucessão habitual dos estados de tempo", "Média histórica de temperaturas", "Um fenômeno oceânico"], correct: 0 },
+            { q: "O que é 'clima'?", options: ["A sucessão habitual dos vários estados de tempo", "O estado da atmosfera em um único dia", "A quantidade de chuva em um mês", "A temperatura mínima de uma região"], correct: 0 },
+            { q: "Se uma questão descrever uma condição 'agora' ou em um momento específico, ela está tratando de:", options: ["Tempo", "Clima", "Latitude", "Pressão"], correct: 0 },
+            { q: "Se a questão descrever o comportamento habitual de uma região, ela está tratando de:", options: ["Clima", "Tempo", "Umidade", "Vento"], correct: 0 },
+            { q: "Quais são os principais elementos do clima citados no material?", options: ["Temperatura, umidade, precipitação e pressão atmosférica", "Latitude, altitude, relevo e vegetação", "Massas de ar, correntes marítimas e vegetação", "El Niño e La Niña"], correct: 0 },
+            { q: "Como se calcula a amplitude térmica?", options: ["Máxima menos mínima", "Máxima mais mínima", "Máxima dividida pela mínima", "Mínima menos máxima"], correct: 0 },
+            { q: "Se a máxima do dia foi 30°C e a mínima 10°C, qual é a amplitude térmica?", options: ["20°C", "40°C", "10°C", "30°C"], correct: 0 },
+            { q: "O que é uma isoterma?", options: ["Linha que une pontos de mesma temperatura", "Linha que une pontos de mesma umidade", "Linha que une pontos de mesma pluviosidade", "Linha que une pontos de mesma pressão"], correct: 0 },
+            { q: "O que é umidade relativa?", options: ["A quantidade de vapor de água na atmosfera, expressa em %", "A quantidade de chuva acumulada em um mês", "A pressão exercida pelo ar", "A diferença entre temperatura máxima e mínima"], correct: 0 },
+            { q: "Se a umidade relativa está próxima de 100%, isso significa que:", options: ["A atmosfera está próxima da saturação, podendo chover", "A atmosfera está seca", "A pressão está muito alta", "A temperatura está no seu ponto máximo"], correct: 0 },
+            { q: "O que é isoígra?", options: ["Pontos de igual umidade", "Pontos de igual temperatura", "Pontos de igual pluviosidade", "Pontos de igual pressão"], correct: 0 },
+            { q: "O que é isoieta?", options: ["Pontos de igual pluviosidade", "Pontos de igual umidade", "Pontos de igual temperatura", "Pontos de igual altitude"], correct: 0 },
+            { q: "O orvalho se forma por:", options: ["Condensação do vapor de água na superfície", "Congelamento do vapor em nuvens altas", "Sublimação da neve", "Evaporação da água do solo"], correct: 0 },
+            { q: "A geada se forma quando:", options: ["Ocorre o congelamento do orvalho em noite fria e sem nuvens", "A temperatura sobe rapidamente pela manhã", "Há muita nebulosidade durante a noite", "O vento sopra forte durante o dia"], correct: 0 },
+            { q: "A neve se forma em condições de:", options: ["Temperatura baixa, próxima de 0°C, e umidade elevada", "Temperatura alta e baixa umidade", "Pressão atmosférica muito baixa apenas", "Vento forte sem variação de temperatura"], correct: 0 },
+            { q: "O granizo é formado por:", options: ["Blocos de gelo em nuvens altas", "Vapor de água condensado na superfície", "Gotas de chuva congeladas no solo", "Neve derretida"], correct: 0 },
+            { q: "Se uma questão mencionar 'calor intenso + ar subindo + chuva forte e rápida', o tipo de chuva é:", options: ["Convectiva", "Frontal", "Orográfica", "Nenhuma das anteriores"], correct: 0 },
+            { q: "A chuva convectiva é caracterizada por:", options: ["Curta duração, alta intensidade e pequenas áreas", "Longa duração e grande área", "Ocorrer apenas em regiões polares", "Baixa intensidade constante"], correct: 0 },
+            { q: "A chuva frontal ocorre por causa:", options: ["Do encontro de massas de ar com características diferentes", "Do relevo forçando o ar a subir", "Do calor intenso fazendo o ar subir rapidamente", "Da proximidade com o oceano apenas"], correct: 0 },
+            { q: "Se uma questão mencionar 'montanha + serra + relevo + ar úmido subindo', o tipo de chuva é:", options: ["Orográfica", "Convectiva", "Frontal", "Nenhuma das anteriores"], correct: 0 },
+            { q: "Na chuva orográfica, o lado que recebe o ar úmido é chamado de:", options: ["Barlavento", "Sotavento", "Isoieta", "Isoterma"], correct: 0 },
+            { q: "Na chuva orográfica, o lado oposto à chegada do ar é chamado de:", options: ["Sotavento", "Barlavento", "Isoígra", "Isoterma"], correct: 0 },
+            { q: "Qual é a relação entre temperatura e pressão atmosférica?", options: ["Temperatura alta → pressão baixa", "Temperatura alta → pressão alta", "Não existe relação entre elas", "Temperatura baixa → pressão baixa"], correct: 0 },
+            { q: "Qual é a relação entre altitude e pressão atmosférica?", options: ["Altitude alta → pressão baixa", "Altitude alta → pressão alta", "Não existe relação entre elas", "Altitude baixa → pressão baixa"], correct: 0 },
+            { q: "Segundo a regra apresentada, os ventos sopram:", options: ["Da alta pressão para a baixa pressão", "Da baixa pressão para a alta pressão", "Sempre do oceano para o continente", "Sempre de norte para sul"], correct: 0 },
+            { q: "O que os 'elementos do clima' mostram, segundo o material?", options: ["Como está o clima", "Por que o clima é daquele jeito", "A localização exata de uma região", "A previsão do tempo para amanhã"], correct: 0 },
+            { q: "O que os 'fatores climáticos' ajudam a explicar?", options: ["Por que o clima é daquele jeito", "Como está o clima no momento", "Apenas a quantidade de chuva", "Apenas a temperatura do dia"], correct: 0 },
+            { q: "Qual é a regra principal sobre latitude e temperatura?", options: ["Maior latitude → menor temperatura", "Maior latitude → maior temperatura", "A latitude não influencia a temperatura", "Menor latitude → menor temperatura"], correct: 0 },
+            { q: "Qual é a relação entre latitude e amplitude térmica?", options: ["Maior latitude → maior amplitude térmica", "Maior latitude → menor amplitude térmica", "Não há relação", "Latitude só influencia a pressão"], correct: 0 },
+            { q: "Qual é a relação entre altitude e temperatura?", options: ["Altitude alta → temperatura baixa", "Altitude alta → temperatura alta", "Não há relação entre elas", "Altitude baixa → temperatura baixa"], correct: 0 },
+            { q: "O relevo pode funcionar, segundo o material, como:", options: ["Barreira ou corredor para as massas de ar", "Apenas como fonte de umidade", "Apenas como fonte de calor", "Elemento que não influencia o clima"], correct: 0 },
+            { q: "A continentalidade está associada a:", options: ["Menor umidade e maior amplitude térmica", "Maior umidade e menor amplitude térmica", "Nenhuma variação de temperatura", "Apenas à proximidade do oceano"], correct: 0 },
+            { q: "A maritimidade está associada a:", options: ["Maior umidade e menor amplitude térmica", "Menor umidade e maior amplitude térmica", "Nenhuma variação de temperatura", "Apenas ao relevo montanhoso"], correct: 0 },
+            { q: "Uma corrente marítima fria tende a deixar o litoral:", options: ["Mais seco, favorecendo desertos", "Mais quente e úmido", "Sem alteração climática", "Com maior amplitude térmica apenas"], correct: 0 },
+            { q: "A Corrente de Humboldt, citada no material, está relacionada à formação de qual deserto?", options: ["Deserto do Atacama", "Deserto do Saara", "Deserto de Gobi", "Deserto da Patagônia"], correct: 0 },
+          ],
+          extraQuiz: [
+            { q: "O desmatamento de uma região tende a causar:", options: ["Menor umidade, menor chuva e maior temperatura", "Maior umidade e mais chuva", "Menor temperatura apenas", "Aumento da pressão atmosférica apenas"], correct: 0 },
+            { q: "Uma massa de ar identificada pela sigla 'mTa' é:", options: ["Massa Tropical Atlântica", "Massa Temperada Ártica", "Massa Tropical Antártica", "Massa Templada Amazônica"], correct: 0 },
+            { q: "Segundo a classificação por temperatura, quais massas de ar são consideradas quentes?", options: ["Tropical (T) e Equatorial (E)", "Polar (P) e Tropical (T)", "Apenas Polar (P)", "Apenas Equatorial (E)"], correct: 0 },
+            { q: "Quanto à umidade, as massas de ar secas são chamadas de:", options: ["Continentais (c)", "Oceânicas", "Equatoriais", "Polares"], correct: 0 },
+            { q: "O El Niño e La Niña são fenômenos relacionados a:", options: ["Condições do Oceano Pacífico que interferem no clima", "Condições do Oceano Atlântico apenas", "Correntes de ar na Antártida", "Mudanças na órbita da Terra"], correct: 0 },
+            { q: "Duas cidades têm a mesma latitude, mas uma está em maior altitude que a outra. Qual delas tende a ser mais fria?", options: ["A cidade de maior altitude", "A cidade de menor altitude", "Ambas terão a mesma temperatura", "Não é possível saber sem outros dados"], correct: 0 },
+            { q: "Uma cidade litorânea, comparada a uma cidade do interior na mesma latitude, tende a apresentar:", options: ["Menor amplitude térmica", "Maior amplitude térmica", "A mesma amplitude térmica", "Menor umidade"], correct: 0 },
+            { q: "Se uma questão comparar uma cidade a 10°S com outra a 50°S, qual tende a ter menor temperatura média?", options: ["A cidade a 50°S", "A cidade a 10°S", "As duas terão a mesma temperatura", "Depende apenas da altitude"], correct: 0 },
+            { q: "Uma corrente marítima quente tende a deixar o litoral:", options: ["Mais quente e mais úmido", "Mais seco e frio", "Sem nenhuma alteração", "Com menor umidade apenas"], correct: 0 },
+            { q: "Ao identificar em uma questão os termos 'frente', 'massa de ar quente' e 'massa de ar fria' juntos, o tipo de chuva a ser considerado é:", options: ["Frontal", "Convectiva", "Orográfica", "Nenhuma das anteriores"], correct: 0 },
           ],
         },
       ],
     },
     {
-      id: "biologia-b",
-      name: "Biologia B",
+      id: "biologia-a",
+      name: "Biologia A",
       emoji: "🧬",
       contents: [
         {
@@ -1374,6 +1073,13 @@ n = Haploide
             },
           ],
         },
+      ],
+    },
+    {
+      id: "biologia-b",
+      name: "Biologia B",
+      emoji: "🧬",
+      contents: [
         {
           id: "codigo-genetico",
           title: "Código Genético",
@@ -1649,6 +1355,219 @@ DNA → RNAm → códons → aminoácidos → proteína`,
       ],
     },
     {
+      id: "quimica-a",
+      name: "Química-A",
+      emoji: "🧪",
+      contents: [
+        {
+          id: "estequiometria",
+          title: "Estequiometria",
+          sections: [
+            {
+              heading: "1. Ordem para resolver uma questão",
+              body: `Na aula, a sequência apresentada foi:
+
+① Equação balanceada
+Primeiro, deixe a equação balanceada.
+
+② Proporção em mol
+Depois, observe os números que aparecem na equação e monte a proporção em mol.
+
+③ Conversão de unidades
+Se o exercício fornecer uma quantidade em outra unidade, faça a conversão necessária.
+
+④ Dúvida do exercício
+Por fim, utilize a proporção para descobrir o valor que o exercício está pedindo.`,
+              visual: `
+<div class="flex flex-col items-center gap-1.5 max-w-xs mx-auto">
+  <div class="w-full rounded-xl bg-cream border border-sand px-4 py-3 flex items-center gap-3">
+    <span class="w-7 h-7 rounded-full bg-espresso text-cream flex items-center justify-center text-xs font-bold shrink-0">1</span>
+    <span class="text-sm text-bark font-medium">Equação balanceada</span>
+  </div>
+  <span class="text-ochre text-lg leading-none">↓</span>
+  <div class="w-full rounded-xl bg-cream border border-sand px-4 py-3 flex items-center gap-3">
+    <span class="w-7 h-7 rounded-full bg-espresso text-cream flex items-center justify-center text-xs font-bold shrink-0">2</span>
+    <span class="text-sm text-bark font-medium">Proporção em mol</span>
+  </div>
+  <span class="text-ochre text-lg leading-none">↓</span>
+  <div class="w-full rounded-xl bg-cream border border-sand px-4 py-3 flex items-center gap-3">
+    <span class="w-7 h-7 rounded-full bg-espresso text-cream flex items-center justify-center text-xs font-bold shrink-0">3</span>
+    <span class="text-sm text-bark font-medium">Conversão de unidades</span>
+  </div>
+  <span class="text-ochre text-lg leading-none">↓</span>
+  <div class="w-full rounded-xl bg-cream border border-sand px-4 py-3 flex items-center gap-3">
+    <span class="w-7 h-7 rounded-full bg-espresso text-cream flex items-center justify-center text-xs font-bold shrink-0">4</span>
+    <span class="text-sm text-bark font-medium">Dúvida do exercício</span>
+  </div>
+</div>`,
+            },
+            {
+              heading: "2. Exemplo da aula",
+              body: `Equação:
+C₂H₆O + 3O₂ → 2CO₂ + 3H₂O
+
+A equação mostra a proporção:`,
+              visual: `
+<div class="overflow-x-auto">
+  <table class="w-full text-sm border-collapse">
+    <thead>
+      <tr class="border-b-2 border-espresso/70">
+        <th class="text-left py-2 pr-4 font-display text-bark">Substância</th>
+        <th class="text-left py-2 font-display text-bark">Quantidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-sand/60"><td class="py-2 pr-4 text-bark/80">C₂H₆O</td><td class="py-2 text-bark/80">1 mol</td></tr>
+      <tr class="border-b border-sand/60"><td class="py-2 pr-4 text-bark/80">O₂</td><td class="py-2 text-bark/80">3 mols</td></tr>
+      <tr class="border-b border-sand/60"><td class="py-2 pr-4 text-bark/80">CO₂</td><td class="py-2 text-bark/80">2 mols</td></tr>
+      <tr><td class="py-2 pr-4 text-bark/80">H₂O</td><td class="py-2 text-bark/80">3 mols</td></tr>
+    </tbody>
+  </table>
+</div>`,
+            },
+            {
+              heading: "",
+              body: `Portanto:
+1 mol de C₂H₆O → 2 mols de CO₂
+Essa é a proporção que será utilizada no exemplo.`,
+            },
+            {
+              heading: "3. Conversão de mol para massa",
+              body: `No exemplo, precisamos saber a massa correspondente a 1 mol de C₂H₆O e a 2 mols de CO₂.
+
+C₂H₆O
+12 · 2 + 1 · 6 + 16
+= 46 g/mol
+
+Portanto:
+1 mol de C₂H₆O = 46 g
+
+CO₂
+12 + 16 · 2
+= 44 g/mol
+
+Como a equação apresenta 2 mols de CO₂:
+2 · 44 g = 88 g
+
+Então temos:
+46 g de C₂H₆O → 88 g de CO₂`,
+            },
+            {
+              heading: "4. Aplicando no exercício",
+              body: `O exemplo fornece:
+46 g de C₂H₆O → 2 · 44 g de CO₂
+
+E pergunta quanto de CO₂ será produzido a partir de:
+2,3 × 10³ g de C₂H₆O
+
+Montando a proporção:
+46 g → 2 · 44 g
+2,3 × 10³ g → ?
+
+Agora fazemos a multiplicação cruzada:
+? = (2,3 · 10³ · 2 · 44) / 46
+
+Resultado:
+? = 4,4 · 10³ g`,
+            },
+            {
+              heading: "🧠 O OURO DA ESTEQUIOMETRIA",
+              body: `Quando aparecer uma questão desse tipo, pense sempre na sequência:
+
+EQUAÇÃO BALANCEADA
+↓
+PROPORÇÃO EM MOL
+↓
+CONVERSÃO DE UNIDADES
+↓
+PROPORÇÃO PARA ENCONTRAR O ?
+
+No exemplo:
+C₂H₆O + 3O₂ → 2CO₂ + 3H₂O
+1 mol C₂H₆O → 2 mol CO₂
+46 g C₂H₆O → 88 g CO₂
+2,3 × 10³ g C₂H₆O → 4,4 × 10³ g CO₂`,
+            },
+            {
+              heading: "🔎 Como analisar uma questão",
+              body: `Antes de fazer qualquer conta, procure:
+
+1. Qual é a equação?
+→ Balanceie.
+
+2. Qual é a proporção em mol?
+→ Olhe os números da equação.
+
+3. Qual unidade o exercício forneceu?
+→ Veja se precisa converter.
+
+4. O que ele está perguntando?
+→ Esse será o ? da proporção.
+
+Assim você não sai fazendo conta aleatoriamente: segue a ordem da aula.`,
+            },
+          ],
+          quiz: [
+            {
+              q: "Qual é o primeiro passo para resolver uma questão de estequiometria, segundo a aula?",
+              options: ["Deixar a equação balanceada", "Converter unidades", "Montar a proporção em mol", "Responder a dúvida do exercício"],
+              correct: 0,
+            },
+            {
+              q: "Depois de balancear a equação, o que se deve fazer?",
+              options: ["Montar a proporção em mol observando os números da equação", "Converter a temperatura", "Calcular a densidade", "Somar as massas atômicas"],
+              correct: 0,
+            },
+            {
+              q: "A conversão de unidades deve ser feita quando:",
+              options: ["O exercício fornecer uma quantidade em outra unidade", "A equação não estiver balanceada", "O produto for um gás", "Sempre, independentemente do exercício"],
+              correct: 0,
+            },
+            {
+              q: "Na equação C₂H₆O + 3O₂ → 2CO₂ + 3H₂O, qual é a proporção em mol entre C₂H₆O e CO₂?",
+              options: ["1 mol de C₂H₆O para 2 mols de CO₂", "1 mol de C₂H₆O para 3 mols de CO₂", "2 mols de C₂H₆O para 1 mol de CO₂", "3 mols de C₂H₆O para 2 mols de CO₂"],
+              correct: 0,
+            },
+            {
+              q: "Qual é a massa molar do C₂H₆O calculada no exemplo?",
+              options: ["46 g/mol", "44 g/mol", "88 g/mol", "12 g/mol"],
+              correct: 0,
+            },
+            {
+              q: "Qual é a massa molar do CO₂ calculada no exemplo?",
+              options: ["44 g/mol", "46 g/mol", "88 g/mol", "28 g/mol"],
+              correct: 0,
+            },
+            {
+              q: "Como a equação apresenta 2 mols de CO₂, qual é a massa total correspondente?",
+              options: ["88 g", "44 g", "46 g", "92 g"],
+              correct: 0,
+            },
+            {
+              q: "Para descobrir o valor de '?' a partir de 2,3 × 10³ g de C₂H₆O, qual operação é usada?",
+              options: ["Multiplicação cruzada", "Soma direta", "Divisão pela massa molar apenas", "Regra de três inversa"],
+              correct: 0,
+            },
+            {
+              q: "Qual é o resultado final de CO₂ produzido a partir de 2,3 × 10³ g de C₂H₆O, segundo o exemplo?",
+              options: ["4,4 × 10³ g", "8,8 × 10³ g", "2,3 × 10³ g", "4,6 × 10² g"],
+              correct: 0,
+            },
+            {
+              q: "Segundo o 'ouro da estequiometria', qual é a sequência correta para resolver a questão?",
+              options: [
+                "Equação balanceada → Proporção em mol → Conversão de unidades → Proporção para encontrar o ?",
+                "Conversão de unidades → Equação balanceada → Proporção em mol → Resposta",
+                "Proporção em mol → Equação balanceada → Resposta → Conversão",
+                "Resposta → Proporção → Conversão → Equação",
+              ],
+              correct: 0,
+            },
+          ],
+        },
+      ],
+    },
+    {
       id: "quimica-b",
       name: "Química B",
       emoji: "⚗️",
@@ -1864,6 +1783,199 @@ HClO → hipocloroso
       ],
     },
     {
+      id: "fisica-a",
+      name: "Física-A",
+      emoji: "🌀",
+      contents: [
+        {
+          id: "dinamica-mcu",
+          title: "Dinâmica dos movimentos circulares e uniformes (MCU)",
+          sections: [
+            {
+              heading: "1. Dinâmica do movimento circular",
+              body: `Aceleração → alguém que altera o valor da velocidade.
+Dividi em 2:
+
+At — Aceleração tangencial
+→ Altera o valor da velocidade.
+Fórmula:
+At = ΔV / Δt
+
+Ac — Aceleração centrípeta
+→ Altera a direção e o sentido da velocidade.
+→ Aponta para o centro.
+Fórmula:
+Ac = V² / R`,
+              visual: `
+<svg viewBox="0 0 320 240" class="w-full max-w-sm mx-auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowV-a" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3E2F20"/>
+    </marker>
+    <marker id="arrowAc-a" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#A8763E"/>
+    </marker>
+  </defs>
+  <circle cx="160" cy="125" r="85" fill="none" stroke="#C9B18C" stroke-width="2" stroke-dasharray="6 5"/>
+  <circle cx="160" cy="125" r="3.5" fill="#3E2F20"/>
+  <text x="168" y="121" font-size="11" fill="#5C4630">centro</text>
+  <circle cx="228" cy="72" r="6" fill="#A8763E"/>
+  <line x1="228" y1="72" x2="192" y2="38" stroke="#3E2F20" stroke-width="2.5" marker-end="url(#arrowV-a)"/>
+  <text x="196" y="30" font-size="13" fill="#3E2F20" font-weight="600">V</text>
+  <line x1="228" y1="72" x2="185" y2="102" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arrowAc-a)"/>
+  <text x="178" y="118" font-size="13" fill="#A8763E" font-weight="600">Ac</text>
+  <text x="45" y="225" font-size="11" fill="#5C4630">V é tangente à trajetória · Ac aponta sempre para o centro</text>
+</svg>`,
+            },
+            {
+              heading: "2. Força resultante no movimento circular",
+              body: `Para o corpo percorrer uma trajetória circular, "alguém" deve puxá-lo para o centro. Esse "alguém" será chamado de resultante.
+
+Fcp = m · V² / R
+
+Importante: sempre que o movimento for circular e uniforme, a resultante das forças será a resultante centrípeta.
+R = Rcp
+
+* Sempre na bundinha
+* Decomposição
+* Ajuda – paralinha`,
+            },
+            {
+              heading: "3. Exemplos",
+              body: `I) Rampa
+MCU → R = Rcp
+P − N = m · V² / R
+
+II) Looping
+MCU → Rcp
+N − P = m · V² / R
+
+III) Globo da Morte
+MCU → Rcp
+R = Rcp
+P + N = m · V² / R
+
+Se o corpo perde o contato:
+N = 0
+Então:
+P + 0 = m · V² / R
+mg = m · V² / R
+g = V² / R
+V² = gR
+V = √gR
+→ Velocidade mínima para completar a volta.`,
+              visual: `
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+  <div class="text-center">
+    <svg viewBox="0 0 200 190" class="w-full" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrowP-r" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#5C4630"/></marker>
+        <marker id="arrowN-r" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#A8763E"/></marker>
+      </defs>
+      <path d="M20,150 Q100,45 180,150" fill="none" stroke="#C9B18C" stroke-width="3"/>
+      <circle cx="100" cy="65" r="6" fill="#3E2F20"/>
+      <line x1="100" y1="65" x2="100" y2="112" stroke="#5C4630" stroke-width="2.5" marker-end="url(#arrowP-r)"/>
+      <text x="106" y="105" font-size="12" fill="#5C4630" font-weight="600">P</text>
+      <line x1="100" y1="65" x2="100" y2="32" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arrowN-r)"/>
+      <text x="106" y="30" font-size="12" fill="#A8763E" font-weight="600">N</text>
+      <circle cx="100" cy="140" r="2.5" fill="#5C4630"/>
+      <text x="108" y="145" font-size="10" fill="#5C4630">centro (Rcp)</text>
+    </svg>
+    <p class="text-xs text-bark/60 mt-1 font-medium">Rampa — P − N = mV²/R</p>
+  </div>
+  <div class="text-center">
+    <svg viewBox="0 0 200 190" class="w-full" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrowP-l" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#5C4630"/></marker>
+        <marker id="arrowN-l" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#A8763E"/></marker>
+      </defs>
+      <circle cx="100" cy="100" r="70" fill="none" stroke="#C9B18C" stroke-width="2" stroke-dasharray="5 4"/>
+      <circle cx="100" cy="100" r="3" fill="#3E2F20"/>
+      <text x="106" y="96" font-size="10" fill="#5C4630">centro</text>
+      <circle cx="100" cy="170" r="6" fill="#3E2F20"/>
+      <line x1="100" y1="170" x2="100" y2="122" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arrowN-l)"/>
+      <text x="106" y="140" font-size="12" fill="#A8763E" font-weight="600">N</text>
+      <line x1="100" y1="170" x2="100" y2="185" stroke="#5C4630" stroke-width="2.5"/>
+      <text x="106" y="188" font-size="12" fill="#5C4630" font-weight="600">P</text>
+    </svg>
+    <p class="text-xs text-bark/60 mt-1 font-medium">Looping — N − P = mV²/R</p>
+  </div>
+  <div class="text-center">
+    <svg viewBox="0 0 200 190" class="w-full" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrowP-g" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#5C4630"/></marker>
+        <marker id="arrowN-g" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#A8763E"/></marker>
+      </defs>
+      <circle cx="100" cy="100" r="70" fill="none" stroke="#C9B18C" stroke-width="2" stroke-dasharray="5 4"/>
+      <circle cx="100" cy="100" r="3" fill="#3E2F20"/>
+      <text x="106" y="118" font-size="10" fill="#5C4630">centro</text>
+      <circle cx="100" cy="30" r="6" fill="#3E2F20"/>
+      <line x1="92" y1="30" x2="92" y2="70" stroke="#5C4630" stroke-width="2.5" marker-end="url(#arrowP-g)"/>
+      <text x="66" y="55" font-size="12" fill="#5C4630" font-weight="600">P</text>
+      <line x1="108" y1="30" x2="108" y2="60" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arrowN-g)"/>
+      <text x="114" y="50" font-size="12" fill="#A8763E" font-weight="600">N</text>
+    </svg>
+    <p class="text-xs text-bark/60 mt-1 font-medium">Globo da Morte — P + N = mV²/R</p>
+  </div>
+</div>`,
+            },
+          ],
+          quiz: [
+            {
+              q: "O que a aceleração tangencial (At) altera no movimento circular?",
+              options: ["O valor da velocidade", "A direção da velocidade", "Apenas o sentido do movimento", "O raio da trajetória"],
+              correct: 0,
+            },
+            {
+              q: "Qual é a fórmula da aceleração tangencial?",
+              options: ["At = ΔV / Δt", "At = V² / R", "At = m · V² / R", "At = √(gR)"],
+              correct: 0,
+            },
+            {
+              q: "A aceleração centrípeta (Ac) é responsável por alterar:",
+              options: ["Apenas o valor da velocidade", "A direção e o sentido da velocidade", "A massa do corpo", "O tempo de percurso"],
+              correct: 1,
+            },
+            {
+              q: "Para onde aponta a aceleração centrípeta?",
+              options: ["Para fora da trajetória", "Tangente à trajetória", "Para o centro da trajetória", "Não tem direção definida"],
+              correct: 2,
+            },
+            {
+              q: "Qual é a fórmula da aceleração centrípeta?",
+              options: ["Ac = V² / R", "Ac = ΔV / Δt", "Ac = m · g", "Ac = √(gR)"],
+              correct: 0,
+            },
+            {
+              q: "No MCU, a força resultante sobre o corpo é chamada de:",
+              options: ["Força tangencial", "Força centrípeta", "Força de atrito", "Força elástica"],
+              correct: 1,
+            },
+            {
+              q: "No exemplo da Rampa, qual é a equação da resultante centrípeta?",
+              options: ["P − N = mV²/R", "N − P = mV²/R", "P + N = mV²/R", "N = mV²/R"],
+              correct: 0,
+            },
+            {
+              q: "No exemplo do Looping, a equação correta é:",
+              options: ["P − N = mV²/R", "N − P = mV²/R", "P + N = mV²/R", "N = 0"],
+              correct: 1,
+            },
+            {
+              q: "No Globo da Morte, quando o corpo perde o contato (N = 0), qual é a velocidade mínima para completar a volta?",
+              options: ["V = √(gR)", "V = gR", "V = g/R", "V = R/g"],
+              correct: 0,
+            },
+            {
+              q: "No Globo da Morte, antes de perder o contato, a equação da resultante centrípeta é:",
+              options: ["P − N = mV²/R", "N − P = mV²/R", "P + N = mV²/R", "N − P = 0"],
+              correct: 2,
+            },
+          ],
+        },
+      ],
+    },
+    {
       id: "fisica-b",
       name: "Física B",
       emoji: "⚙️",
@@ -2060,410 +2172,305 @@ Fórmula:
       ],
     },
     {
-      id: "geografia",
-      name: "Geografia",
-      emoji: "🌎",
+      id: "matematica-b",
+      name: "Matemática B",
+      emoji: "📐",
       contents: [
         {
-          id: "climatologia",
-          title: "Climatologia",
-          noShuffle: true,
-          extraQuizLabel: "Questões estilo Anglo",
-          extraQuizHeading: "10 questões extras, no estilo de prova",
+          id: "semelhanca-triangulos",
+          title: "Semelhança de Triângulos",
           sections: [
             {
-              heading: "1. Tempo × Clima",
-              body: `🌦️ Tempo
-É o estado momentâneo da atmosfera.
-Exemplo de ideia: hoje está frio, amanhã pode esquentar.
+              heading: "O que é semelhança de triângulos?",
+              body: `Dois triângulos são semelhantes quando possuem a mesma forma, mesmo que tenham tamanhos diferentes.
+Isso significa que:
 
-🌍 Clima
-É a sucessão habitual dos vários estados de tempo.
-
-🎯 Na questão
-Se falar de uma condição agora ou em determinado momento → pense em TEMPO.
-Se falar do comportamento habitual de uma região → pense em CLIMA.`,
-            },
-            {
-              heading: "2. Elementos do clima",
-              body: `Os elementos mostram como está o clima.
-
-Os principais trabalhados no material são:
-🌡️ Temperatura
-💧 Umidade
-🌧️ Precipitação
-💨 Pressão atmosférica`,
-            },
-            {
-              heading: "🌡️ Temperatura",
-              body: `Amplitude térmica
-É a diferença entre a temperatura máxima e mínima.
-
-Fórmula:
-AMPLITUDE = MÁXIMA − MÍNIMA
-
-Exemplo:
-Máxima = 30°C
-Mínima = 10°C
-30 − 10 = 20°C
-👉 Amplitude térmica = 20°C.
-
-🎯 Na questão
-Se aparecerem temperatura máxima e mínima, provavelmente você precisa calcular a amplitude térmica.
-
-Isoterma → linha que une pontos de mesma temperatura.`,
-            },
-            {
-              heading: "💧 Umidade",
-              body: `É a quantidade de vapor de água presente na atmosfera.
-
-Umidade relativa
-É expressa em %.
-Quando está próxima de 100%, a atmosfera está chegando ao ponto de saturação, podendo ocorrer precipitação.
-
-🎯 Na questão
-Se aparecer "Umidade relativa de 90%" → significa que o ar está muito próximo da saturação.
-
-Isoígra → pontos de igual umidade.
-Isoieta → pontos de igual pluviosidade.`,
-            },
-            {
-              heading: "🌧️ Precipitação",
-              body: `É a água que cai da atmosfera.
-
-Principais formas:
-Orvalho → condensação do vapor de água na superfície.
-Geada → congelamento do orvalho durante uma noite/madrugada fria e sem nuvens.
-Neve → temperatura baixa, próxima de 0°C, e umidade elevada.
-Granizo → "chuva de pedra", formada por blocos de gelo em nuvens altas.
-Chuva → precipitação líquida.`,
-            },
-            {
-              heading: "🌧️ Os 3 tipos de chuva",
-              body: `Essa parte é muito importante para analisar questões.
-
-☀️ Chuva convectiva
-Pense: CALOR → AR SOBE → RESFRIA → CONDENSA → CHUVA
-Características: curta duração; alta intensidade; pequenas áreas; comum na Amazônia.
-🎯 Como reconhecer? Se a questão falar de calor intenso + ar subindo + chuva forte e rápida → CONVECTIVA.`,
+• Os ângulos correspondentes são iguais.
+• Os lados correspondentes são proporcionais.`,
               visual: `
-<div class="flex flex-col items-center gap-1 max-w-[190px] mx-auto text-center">
-  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">☀️ Calor</div>
-  <span class="text-ochre text-sm">↓</span>
-  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">Ar sobe</div>
-  <span class="text-ochre text-sm">↓</span>
-  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">Resfria</div>
-  <span class="text-ochre text-sm">↓</span>
-  <div class="w-full rounded-lg bg-cream border border-sand px-3 py-2 text-xs text-bark font-medium">Condensa</div>
-  <span class="text-ochre text-sm">↓</span>
-  <div class="w-full rounded-lg bg-espresso text-cream px-3 py-2 text-xs font-medium">🌧️ Chuva — curta, forte, área pequena</div>
-</div>`,
-            },
-            {
-              heading: "",
-              body: `🌡️ Chuva frontal
-Pense: AR QUENTE + AR FRIO → ENCONTRO → CHUVA
-Ocorre no encontro de massas de ar com características diferentes.
-Características: contínua; intensidade baixa a moderada; grande área; comum em grande parte do Brasil, principalmente Sul e Sudeste.
-🎯 Como reconhecer? Se aparecer frente + massa de ar quente + massa de ar fria → FRONTAL.`,
-              visual: `
-<div class="max-w-[220px] mx-auto">
-  <div class="flex items-center justify-center gap-2">
-    <div class="rounded-lg bg-cream border border-sand px-2.5 py-2 text-[11px] text-bark font-medium text-center">Ar quente</div>
-    <span class="text-ochre text-base">↔</span>
-    <div class="rounded-lg bg-cream border border-sand px-2.5 py-2 text-[11px] text-bark font-medium text-center">Ar frio</div>
-  </div>
-  <div class="flex justify-center my-1"><span class="text-ochre text-sm">↓ encontro</span></div>
-  <div class="rounded-lg bg-espresso text-cream px-3 py-2 text-[11px] font-medium text-center">🌧️ Chuva frontal — contínua, grande área</div>
-</div>`,
-            },
-            {
-              heading: "",
-              body: `⛰️ Chuva orográfica
-Pense: AR ÚMIDO → MONTANHA → SOBE → ESFRIA → CONDENSA → CHUVA
-A massa de ar úmida encontra uma barreira do relevo e é forçada a subir.
-Barlavento → lado que recebe o ar úmido.
-Sotavento → lado oposto à chegada do ar.
-🎯 Como reconhecer? Se a questão falar de montanha + serra + relevo + ar úmido subindo → OROGRÁFICA.`,
-              visual: `
-<svg viewBox="0 0 300 170" class="w-full max-w-sm mx-auto" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <marker id="arOro-1" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#A8763E"/></marker>
-  </defs>
-  <polygon points="20,150 150,25 280,150" fill="none" stroke="#5C4630" stroke-width="2.5"/>
-  <line x1="45" y1="140" x2="128" y2="42" stroke="#A8763E" stroke-width="2.5" marker-end="url(#arOro-1)"/>
-  <text x="35" y="90" font-size="9.5" fill="#5C4630" transform="rotate(-52 35,90)">sobe · esfria · condensa</text>
-  <line x1="172" y1="42" x2="255" y2="140" stroke="#5C4630" stroke-width="2" stroke-dasharray="4 3"/>
-  <text x="200" y="100" font-size="9.5" fill="#5C4630" transform="rotate(52 200,100)">desce seco</text>
-  <text x="15" y="164" font-size="10.5" fill="#5C4630" font-weight="600">Barlavento</text>
-  <text x="228" y="164" font-size="10.5" fill="#5C4630" font-weight="600">Sotavento</text>
-  <text x="120" y="18" font-size="10" fill="#A8763E" font-weight="600">🌧️ chuva</text>
+<svg viewBox="0 0 320 180" class="w-full max-w-md mx-auto" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="20,150 150,150 70,40" fill="none" stroke="#5C4630" stroke-width="2.5"/>
+  <polygon points="210,150 288,150 240,84" fill="none" stroke="#5C4630" stroke-width="2.5"/>
+  <path d="M38,150 Q20,150 27.4,133.6" stroke="#A8763E" stroke-width="2" fill="none"/>
+  <path d="M132,150 Q150,150 139.4,135.4" stroke="#3E2F20" stroke-width="2" fill="none"/>
+  <path d="M228,150 Q210,150 217.4,133.6" stroke="#A8763E" stroke-width="2" fill="none"/>
+  <path d="M270,150 Q288,150 277.4,135.4" stroke="#3E2F20" stroke-width="2" fill="none"/>
+  <text x="8" y="165" font-size="12" fill="#5C4630" font-weight="600">A</text>
+  <text x="152" y="165" font-size="12" fill="#5C4630" font-weight="600">B</text>
+  <text x="66" y="32" font-size="12" fill="#5C4630" font-weight="600">C</text>
+  <text x="198" y="165" font-size="12" fill="#5C4630" font-weight="600">A'</text>
+  <text x="290" y="165" font-size="12" fill="#5C4630" font-weight="600">B'</text>
+  <text x="236" y="76" font-size="12" fill="#5C4630" font-weight="600">C'</text>
+  <text x="60" y="178" font-size="10.5" fill="#5C4630">Mesma forma · ângulos iguais (cores) · tamanhos diferentes</text>
 </svg>`,
             },
             {
-              heading: "💨 Pressão atmosférica",
-              body: `É o peso exercido pela atmosfera sobre a superfície terrestre.
-Aqui existem algumas relações que você precisa saber.
-
-🌡️ Temperatura × pressão
-Temperatura ↑ → Pressão ↓
-Temperatura ↓ → Pressão ↑
-🧠 Pense: Ar quente sobe → menor pressão. Ar frio desce → maior pressão.
-
-⛰️ Altitude × pressão
-Altitude ↑ → Pressão ↓
-Altitude ↓ → Pressão ↑
-🎯 Na questão: Se uma cidade está em uma altitude muito elevada → menor pressão atmosférica.`,
+              heading: "Como analisar se dois triângulos são semelhantes?",
+              body: `Primeiro, procure ângulos iguais e depois compare os lados correspondentes.
+É importante colocar os lados na mesma ordem de correspondência antes de montar a proporção.`,
             },
             {
-              heading: "💨 Ventos",
-              body: `O vento é ar em movimento.
-A regra mais importante é: ALTA PRESSÃO → BAIXA PRESSÃO (AP → BP)
-Os ventos sopram das áreas de Alta Pressão para as áreas de Baixa Pressão.
+              heading: "Casos de semelhança",
+              body: `1. AA — Ângulo Ângulo
+Se dois ângulos de um triângulo são iguais aos dois ângulos correspondentes de outro, os triângulos são semelhantes.
 
-🧠 Macete: Alta → Baixa
-Se uma questão perguntar "para onde o vento vai?", procure primeiro as áreas de pressão.`,
+2. LAL — Lado Ângulo Lado
+Se dois lados são proporcionais e o ângulo entre esses dois lados é igual, os triângulos são semelhantes.
+
+3. LLL — Lado Lado Lado
+Se os três lados correspondentes são proporcionais, os triângulos são semelhantes.`,
               visual: `
-<div class="flex items-center justify-center gap-3">
-  <div class="w-16 h-16 rounded-full bg-beige border-2 border-sand flex items-center justify-center text-sm font-bold text-bark">AP</div>
-  <span class="text-ochre text-2xl">→</span>
-  <div class="w-16 h-16 rounded-full bg-espresso text-cream flex items-center justify-center text-sm font-bold">BP</div>
+<div class="grid grid-cols-3 gap-3">
+  <div class="text-center">
+    <svg viewBox="0 0 110 100" class="w-full" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="15,80 95,80 55,15" fill="none" stroke="#5C4630" stroke-width="2"/>
+      <path d="M31,80 Q15,80 23.4,66.4" stroke="#A8763E" stroke-width="2" fill="none"/>
+      <path d="M46.6,28.6 Q55,15 63.4,28.6" stroke="#A8763E" stroke-width="2" fill="none"/>
+    </svg>
+    <p class="text-xs text-bark/60 mt-1 font-medium">AA</p>
+  </div>
+  <div class="text-center">
+    <svg viewBox="0 0 110 100" class="w-full" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="15,80 95,80 55,15" fill="none" stroke="#5C4630" stroke-width="2"/>
+      <path d="M31,80 Q15,80 23.4,66.4" stroke="#A8763E" stroke-width="2" fill="none"/>
+      <line x1="52" y1="76" x2="58" y2="84" stroke="#3E2F20" stroke-width="2"/>
+      <line x1="29.9" y1="44.4" x2="40.1" y2="50.6" stroke="#3E2F20" stroke-width="2"/>
+    </svg>
+    <p class="text-xs text-bark/60 mt-1 font-medium">LAL</p>
+  </div>
+  <div class="text-center">
+    <svg viewBox="0 0 110 100" class="w-full" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="15,80 95,80 55,15" fill="none" stroke="#5C4630" stroke-width="2"/>
+      <line x1="52" y1="76" x2="58" y2="84" stroke="#3E2F20" stroke-width="2"/>
+      <line x1="29.9" y1="44.4" x2="40.1" y2="50.6" stroke="#3E2F20" stroke-width="2"/>
+      <line x1="80.1" y1="44.4" x2="69.9" y2="50.6" stroke="#3E2F20" stroke-width="2"/>
+    </svg>
+    <p class="text-xs text-bark/60 mt-1 font-medium">LLL</p>
+  </div>
 </div>
-<p class="text-center text-[11px] text-bark/60 mt-2">O vento sopra da Alta Pressão para a Baixa Pressão</p>`,
+<p class="text-[11px] text-bark/50 text-center mt-2">Marcações em ocre = ângulos iguais · marcações em marrom = lados proporcionais</p>`,
             },
             {
-              heading: "🌍 6. Fatores climáticos",
-              body: `Agora muda a lógica:
-Elementos → mostram como está o clima.
-Fatores → ajudam a explicar por que o clima é daquele jeito.
+              heading: "Como saber qual caso usar?",
+              body: `AA: procure dois ângulos iguais.
+LAL: procure dois lados proporcionais + o ângulo entre eles.
+LLL: compare os três lados correspondentes.
 
-Os principais fatores trabalhados no material são:
-Latitude, Altitude, Relevo, Continentalidade e maritimidade, Correntes marítimas, Vegetação, Massas de ar.`,
-            },
-            {
-              heading: "📍 Latitude",
-              body: `Latitude é a distância em relação ao Equador (0°).
-
-Regra principal:
-MAIOR LATITUDE → MENOR TEMPERATURA
-MENOR LATITUDE → MAIOR TEMPERATURA
-Além disso: Maior latitude → maior amplitude térmica. Menor latitude → menor amplitude térmica.
-
-🎯 Como analisar?
-Se uma questão comparar Cidade A → 10° S e Cidade B → 50° S: a cidade B está em maior latitude, logo tende a apresentar menor temperatura média.`,
-              visual: `
-<div class="flex items-center justify-between gap-1 text-[10px] text-bark font-medium max-w-sm mx-auto">
-  <div class="text-center flex-1">
-    <div class="w-11 h-11 rounded-full bg-cream border border-sand flex items-center justify-center mx-auto mb-1 text-base">❄️</div>
-    Polo<br/>menor T°
-  </div>
-  <span class="text-ochre text-lg">↔</span>
-  <div class="text-center flex-1">
-    <div class="w-14 h-14 rounded-full bg-beige border border-sand flex items-center justify-center mx-auto mb-1 text-lg">🌤️</div>
-    Latitude média
-  </div>
-  <span class="text-ochre text-lg">↔</span>
-  <div class="text-center flex-1">
-    <div class="w-16 h-16 rounded-full bg-espresso text-cream flex items-center justify-center mx-auto mb-1 text-xl">☀️</div>
-    Equador<br/>maior T°
-  </div>
-</div>`,
-            },
-            {
-              heading: "⛰️ Altitude",
-              body: `É a altura em relação ao nível do mar.
-
-Regra:
-ALTITUDE ↑ → TEMPERATURA ↓
-ALTITUDE ↓ → TEMPERATURA ↑
-
-🎯 Na questão
-Duas cidades possuem a mesma latitude, mas: Cidade A → baixa altitude; Cidade B → alta altitude.
-👉 A cidade B tende a ser mais fria.`,
-              visual: `
-<div class="flex flex-col items-center gap-2 max-w-[260px] mx-auto text-center">
-  <div class="w-full rounded-lg bg-espresso text-cream px-3 py-2 text-xs font-medium">Alta altitude → menor temperatura, menor pressão</div>
-  <span class="text-ochre text-sm">↕ altitude</span>
-  <div class="w-full rounded-lg bg-beige border border-sand px-3 py-2 text-xs font-medium text-bark">Baixa altitude → maior temperatura, maior pressão</div>
-</div>`,
-            },
-            {
-              heading: "⛰️ Relevo",
-              body: `O relevo pode funcionar como BARREIRA ou "CORREDOR".
-Ele influencia a circulação das massas de ar.
-
-🎯 Na questão
-Se aparecer serra + montanha + massa de ar sendo impedida ou obrigada a subir → pense em relevo.
-E também pode aparecer relacionado à chuva orográfica.`,
-            },
-            {
-              heading: "🌊 Continentalidade × Maritimidade",
-              body: `Essa comparação é muito importante.
-
-🏠 Continentalidade
-Influência do continente.
-→ menor umidade
-→ maior amplitude térmica
-
-🌊 Maritimidade
-Influência do oceano.
-→ maior umidade
-→ menor amplitude térmica
-
-🧠 Como imaginar?
-Continente = temperaturas variam mais.
-Oceano = temperaturas variam menos.
-
-🎯 Questão clássica: "Uma cidade localizada próxima ao litoral apresenta menor amplitude térmica." 👉 Pense: MARITIMIDADE.`,
-              visual: `
-<div class="grid grid-cols-2 gap-3 text-center text-xs max-w-sm mx-auto">
-  <div class="rounded-xl bg-cream border border-sand px-3 py-4">
-    <p class="font-semibold text-bark mb-1">🏠 Continentalidade</p>
-    <p class="text-bark/70">Menor umidade<br/>Maior amplitude térmica</p>
-  </div>
-  <div class="rounded-xl bg-cream border border-sand px-3 py-4">
-    <p class="font-semibold text-bark mb-1">🌊 Maritimidade</p>
-    <p class="text-bark/70">Maior umidade<br/>Menor amplitude térmica</p>
-  </div>
-</div>`,
-            },
-            {
-              heading: "🌊 Correntes marítimas",
-              body: `São massas de água que circulam pelos oceanos.
-
-🔥 Corrente quente
-Tende a deixar o litoral: mais quente e mais úmido.
-
-❄️ Corrente fria
-Tende a deixar o litoral: mais seco, favorecendo a ocorrência de desertos.
-
-Exemplo importante:
-Corrente de Humboldt (ou do Peru) → corrente fria → Pacífico Sul → contribui para a formação do deserto do Atacama.
-
-🎯 Na questão: Atacama + corrente marítima → pense imediatamente em Humboldt → corrente fria.`,
-            },
-            {
-              heading: "🌳 Vegetação",
-              body: `A vegetação interfere no clima porque impede a incidência total dos raios solares na superfície.
-
-Com o desmatamento:
-↓ umidade
-↓ chuvas
-↑ temperatura
-
-🎯 Como reconhecer?
-Se a questão relacionar desmatamento + aumento da temperatura + redução da umidade → pense em vegetação.`,
-            },
-            {
-              heading: "💨 Massas de ar",
-              body: `São grandes porções da atmosfera que se deslocam levando as características da região onde se formaram.
-
-Elas podem ser:
-Pela temperatura → Quentes: Tropical (T) e Equatorial (E). Frias: Polar (P).
-Pela umidade → Secas: continentais (c). Úmidas: oceânicas.
-
-🧠 Como interpretar uma sigla?
-Se aparecer algo como "mTa", pense: m = massa, T = Tropical, a = atlântica.
-A ideia é descobrir de onde vem a massa e quais características ela carrega.`,
-            },
-            {
-              heading: "🌎 El Niño e La Niña",
-              body: `O material apresenta os fenômenos El Niño e La Niña.
-Para a revisão, reconheça que são fenômenos relacionados às condições do Oceano Pacífico e que interferem nas condições climáticas.`,
-            },
-            {
-              heading: "🏆 Mapa mental para questões",
-              body: `Quando aparecer uma questão de Climatologia, pense assim:
-
-🌡️ "Está falando de temperatura?" → Latitude / altitude / continentalidade / maritimidade
-🌧️ "Está falando de chuva?" → Convectiva / frontal / orográfica
-💨 "Está falando de vento?" → Alta pressão → Baixa pressão
-⛰️ "Tem montanha ou serra?" → Relevo → chuva orográfica
-🌊 "Tem oceano influenciando?" → Maritimidade
-🏠 "Está longe do oceano?" → Continentalidade
-🌊 "Tem corrente marítima?" → Quente = mais quente/úmido · Fria = mais seco
-📍 "Comparou duas latitudes?" → Maior latitude = menor temperatura
-⛰️ "Comparou duas altitudes?" → Maior altitude = menor temperatura
-🌳 "Falou de desmatamento?" → Menor umidade + menor chuva + maior temperatura`,
-            },
-            {
-              heading: "⚡ 10 relações para decorar",
-              body: `1. Maior latitude → menor temperatura
-2. Maior altitude → menor temperatura
-3. Maior altitude → menor pressão
-4. Maior temperatura → menor pressão
-5. Alta pressão → Baixa pressão
-6. Continentalidade → maior amplitude térmica
-7. Maritimidade → menor amplitude térmica
-8. Corrente quente → mais quente e úmido
-9. Corrente fria → mais seco
-10. Desmatamento → menor umidade, menor chuva e maior temperatura`,
-            },
-            {
-              heading: "🧠 O segredo para a prova",
-              body: `Não tente decorar Climatologia como uma lista enorme. Leia o que a questão está descrevendo e procure a "pista":
-
-calor subindo → convectiva
-frente quente + fria → frontal
-montanha → orográfica
-alta → baixa → vento
-altitude → temperatura
-latitude → temperatura
-oceano → maritimidade
-continente → continentalidade
-corrente fria → ar mais seco
-
-Isso transforma a matéria em relações que você consegue identificar na questão, em vez de apenas decorar definições.`,
+Dica: não compare os lados simplesmente pela posição no desenho. Primeiro descubra quais lados e ângulos realmente correspondem.`,
             },
           ],
           quiz: [
-            { q: "O que é 'tempo', segundo o conteúdo?", options: ["Estado momentâneo da atmosfera", "Sucessão habitual dos estados de tempo", "Média histórica de temperaturas", "Um fenômeno oceânico"], correct: 0 },
-            { q: "O que é 'clima'?", options: ["A sucessão habitual dos vários estados de tempo", "O estado da atmosfera em um único dia", "A quantidade de chuva em um mês", "A temperatura mínima de uma região"], correct: 0 },
-            { q: "Se uma questão descrever uma condição 'agora' ou em um momento específico, ela está tratando de:", options: ["Tempo", "Clima", "Latitude", "Pressão"], correct: 0 },
-            { q: "Se a questão descrever o comportamento habitual de uma região, ela está tratando de:", options: ["Clima", "Tempo", "Umidade", "Vento"], correct: 0 },
-            { q: "Quais são os principais elementos do clima citados no material?", options: ["Temperatura, umidade, precipitação e pressão atmosférica", "Latitude, altitude, relevo e vegetação", "Massas de ar, correntes marítimas e vegetação", "El Niño e La Niña"], correct: 0 },
-            { q: "Como se calcula a amplitude térmica?", options: ["Máxima menos mínima", "Máxima mais mínima", "Máxima dividida pela mínima", "Mínima menos máxima"], correct: 0 },
-            { q: "Se a máxima do dia foi 30°C e a mínima 10°C, qual é a amplitude térmica?", options: ["20°C", "40°C", "10°C", "30°C"], correct: 0 },
-            { q: "O que é uma isoterma?", options: ["Linha que une pontos de mesma temperatura", "Linha que une pontos de mesma umidade", "Linha que une pontos de mesma pluviosidade", "Linha que une pontos de mesma pressão"], correct: 0 },
-            { q: "O que é umidade relativa?", options: ["A quantidade de vapor de água na atmosfera, expressa em %", "A quantidade de chuva acumulada em um mês", "A pressão exercida pelo ar", "A diferença entre temperatura máxima e mínima"], correct: 0 },
-            { q: "Se a umidade relativa está próxima de 100%, isso significa que:", options: ["A atmosfera está próxima da saturação, podendo chover", "A atmosfera está seca", "A pressão está muito alta", "A temperatura está no seu ponto máximo"], correct: 0 },
-            { q: "O que é isoígra?", options: ["Pontos de igual umidade", "Pontos de igual temperatura", "Pontos de igual pluviosidade", "Pontos de igual pressão"], correct: 0 },
-            { q: "O que é isoieta?", options: ["Pontos de igual pluviosidade", "Pontos de igual umidade", "Pontos de igual temperatura", "Pontos de igual altitude"], correct: 0 },
-            { q: "O orvalho se forma por:", options: ["Condensação do vapor de água na superfície", "Congelamento do vapor em nuvens altas", "Sublimação da neve", "Evaporação da água do solo"], correct: 0 },
-            { q: "A geada se forma quando:", options: ["Ocorre o congelamento do orvalho em noite fria e sem nuvens", "A temperatura sobe rapidamente pela manhã", "Há muita nebulosidade durante a noite", "O vento sopra forte durante o dia"], correct: 0 },
-            { q: "A neve se forma em condições de:", options: ["Temperatura baixa, próxima de 0°C, e umidade elevada", "Temperatura alta e baixa umidade", "Pressão atmosférica muito baixa apenas", "Vento forte sem variação de temperatura"], correct: 0 },
-            { q: "O granizo é formado por:", options: ["Blocos de gelo em nuvens altas", "Vapor de água condensado na superfície", "Gotas de chuva congeladas no solo", "Neve derretida"], correct: 0 },
-            { q: "Se uma questão mencionar 'calor intenso + ar subindo + chuva forte e rápida', o tipo de chuva é:", options: ["Convectiva", "Frontal", "Orográfica", "Nenhuma das anteriores"], correct: 0 },
-            { q: "A chuva convectiva é caracterizada por:", options: ["Curta duração, alta intensidade e pequenas áreas", "Longa duração e grande área", "Ocorrer apenas em regiões polares", "Baixa intensidade constante"], correct: 0 },
-            { q: "A chuva frontal ocorre por causa:", options: ["Do encontro de massas de ar com características diferentes", "Do relevo forçando o ar a subir", "Do calor intenso fazendo o ar subir rapidamente", "Da proximidade com o oceano apenas"], correct: 0 },
-            { q: "Se uma questão mencionar 'montanha + serra + relevo + ar úmido subindo', o tipo de chuva é:", options: ["Orográfica", "Convectiva", "Frontal", "Nenhuma das anteriores"], correct: 0 },
-            { q: "Na chuva orográfica, o lado que recebe o ar úmido é chamado de:", options: ["Barlavento", "Sotavento", "Isoieta", "Isoterma"], correct: 0 },
-            { q: "Na chuva orográfica, o lado oposto à chegada do ar é chamado de:", options: ["Sotavento", "Barlavento", "Isoígra", "Isoterma"], correct: 0 },
-            { q: "Qual é a relação entre temperatura e pressão atmosférica?", options: ["Temperatura alta → pressão baixa", "Temperatura alta → pressão alta", "Não existe relação entre elas", "Temperatura baixa → pressão baixa"], correct: 0 },
-            { q: "Qual é a relação entre altitude e pressão atmosférica?", options: ["Altitude alta → pressão baixa", "Altitude alta → pressão alta", "Não existe relação entre elas", "Altitude baixa → pressão baixa"], correct: 0 },
-            { q: "Segundo a regra apresentada, os ventos sopram:", options: ["Da alta pressão para a baixa pressão", "Da baixa pressão para a alta pressão", "Sempre do oceano para o continente", "Sempre de norte para sul"], correct: 0 },
-            { q: "O que os 'elementos do clima' mostram, segundo o material?", options: ["Como está o clima", "Por que o clima é daquele jeito", "A localização exata de uma região", "A previsão do tempo para amanhã"], correct: 0 },
-            { q: "O que os 'fatores climáticos' ajudam a explicar?", options: ["Por que o clima é daquele jeito", "Como está o clima no momento", "Apenas a quantidade de chuva", "Apenas a temperatura do dia"], correct: 0 },
-            { q: "Qual é a regra principal sobre latitude e temperatura?", options: ["Maior latitude → menor temperatura", "Maior latitude → maior temperatura", "A latitude não influencia a temperatura", "Menor latitude → menor temperatura"], correct: 0 },
-            { q: "Qual é a relação entre latitude e amplitude térmica?", options: ["Maior latitude → maior amplitude térmica", "Maior latitude → menor amplitude térmica", "Não há relação", "Latitude só influencia a pressão"], correct: 0 },
-            { q: "Qual é a relação entre altitude e temperatura?", options: ["Altitude alta → temperatura baixa", "Altitude alta → temperatura alta", "Não há relação entre elas", "Altitude baixa → temperatura baixa"], correct: 0 },
-            { q: "O relevo pode funcionar, segundo o material, como:", options: ["Barreira ou corredor para as massas de ar", "Apenas como fonte de umidade", "Apenas como fonte de calor", "Elemento que não influencia o clima"], correct: 0 },
-            { q: "A continentalidade está associada a:", options: ["Menor umidade e maior amplitude térmica", "Maior umidade e menor amplitude térmica", "Nenhuma variação de temperatura", "Apenas à proximidade do oceano"], correct: 0 },
-            { q: "A maritimidade está associada a:", options: ["Maior umidade e menor amplitude térmica", "Menor umidade e maior amplitude térmica", "Nenhuma variação de temperatura", "Apenas ao relevo montanhoso"], correct: 0 },
-            { q: "Uma corrente marítima fria tende a deixar o litoral:", options: ["Mais seco, favorecendo desertos", "Mais quente e úmido", "Sem alteração climática", "Com maior amplitude térmica apenas"], correct: 0 },
-            { q: "A Corrente de Humboldt, citada no material, está relacionada à formação de qual deserto?", options: ["Deserto do Atacama", "Deserto do Saara", "Deserto de Gobi", "Deserto da Patagônia"], correct: 0 },
+            {
+              q: "Dois triângulos são semelhantes quando:",
+              options: ["Possuem a mesma forma, mesmo com tamanhos diferentes", "Possuem exatamente o mesmo tamanho", "Têm a mesma área", "Têm o mesmo perímetro"],
+              correct: 0,
+            },
+            {
+              q: "Em triângulos semelhantes, os ângulos correspondentes são:",
+              options: ["Iguais", "Proporcionais, mas diferentes", "Sempre retos", "Sempre agudos"],
+              correct: 0,
+            },
+            {
+              q: "Em triângulos semelhantes, os lados correspondentes são:",
+              options: ["Iguais", "Proporcionais", "Paralelos", "Perpendiculares"],
+              correct: 1,
+            },
+            {
+              q: "No caso AA de semelhança, o que precisa ser igual?",
+              options: ["Dois ângulos correspondentes", "Três lados", "Dois lados e um ângulo", "Apenas um ângulo"],
+              correct: 0,
+            },
+            {
+              q: "No caso LAL, quais elementos precisam corresponder?",
+              options: ["Dois lados proporcionais e o ângulo entre eles igual", "Três lados proporcionais", "Dois ângulos iguais", "Um lado e dois ângulos"],
+              correct: 0,
+            },
+            {
+              q: "No caso LLL, a condição para semelhança é:",
+              options: ["Os três lados correspondentes são proporcionais", "Dois ângulos são iguais", "Apenas um lado é igual", "A altura é igual"],
+              correct: 0,
+            },
+            {
+              q: "Antes de montar uma proporção entre lados de triângulos semelhantes, é importante:",
+              options: ["Colocar os lados na mesma ordem de correspondência", "Somar todos os lados", "Multiplicar os ângulos", "Ignorar a correspondência"],
+              correct: 0,
+            },
+            {
+              q: "Para verificar o caso AA, a estratégia correta é:",
+              options: ["Procurar dois ângulos iguais", "Procurar dois lados proporcionais", "Comparar os três lados", "Medir a altura do triângulo"],
+              correct: 0,
+            },
+            {
+              q: "Para verificar o caso LAL, deve-se procurar:",
+              options: ["Dois lados proporcionais mais o ângulo entre eles", "Três ângulos iguais", "Apenas um lado proporcional", "A soma dos ângulos"],
+              correct: 0,
+            },
+            {
+              q: "Segundo a dica do conteúdo, antes de comparar os lados pela posição no desenho, deve-se:",
+              options: ["Descobrir quais lados e ângulos realmente correspondem", "Assumir que os lados na mesma posição sempre correspondem", "Ignorar os ângulos", "Medir apenas o maior lado"],
+              correct: 0,
+            },
           ],
-          extraQuiz: [
-            { q: "O desmatamento de uma região tende a causar:", options: ["Menor umidade, menor chuva e maior temperatura", "Maior umidade e mais chuva", "Menor temperatura apenas", "Aumento da pressão atmosférica apenas"], correct: 0 },
-            { q: "Uma massa de ar identificada pela sigla 'mTa' é:", options: ["Massa Tropical Atlântica", "Massa Temperada Ártica", "Massa Tropical Antártica", "Massa Templada Amazônica"], correct: 0 },
-            { q: "Segundo a classificação por temperatura, quais massas de ar são consideradas quentes?", options: ["Tropical (T) e Equatorial (E)", "Polar (P) e Tropical (T)", "Apenas Polar (P)", "Apenas Equatorial (E)"], correct: 0 },
-            { q: "Quanto à umidade, as massas de ar secas são chamadas de:", options: ["Continentais (c)", "Oceânicas", "Equatoriais", "Polares"], correct: 0 },
-            { q: "O El Niño e La Niña são fenômenos relacionados a:", options: ["Condições do Oceano Pacífico que interferem no clima", "Condições do Oceano Atlântico apenas", "Correntes de ar na Antártida", "Mudanças na órbita da Terra"], correct: 0 },
-            { q: "Duas cidades têm a mesma latitude, mas uma está em maior altitude que a outra. Qual delas tende a ser mais fria?", options: ["A cidade de maior altitude", "A cidade de menor altitude", "Ambas terão a mesma temperatura", "Não é possível saber sem outros dados"], correct: 0 },
-            { q: "Uma cidade litorânea, comparada a uma cidade do interior na mesma latitude, tende a apresentar:", options: ["Menor amplitude térmica", "Maior amplitude térmica", "A mesma amplitude térmica", "Menor umidade"], correct: 0 },
-            { q: "Se uma questão comparar uma cidade a 10°S com outra a 50°S, qual tende a ter menor temperatura média?", options: ["A cidade a 50°S", "A cidade a 10°S", "As duas terão a mesma temperatura", "Depende apenas da altitude"], correct: 0 },
-            { q: "Uma corrente marítima quente tende a deixar o litoral:", options: ["Mais quente e mais úmido", "Mais seco e frio", "Sem nenhuma alteração", "Com menor umidade apenas"], correct: 0 },
-            { q: "Ao identificar em uma questão os termos 'frente', 'massa de ar quente' e 'massa de ar fria' juntos, o tipo de chuva a ser considerado é:", options: ["Frontal", "Convectiva", "Orográfica", "Nenhuma das anteriores"], correct: 0 },
+        },
+        {
+          id: "triangulo-retangulo-1",
+          title: "Triângulo Retângulo 1",
+          sections: [
+            {
+              heading: "Módulo 10 · Triângulo retângulo dividido pela altura",
+              body: `Um triângulo retângulo pode ser dividido pela altura relativa à hipotenusa, formando dois novos triângulos retângulos.
+
+Na representação do caderno:
+• a → hipotenusa
+• b e c → catetos
+• h → altura
+• m e n → partes da hipotenusa
+
+Relação dos ângulos
+α + β + 90° = 180°`,
+              visual: `
+<svg viewBox="0 0 300 220" class="w-full max-w-md mx-auto" xmlns="http://www.w3.org/2000/svg">
+  <line x1="30" y1="170" x2="270" y2="170" stroke="#5C4630" stroke-width="2.5"/>
+  <line x1="30" y1="170" x2="110" y2="57" stroke="#5C4630" stroke-width="2.5"/>
+  <line x1="270" y1="170" x2="110" y2="57" stroke="#5C4630" stroke-width="2.5"/>
+  <line x1="110" y1="170" x2="110" y2="57" stroke="#A8763E" stroke-width="2" stroke-dasharray="5 4"/>
+  <circle cx="30" cy="170" r="3" fill="#3E2F20"/>
+  <circle cx="270" cy="170" r="3" fill="#3E2F20"/>
+  <circle cx="110" cy="57" r="3" fill="#3E2F20"/>
+  <circle cx="110" cy="170" r="3" fill="#A8763E"/>
+  <text x="18" y="188" font-size="12" fill="#3E2F20" font-weight="600">A</text>
+  <text x="266" y="188" font-size="12" fill="#3E2F20" font-weight="600">B</text>
+  <text x="103" y="46" font-size="12" fill="#3E2F20" font-weight="600">C</text>
+  <text x="115" y="185" font-size="11" fill="#A8763E" font-weight="600">H</text>
+  <text x="145" y="188" font-size="13" fill="#5C4630" font-weight="600">a</text>
+  <text x="55" y="107" font-size="13" fill="#5C4630" font-weight="600">b</text>
+  <text x="185" y="107" font-size="13" fill="#5C4630" font-weight="600">c</text>
+  <text x="118" y="115" font-size="13" fill="#A8763E" font-weight="600">h</text>
+  <text x="65" y="188" font-size="12" fill="#5C4630" font-weight="600">m</text>
+  <text x="185" y="188" font-size="12" fill="#5C4630" font-weight="600">n</text>
+  <path d="M110,150 L120,150 L120,160" fill="none" stroke="#A8763E" stroke-width="1.5"/>
+  <text x="65" y="20" font-size="10.5" fill="#5C4630">a = hipotenusa · b, c = catetos · h = altura · m, n = partes de a</text>
+</svg>`,
+            },
+            {
+              heading: "Teorema de Pitágoras",
+              body: `a² = b² + c²
+Onde:
+• a = hipotenusa
+• b e c = catetos
+
+Não esquecer:
+a² = b² + c²
+Também podemos isolar:
+b² = a² − c²
+c² = a² − b²`,
+            },
+            {
+              heading: "Relações do triângulo retângulo",
+              body: `Relação hipotenusa-divisão
+a = m + n
+A hipotenusa inteira é formada pelas duas partes: m + n
+
+Relação cateto-hipotenusa
+Para o cateto b: b² = a · m
+Para o cateto c: c² = a · n
+
+Relação da altura
+h² = m · n
+
+Relação envolvendo altura, catetos e hipotenusa
+b · c = a · h`,
+            },
+            {
+              heading: "Resumo das relações",
+              body: `Teorema de Pitágoras: a² = b² + c²
+Hipotenusa-divisão: a = m + n
+Cateto-hipotenusa: b² = a · m  |  c² = a · n
+Altura: h² = m · n
+Altura-catetos: b · c = a · h`,
+            },
+            {
+              heading: "🔎 Como analisar o desenho",
+              body: `Quando aparecer um triângulo retângulo dividido pela altura, faça nesta ordem:
+
+1. Identifique a hipotenusa → a
+É sempre o lado oposto ao ângulo de 90°.
+
+2. Identifique os catetos → b e c
+São os dois lados que formam o ângulo de 90°.
+
+3. Identifique a altura → h
+É a linha que sai do ângulo de 90° e chega perpendicularmente à hipotenusa.
+
+4. Identifique as partes da hipotenusa → m e n
+A hipotenusa fica dividida em: a = m + n
+
+5. Escolha a relação de acordo com o que a questão está pedindo.
+Se aparecerem os três lados → Pitágoras: a² = b² + c²
+Se aparecer cateto + hipotenusa + parte da hipotenusa → cateto-hipotenusa: b² = a · m ou c² = a · n
+Se aparecer altura + duas partes da hipotenusa → altura: h² = m · n
+Se aparecerem os dois catetos + hipotenusa + altura → altura-catetos: b · c = a · h`,
+            },
+            {
+              heading: "🧠 Ouro para a prova",
+              body: `Primeiro descubra quem é quem no desenho.
+a = hipotenusa
+b e c = catetos
+h = altura
+m e n = divisões da hipotenusa`,
+            },
+          ],
+          quiz: [
+            {
+              q: "No triângulo retângulo dividido pela altura relativa à hipotenusa, o que a altura forma?",
+              options: ["Dois novos triângulos retângulos", "Um triângulo equilátero", "Um quadrado", "Um triângulo obtuso"],
+              correct: 0,
+            },
+            {
+              q: "Qual é a relação entre os ângulos α, β e o ângulo reto no triângulo retângulo?",
+              options: ["α + β + 90° = 180°", "α + β = 180°", "α − β = 90°", "α · β = 90°"],
+              correct: 0,
+            },
+            {
+              q: "O Teorema de Pitágoras é representado por:",
+              options: ["a² = b² + c²", "a = b + c", "a² = b · c", "h² = m · n"],
+              correct: 0,
+            },
+            {
+              q: "Na relação hipotenusa-divisão, a hipotenusa é formada por:",
+              options: ["a = m + n", "a = m · n", "a = m − n", "a = m/n"],
+              correct: 0,
+            },
+            {
+              q: "Qual é a relação cateto-hipotenusa para o cateto b?",
+              options: ["b² = a · m", "b² = a · n", "b² = m · n", "b² = a² − c²"],
+              correct: 0,
+            },
+            {
+              q: "E para o cateto c, a relação cateto-hipotenusa é:",
+              options: ["c² = a · n", "c² = a · m", "c² = m · n", "c² = a² − b²"],
+              correct: 0,
+            },
+            {
+              q: "A relação da altura no triângulo retângulo é dada por:",
+              options: ["h² = m · n", "h² = a · m", "h² = b · c", "h² = a² − b²"],
+              correct: 0,
+            },
+            {
+              q: "A relação que envolve altura, catetos e hipotenusa é:",
+              options: ["b · c = a · h", "b + c = a + h", "b² + c² = a · h", "b · c = m · n"],
+              correct: 0,
+            },
+            {
+              q: "Para identificar a hipotenusa em um triângulo retângulo, deve-se procurar:",
+              options: ["O lado oposto ao ângulo de 90°", "O menor lado do triângulo", "O lado que forma o ângulo reto", "A altura do triângulo"],
+              correct: 0,
+            },
+            {
+              q: "A altura de um triângulo retângulo, ao ser traçada relativa à hipotenusa, chega até ela:",
+              options: ["Perpendicularmente", "Paralelamente", "Formando um ângulo de 45°", "Formando um ângulo obtuso"],
+              correct: 0,
+            },
           ],
         },
       ],
@@ -2608,6 +2615,19 @@ function renderSubjectPage(subjectId) {
     </section>
   `);
   app.appendChild(header);
+
+  if (subject.contents.length === 0) {
+    app.appendChild(el(`
+      <section class="rounded-card border border-dashed border-sand bg-beige/40 px-6 py-14 text-center">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-sand/50 flex items-center justify-center text-2xl">📚</div>
+        <h2 class="font-display text-xl text-espresso mb-2">Nenhum conteúdo por aqui ainda</h2>
+        <p class="text-bark/60 max-w-md mx-auto leading-relaxed text-sm">
+          Assim que o primeiro conteúdo de ${subject.name} for enviado, ele vai aparecer nesta tela.
+        </p>
+      </section>
+    `));
+    return;
+  }
 
   const grid = el(`<section class="grid grid-cols-1 sm:grid-cols-2 gap-4"></section>`);
   subject.contents.forEach((content) => {
