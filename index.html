@@ -2373,6 +2373,100 @@ O mais importante para entender:
             { q: "Relacionando os grupos às suas características: briófitas não apresentam vasos para condução; angiospermas apresentam flores e frutos; pteridófitas são as primeiras plantas vasculares; gimnospermas são as primeiras a formar sementes. Essa associação está:", options: ["Correta", "Incorreta apenas quanto às pteridófitas", "Incorreta apenas quanto às gimnospermas", "Totalmente incorreta"], correct: 0 },
           ],
         },
+        {
+          id: "gimnospermas",
+          title: "Gimnospermas",
+          sections: [
+            {
+              heading: "Gimnospermas",
+              body: `Folhas aciculiformes (agulhas).
+Copa em forma de cone (evita o acúmulo de neve).
+
+Lembre-se:
+Pinheiros, ciprestes e araucárias.
+São vasculares (traqueófitas): xilema e floema.
+Possuem folhas, caules e raízes.
+Esporófitos produzem sementes.
+Não possuem fruto nem flor.
+Adaptadas ao clima frio.
+Não dependem da água para reprodução: dispersão do grão de pólen.
+
+Importante: o grão de pólen não é o gameta; ele é o gametófito masculino.`,
+              visual: `
+<div class="grid grid-cols-2 gap-2 max-w-xs mx-auto text-xs">
+  <div class="rounded-lg bg-cream border border-sand px-3 py-2 flex items-center justify-between"><span class="text-bark">Vascular</span><span class="text-correct font-bold">✓</span></div>
+  <div class="rounded-lg bg-cream border border-sand px-3 py-2 flex items-center justify-between"><span class="text-bark">Semente</span><span class="text-correct font-bold">✓</span></div>
+  <div class="rounded-lg bg-cream border border-sand px-3 py-2 flex items-center justify-between"><span class="text-bark">Flor</span><span class="text-wrong font-bold">✗</span></div>
+  <div class="rounded-lg bg-cream border border-sand px-3 py-2 flex items-center justify-between"><span class="text-bark">Fruto</span><span class="text-wrong font-bold">✗</span></div>
+</div>`,
+            },
+            {
+              heading: "Grão de pólen",
+              body: `Estrutura:
+Núcleo polínico.
+Núcleo gerador.
+Dois sacos aéreos laterais ocos.`,
+              visual: `
+<svg viewBox="0 0 200 120" class="w-full max-w-xs mx-auto" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="100" cy="55" rx="32" ry="22" fill="none" stroke="#5C4630" stroke-width="2.5"/>
+  <circle cx="63" cy="55" r="17" fill="none" stroke="#A8763E" stroke-width="2"/>
+  <circle cx="137" cy="55" r="17" fill="none" stroke="#A8763E" stroke-width="2"/>
+  <circle cx="92" cy="52" r="3" fill="#3E2F20"/>
+  <circle cx="108" cy="58" r="3" fill="#3E2F20"/>
+  <text x="68" y="96" font-size="9" fill="#A8763E">saco aéreo</text>
+  <text x="128" y="96" font-size="9" fill="#A8763E">saco aéreo</text>
+  <text x="60" y="20" font-size="9" fill="#5C4630">núcleo polínico + núcleo gerador</text>
+</svg>`,
+            },
+            {
+              heading: "Dispersão do pólen",
+              body: `Vento → Anemofilia.`,
+            },
+            {
+              heading: "Semente",
+              body: `3N: 2N do embrião + N do endosperma primário.`,
+            },
+            {
+              heading: "Estróbilo (cone)",
+              body: `Estruturas reprodutivas:
+Estróbilo (cone).
+Escama.
+Esporângio.`,
+              visual: `
+<svg viewBox="0 0 160 200" class="w-full max-w-[160px] mx-auto" xmlns="http://www.w3.org/2000/svg">
+  <path d="M80,10 L140,190 L20,190 Z" fill="none" stroke="#5C4630" stroke-width="2.5"/>
+  <line x1="35" y1="150" x2="125" y2="150" stroke="#A8763E" stroke-width="1.5"/>
+  <line x1="45" y1="115" x2="115" y2="115" stroke="#A8763E" stroke-width="1.5"/>
+  <line x1="55" y1="80" x2="105" y2="80" stroke="#A8763E" stroke-width="1.5"/>
+  <line x1="65" y1="45" x2="95" y2="45" stroke="#A8763E" stroke-width="1.5"/>
+  <circle cx="35" cy="150" r="3" fill="#3E2F20"/>
+  <text x="0" y="168" font-size="8.5" fill="#5C4630">escama</text>
+  <text x="0" y="180" font-size="8.5" fill="#5C4630">(com esporângio)</text>
+</svg>`,
+            },
+          ],
+          quiz: [
+            { q: "Qual é o formato característico das folhas das gimnospermas?", options: ["Aciculiformes (em forma de agulha)", "Largas e arredondadas", "Compostas e recortadas", "Ausentes"], correct: 0 },
+            { q: "Por que a copa das gimnospermas costuma ter formato de cone?", options: ["Para evitar o acúmulo de neve", "Para atrair polinizadores", "Para reter mais água", "Para produzir mais frutos"], correct: 0 },
+            { q: "Quais são exemplos de gimnospermas citados no conteúdo?", options: ["Pinheiros, ciprestes e araucárias", "Samambaias e avencas", "Musgos e hepáticas", "Orquídeas e bromélias"], correct: 0 },
+            { q: "As gimnospermas são plantas:", options: ["Vasculares (traqueófitas), com xilema e floema", "Avasculares, sem tecidos condutores", "Sem raízes, caules ou folhas", "Exclusivamente aquáticas"], correct: 0 },
+            { q: "O que produz as sementes nas gimnospermas?", options: ["Os esporófitos", "Os gametófitos apenas", "As flores", "Os frutos"], correct: 0 },
+            { q: "As gimnospermas possuem fruto e flor?", options: ["Não possuem nem fruto nem flor", "Possuem fruto, mas não flor", "Possuem flor, mas não fruto", "Possuem ambos"], correct: 0 },
+            { q: "As gimnospermas dependem da água para a reprodução?", options: ["Não; dependem da dispersão do grão de pólen", "Sim, totalmente", "Apenas em climas frios", "Apenas durante a germinação da semente"], correct: 0 },
+            { q: "O grão de pólen da gimnosperma é:", options: ["O gametófito masculino (não é o próprio gameta)", "O próprio gameta masculino", "O óvulo", "O fruto da planta"], correct: 0 },
+            { q: "Como ocorre a dispersão do pólen nas gimnospermas?", options: ["Pelo vento (anemofilia)", "Por insetos exclusivamente", "Pela água exclusivamente", "Por pássaros exclusivamente"], correct: 0 },
+            { q: "A semente da gimnosperma é formada por:", options: ["2N do embrião + N do endosperma primário (3N no total)", "Apenas células haploides", "Apenas células diploides", "Um fruto protetor"], correct: 0 },
+          ],
+          extraQuizLabel: "Treino do PDF",
+          extraQuizHeading: "Questões da lista do professor",
+          extraQuiz: [
+            { q: "Araucária, eucalipto, samambaia e orquídea são exemplos, respectivamente, de:", options: ["Gimnosperma, Dicotiledônea, Pteridófita e Monocotiledônea", "Pteridófita, Angiosperma, Gimnosperma e Monocotiledônea", "Monocotiledônea, Pteridófita, Gimnosperma e Dicotiledônea", "Gimnosperma, Monocotiledônea, Dicotiledônea e Pteridófita"], correct: 0 },
+            { q: "O grande sucesso das plantas fanerogâmicas (gimnospermas e angiospermas) na conquista do ambiente terrestre pode ser atribuído a duas adaptações principais:", options: ["Independência da água para reprodução e propagação por meio de sementes", "Propagação por meio de frutos e reprodução por esporos", "Dependência da água para reprodução e ausência de sementes", "Reprodução exclusivamente por gametas flagelados"], correct: 0 },
+            { q: "Uma planta apresenta xilema e floema bem desenvolvidos, flores diferenciadas e estruturas que atraem polinizadores. Sobre essa planta, é correto afirmar que:", options: ["Ela não é uma Gimnosperma, já que as gimnospermas não produzem flores", "Ela é obrigatoriamente uma Gimnosperma", "Ela não possui transporte eficiente de seiva", "Ela não pode ser uma planta Dicotiledônea"], correct: 0 },
+            { q: "Em um esquema que separa as plantas em avasculares, vasculares com sementes (com ou sem frutos) e vasculares sem sementes, os grupos correspondentes são, respectivamente:", options: ["Briófitas, Angiospermas, Gimnospermas e Pteridófitas", "Pteridófitas, Gimnospermas, Angiospermas e Briófitas", "Briófitas, Gimnospermas, Angiospermas e Pteridófitas", "Gimnospermas, Briófitas, Pteridófitas e Angiospermas"], correct: 0 },
+            { q: "São características comuns às gimnospermas e às angiospermas:", options: ["Sistema vascular e presença de grãos de pólen com tubo polínico", "Apenas a presença de sementes nuas", "Ausência total de sistema vascular", "Reprodução exclusiva por esporos"], correct: 0 },
+          ],
+        },
       ],
     },
     {
@@ -2650,100 +2744,6 @@ DNA → RNAm → códons → aminoácidos → proteína`,
             { q: "Qual é o principal códon de iniciação da tradução?", options: ["AUG", "UAA", "UAG", "UGA"], correct: 0 },
             { q: "Quais códons indicam parada da tradução?", options: ["UAA, UAG e UGA", "AUG, GUC e CCC", "Apenas AUG", "Apenas UGA"], correct: 0 },
             { q: "Por que o código genético é considerado degenerado?", options: ["Porque diferentes códons podem determinar o mesmo aminoácido", "Porque só funciona em alguns seres vivos", "Porque não segue nenhuma regra fixa", "Porque cada aminoácido tem apenas um códon possível"], correct: 0 },
-          ],
-        },
-        {
-          id: "gimnospermas",
-          title: "Gimnospermas",
-          sections: [
-            {
-              heading: "Gimnospermas",
-              body: `Folhas aciculiformes (agulhas).
-Copa em forma de cone (evita o acúmulo de neve).
-
-Lembre-se:
-Pinheiros, ciprestes e araucárias.
-São vasculares (traqueófitas): xilema e floema.
-Possuem folhas, caules e raízes.
-Esporófitos produzem sementes.
-Não possuem fruto nem flor.
-Adaptadas ao clima frio.
-Não dependem da água para reprodução: dispersão do grão de pólen.
-
-Importante: o grão de pólen não é o gameta; ele é o gametófito masculino.`,
-              visual: `
-<div class="grid grid-cols-2 gap-2 max-w-xs mx-auto text-xs">
-  <div class="rounded-lg bg-cream border border-sand px-3 py-2 flex items-center justify-between"><span class="text-bark">Vascular</span><span class="text-correct font-bold">✓</span></div>
-  <div class="rounded-lg bg-cream border border-sand px-3 py-2 flex items-center justify-between"><span class="text-bark">Semente</span><span class="text-correct font-bold">✓</span></div>
-  <div class="rounded-lg bg-cream border border-sand px-3 py-2 flex items-center justify-between"><span class="text-bark">Flor</span><span class="text-wrong font-bold">✗</span></div>
-  <div class="rounded-lg bg-cream border border-sand px-3 py-2 flex items-center justify-between"><span class="text-bark">Fruto</span><span class="text-wrong font-bold">✗</span></div>
-</div>`,
-            },
-            {
-              heading: "Grão de pólen",
-              body: `Estrutura:
-Núcleo polínico.
-Núcleo gerador.
-Dois sacos aéreos laterais ocos.`,
-              visual: `
-<svg viewBox="0 0 200 120" class="w-full max-w-xs mx-auto" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="100" cy="55" rx="32" ry="22" fill="none" stroke="#5C4630" stroke-width="2.5"/>
-  <circle cx="63" cy="55" r="17" fill="none" stroke="#A8763E" stroke-width="2"/>
-  <circle cx="137" cy="55" r="17" fill="none" stroke="#A8763E" stroke-width="2"/>
-  <circle cx="92" cy="52" r="3" fill="#3E2F20"/>
-  <circle cx="108" cy="58" r="3" fill="#3E2F20"/>
-  <text x="68" y="96" font-size="9" fill="#A8763E">saco aéreo</text>
-  <text x="128" y="96" font-size="9" fill="#A8763E">saco aéreo</text>
-  <text x="60" y="20" font-size="9" fill="#5C4630">núcleo polínico + núcleo gerador</text>
-</svg>`,
-            },
-            {
-              heading: "Dispersão do pólen",
-              body: `Vento → Anemofilia.`,
-            },
-            {
-              heading: "Semente",
-              body: `3N: 2N do embrião + N do endosperma primário.`,
-            },
-            {
-              heading: "Estróbilo (cone)",
-              body: `Estruturas reprodutivas:
-Estróbilo (cone).
-Escama.
-Esporângio.`,
-              visual: `
-<svg viewBox="0 0 160 200" class="w-full max-w-[160px] mx-auto" xmlns="http://www.w3.org/2000/svg">
-  <path d="M80,10 L140,190 L20,190 Z" fill="none" stroke="#5C4630" stroke-width="2.5"/>
-  <line x1="35" y1="150" x2="125" y2="150" stroke="#A8763E" stroke-width="1.5"/>
-  <line x1="45" y1="115" x2="115" y2="115" stroke="#A8763E" stroke-width="1.5"/>
-  <line x1="55" y1="80" x2="105" y2="80" stroke="#A8763E" stroke-width="1.5"/>
-  <line x1="65" y1="45" x2="95" y2="45" stroke="#A8763E" stroke-width="1.5"/>
-  <circle cx="35" cy="150" r="3" fill="#3E2F20"/>
-  <text x="0" y="168" font-size="8.5" fill="#5C4630">escama</text>
-  <text x="0" y="180" font-size="8.5" fill="#5C4630">(com esporângio)</text>
-</svg>`,
-            },
-          ],
-          quiz: [
-            { q: "Qual é o formato característico das folhas das gimnospermas?", options: ["Aciculiformes (em forma de agulha)", "Largas e arredondadas", "Compostas e recortadas", "Ausentes"], correct: 0 },
-            { q: "Por que a copa das gimnospermas costuma ter formato de cone?", options: ["Para evitar o acúmulo de neve", "Para atrair polinizadores", "Para reter mais água", "Para produzir mais frutos"], correct: 0 },
-            { q: "Quais são exemplos de gimnospermas citados no conteúdo?", options: ["Pinheiros, ciprestes e araucárias", "Samambaias e avencas", "Musgos e hepáticas", "Orquídeas e bromélias"], correct: 0 },
-            { q: "As gimnospermas são plantas:", options: ["Vasculares (traqueófitas), com xilema e floema", "Avasculares, sem tecidos condutores", "Sem raízes, caules ou folhas", "Exclusivamente aquáticas"], correct: 0 },
-            { q: "O que produz as sementes nas gimnospermas?", options: ["Os esporófitos", "Os gametófitos apenas", "As flores", "Os frutos"], correct: 0 },
-            { q: "As gimnospermas possuem fruto e flor?", options: ["Não possuem nem fruto nem flor", "Possuem fruto, mas não flor", "Possuem flor, mas não fruto", "Possuem ambos"], correct: 0 },
-            { q: "As gimnospermas dependem da água para a reprodução?", options: ["Não; dependem da dispersão do grão de pólen", "Sim, totalmente", "Apenas em climas frios", "Apenas durante a germinação da semente"], correct: 0 },
-            { q: "O grão de pólen da gimnosperma é:", options: ["O gametófito masculino (não é o próprio gameta)", "O próprio gameta masculino", "O óvulo", "O fruto da planta"], correct: 0 },
-            { q: "Como ocorre a dispersão do pólen nas gimnospermas?", options: ["Pelo vento (anemofilia)", "Por insetos exclusivamente", "Pela água exclusivamente", "Por pássaros exclusivamente"], correct: 0 },
-            { q: "A semente da gimnosperma é formada por:", options: ["2N do embrião + N do endosperma primário (3N no total)", "Apenas células haploides", "Apenas células diploides", "Um fruto protetor"], correct: 0 },
-          ],
-          extraQuizLabel: "Treino do PDF",
-          extraQuizHeading: "Questões da lista do professor",
-          extraQuiz: [
-            { q: "Araucária, eucalipto, samambaia e orquídea são exemplos, respectivamente, de:", options: ["Gimnosperma, Dicotiledônea, Pteridófita e Monocotiledônea", "Pteridófita, Angiosperma, Gimnosperma e Monocotiledônea", "Monocotiledônea, Pteridófita, Gimnosperma e Dicotiledônea", "Gimnosperma, Monocotiledônea, Dicotiledônea e Pteridófita"], correct: 0 },
-            { q: "O grande sucesso das plantas fanerogâmicas (gimnospermas e angiospermas) na conquista do ambiente terrestre pode ser atribuído a duas adaptações principais:", options: ["Independência da água para reprodução e propagação por meio de sementes", "Propagação por meio de frutos e reprodução por esporos", "Dependência da água para reprodução e ausência de sementes", "Reprodução exclusivamente por gametas flagelados"], correct: 0 },
-            { q: "Uma planta apresenta xilema e floema bem desenvolvidos, flores diferenciadas e estruturas que atraem polinizadores. Sobre essa planta, é correto afirmar que:", options: ["Ela não é uma Gimnosperma, já que as gimnospermas não produzem flores", "Ela é obrigatoriamente uma Gimnosperma", "Ela não possui transporte eficiente de seiva", "Ela não pode ser uma planta Dicotiledônea"], correct: 0 },
-            { q: "Em um esquema que separa as plantas em avasculares, vasculares com sementes (com ou sem frutos) e vasculares sem sementes, os grupos correspondentes são, respectivamente:", options: ["Briófitas, Angiospermas, Gimnospermas e Pteridófitas", "Pteridófitas, Gimnospermas, Angiospermas e Briófitas", "Briófitas, Gimnospermas, Angiospermas e Pteridófitas", "Gimnospermas, Briófitas, Pteridófitas e Angiospermas"], correct: 0 },
-            { q: "São características comuns às gimnospermas e às angiospermas:", options: ["Sistema vascular e presença de grãos de pólen com tubo polínico", "Apenas a presença de sementes nuas", "Ausência total de sistema vascular", "Reprodução exclusiva por esporos"], correct: 0 },
           ],
         },
       ],
