@@ -1,11 +1,26 @@
-const CACHE_NAME = "revisao-lucas-m-v2";
+const CACHE_NAME = "revisao-lucas-m-v3";
 
 const ASSETS = [
   "./",
   "./index.html",
   "./manifest.json",
   "./icon-192.png",
-  "./icon-512.png"
+  "./icon-512.png",
+  "./materias/literatura.js",
+  "./materias/geografia.js",
+  "./materias/historia.js",
+  "./materias/analise-linguistica.js",
+  "./materias/filosofia.js",
+  "./materias/sociologia.js",
+  "./materias/biologia-a.js",
+  "./materias/biologia-b.js",
+  "./materias/quimica-a.js",
+  "./materias/quimica-b.js",
+  "./materias/fisica-a.js",
+  "./materias/fisica-b.js",
+  "./materias/matematica-a.js",
+  "./materias/matematica-b.js",
+  "./materias/educacao-financeira.js"
 ];
 
 self.addEventListener("install", (event) => {
@@ -52,10 +67,19 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Para os outros arquivos, usa o cache primeiro
+  // Para os outros arquivos, usa o cache primeiro, mas atualiza o cache
+  // em segundo plano quando busca algo que ainda não estava salvo
   event.respondWith(
     caches.match(request).then((cached) => {
-      return cached || fetch(request);
+      if (cached) return cached;
+
+      return fetch(request).then((response) => {
+        const responseClone = response.clone();
+        caches.open(CACHE_NAME).then((cache) => {
+          cache.put(request, responseClone);
+        });
+        return response;
+      });
     })
   );
 });
