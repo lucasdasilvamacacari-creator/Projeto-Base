@@ -909,6 +909,6 @@ Apesar das melhorias, os portugueses expulsaram os holandeses em 1654. Pernambuc
     }
   ]
 }
-        }
+        
       ]
     });
