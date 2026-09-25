@@ -1,86 +1,300 @@
-# Revisão de Lucas M
+# Guia de Ilustrações Didáticas
 
-Plataforma pessoal de estudos para o Ensino Médio. Reúne matérias organizadas em conteúdos, cada um com explicação teórica, ilustrações didáticas e um treino de múltipla escolha com correção imediata — para revisar antes de provas sem depender de vários materiais espalhados.
+## Princípio Fundamental
 
-## Estado atual
+As ilustrações não devem ser **decorativas**. Elas devem ter **função pedagógica** e explicar visualmente aquilo que está sendo estudado. Uma imagem deve fazer o aluno pensar: *"agora eu consigo enxergar o que a matéria está explicando"*.
 
-- **15 matérias**, **29 conteúdos**, **697 perguntas de treino**
-- Humanas → Ciências → Exatas, nessa ordem na tela inicial
-- Instalável como aplicativo (PWA), com uso offline básico
+---
 
-| Matéria | Conteúdos |
-|---|---|
-| 📖 Literatura | 2 |
-| 🌎 Geografia | 1 |
-| 🏛️ História | 4 |
-| 🗣️ Análise Linguística | 4 |
-| 🏺 Filosofia | 1 |
-| 🧑‍🤝‍🧑 Sociologia | 1 |
-| 🧬 Biologia A | 5 |
-| 🧬 Biologia B | 1 |
-| 🧪 Química-A | 1 |
-| ⚗️ Química B | 2 |
-| 🌀 Física-A | 1 |
-| ⚙️ Física B | 1 |
-| 📊 Matemática A | 2 |
-| 📐 Matemática B | 2 |
-| 💸 Educação Financeira | 1 |
+## Critérios de Necessidade
 
-*(Física-A/B, Química-A/B, Biologia A/B e Matemática A/B são pares de matérias **independentes** — mesmo nome parecido, conteúdo nunca se mistura entre elas.)*
+Antes de criar uma ilustração, pergunte-se:
 
-## Tecnologias
+- ✅ Isso é difícil de visualizar apenas pelo texto?
+- ✅ Uma representação visual vai aumentar significativamente a compreensão?
+- ✅ O aluno vai memorizar melhor vendo?
+- ❌ É apenas para deixar o site bonito?
 
-- **HTML + Tailwind CSS via CDN** — sem etapa de build; as classes são processadas em tempo real no navegador.
-- **JavaScript puro** — sem framework, sem bibliotecas externas.
-- **PWA** — instalável pelo Chrome (manifest + service worker), com cache offline dos arquivos da aplicação e busca sempre pela versão mais nova ao abrir o app.
+**Priorize qualidade em vez de quantidade.** Um conteúdo pode ter várias ilustrações se realmente forem necessárias, enquanto outro pode não precisar de nenhuma.
 
-Não há dependência de Node/npm, servidor ou banco de dados. É um site 100% estático.
+---
 
-## Arquitetura
+## Padrão Visual das Ilustrações
 
-O projeto é intencionalmente **um único arquivo `index.html`** — essa é a decisão de arquitetura vigente, escolhida por manter o deploy no Vercel simples (subir os 5 arquivos abaixo e pronto, sem risco de pasta faltando ou caminho quebrado). Dentro desse arquivo, duas partes bem separadas:
+Todas as ilustrações devem seguir a **identidade visual do site**:
 
-1. **`const DB = { subjects: [...] }`** — todo o conteúdo de estudo: cada matéria é um objeto com `id`, `name`, `emoji` e uma lista de `contents`; cada conteúdo tem `sections` (explicação + ilustrações em HTML/SVG) e `quiz` (perguntas de múltipla escolha). Isso é ~90% do arquivo.
-2. **O motor da aplicação** (~400 linhas, no fim do arquivo) — roteador por hash (`#/materia/x/conteudo/y`), os três renderizadores de tela (início, matéria, conteúdo) e o engine do treino (embaralhamento de perguntas/alternativas, correção, pontuação, botão de recomeçar).
+- 🎨 Estética profissional e acadêmica moderna
+- 🟤 Fundo em tons de bege
+- ⚖️ Contraste elegante e bem equilibrado
+- 📱 Ótima adaptação para celular (mobile-first)
+- 🧹 Elementos bem espaçados e bordas suaves
+- 📐 Diagramas limpos e organizados
 
-> Já existiu uma tentativa de separar isso em múltiplos arquivos/pastas (ES Modules). Funcionava localmente, mas quebrou no deploy real por causa de como os arquivos foram publicados — por isso o projeto foi revertido para arquivo único e permanece assim propositalmente.
+---
 
-## Arquivos do projeto
+## Por Disciplina: O Que Ilustrar
 
+### 📚 Física
+
+Represente visualmente:
+- Movimentos e trajetórias
+- Forças e vetores
+- Gráficos de movimento (posição × tempo, velocidade × tempo)
+- Circuitos elétricos
+- Fenômenos difíceis de imaginar (ondas, campos, radiação)
+- Situações de dinâmica e estática
+
+**Exemplo:** Para "Dinâmica dos movimentos circulares (MCU)", mostre:
+- A trajetória circular
+- Vetor velocidade (tangencial)
+- Vetor aceleração (centrípeta, apontando para o centro)
+- Força resultante
+- Ângulo e raio
+
+---
+
+### 🔢 Matemática
+
+Represente visualmente:
+- Triângulos e relações geométricas
+- Gráficos de funções
+- Ângulos e proporções
+- Construções geométricas
+- Etapas de resolução
+- Semelhança entre figuras
+- Projeções e alturas
+
+**Exemplo:** Para "Triângulo Retângulo", mostre claramente:
+- A hipotenusa
+- Os dois catetos
+- A altura relativa à hipotenusa
+- As projeções dos catetos na hipotenusa
+- Use letras (a, b, c, h, m, n) para identificar cada elemento
+- Inclua ângulo reto destacado
+
+**Exemplo:** Para "Função Quadrática", mostre:
+- A parábola
+- Vértice
+- Raízes (zeros)
+- Eixo de simetria
+- Concavidade
+- Ponto de intersecção com o eixo Y
+
+---
+
+### 🧪 Química
+
+Represente visualmente:
+- Estruturas moleculares e ligações
+- Modelos atômicos
+- Transformações químicas (antes → depois)
+- Ionização de ácidos/bases
+- Processos de reação
+- Tabelas de classificação
+
+**Exemplo:** Para "Ácidos", mostre:
+- Molécula de HCl
+- Ionização em água: HCl → H⁺ + Cl⁻
+- Formação de H₃O⁺
+- Use cores diferentes para elementos diferentes
+- Setas indicando transformação
+
+**Exemplo:** Para "Estequiometria", mostre:
+- Equação balanceada
+- Proporção molar (reagentes → produtos)
+- Se houver medidas, mostre a correlação visual
+
+---
+
+### 🧬 Biologia
+
+Represente visualmente:
+- Estruturas celulares
+- Ciclos biológicos
+- Processos fisiológicos
+- Classificações de organismos
+- Sequências de acontecimentos
+- Relações entre partes
+
+**Exemplo:** Para "Ciclo da Vida", mostre:
+- Representação circular do ciclo completo
+- Cada etapa claramente identificada
+- Setas indicando o fluxo
+- Duração ou características de cada fase
+
+**Exemplo:** Para "Fungos", "Briófitas", "Gimnospermas":
+- Estrutura geral do organismo
+- Partes principais destacadas
+- Exemplos ou silhuetas reconhecíveis
+
+---
+
+### 🌍 Geografia
+
+Represente visualmente:
+- Mapas e relevo
+- Circulação atmosférica e de massas de ar
+- Correntes marítimas
+- Fenômenos climáticos e tipos de chuva
+- Movimentos da Terra
+- Processos espaciais
+
+**Exemplo:** Para "Climatologia - Tipos de Chuva":
+
+**Chuva Convectiva:**
+- Sol aquecendo o solo
+- Ar quente subindo (convecção)
+- Resfriamento em altitude
+- Condensação e formação de nuvem
+- Precipitação retornando
+
+**Chuva Orográfica:**
+- Massa de ar úmida se aproximando
+- Encontro com montanha (barlavento)
+- Ar sendo forçado a subir
+- Resfriamento adiabático
+- Condensação e chuva no lado de barlavento
+- Ar seco descendo no outro lado (sotavento)
+
+**Chuva Frontal:**
+- Frente fria encontrando ar quente
+- Ar quente sendo forçado para cima
+- Resfriamento e condensação
+- Precipitação ao longo da frente
+
+**Exemplo:** Para "Relação entre Latitude e Temperatura":
+- Globo terrestre mostrando incidência solar
+- Ângulos diferentes em diferentes latitudes
+- Variação de temperatura com a latitude
+
+**Exemplo:** Para "Continentalidade vs. Maritimidade":
+- Dois gráficos de temperatura ao longo do ano
+- Um local continental (variações extremas)
+- Um local marítimo (variações suaves)
+- Comparação lado a lado
+
+---
+
+### 📖 Literatura, História, Filosofia e Sociologia
+
+Represente visualmente:
+- Linhas do tempo
+- Mapas conceituais
+- Relações entre conceitos e pensadores
+- Sequência de acontecimentos
+- Estruturas de movimentos literários
+
+**Exemplo:** Para "Arcadismo":
+- Linha do tempo do período (1768–1836)
+- Autores principais situados no tempo
+- Principais temas representados graficamente
+- Relação com contexto histórico (Inconfidência Mineira)
+
+**Exemplo:** Para "Max Weber":
+- Conceitos-chave conectados
+- Contribuições à Sociologia
+- Contexto histórico
+
+---
+
+## Posicionamento e Integração
+
+### Dentro da Explicação
+
+A ilustração deve aparecer **imediatamente próxima** da explicação à qual pertence, para que o aluno consiga ler e visualizar ao mesmo tempo.
+
+**Estrutura ideal:**
 ```
-index.html        → toda a aplicação: layout, dados (DB) e motor
-manifest.json      → manifesto do PWA
-sw.js               → service worker (cache offline + atualização automática)
-icon-192.png         → ícone do app
-icon-512.png          → ícone do app
+[Título da seção]
+[Explicação em texto]
+[ILUSTRAÇÃO]
+[Detalhes adicionais ou conclusão]
 ```
 
-Os 5 arquivos ficam **todos na raiz** do repositório — sem subpastas. É só isso que precisa ser publicado.
+### Com Legenda
 
-## Como rodar localmente
+Quando apropriado, adicione uma **legenda explicativa curta**:
+- Clareza sobre o que se vê
+- Identificação de elementos principais
+- Referência ao conceito explicado
 
-Como não há build, basta abrir o `index.html` no navegador — ou, para simular exatamente o ambiente de produção:
+**Exemplo de legenda:**
+- "Fig. 1: Ionização de um ácido forte (HCl) em água"
+- "Diagrama de circulação: ar quente sobe, resfria e precipita"
 
-```bash
-python3 -m http.server 8000
-# depois acesse http://localhost:8000/index.html
-```
+---
 
-## Como publicar
+## Tipos de Recursos Visuais
 
-`git push` para o repositório conectado ao Vercel. Sem passo de build, sem configuração de "Root Directory" além da raiz padrão.
+### Principais
 
-## Como o conteúdo é organizado
+1. **Diagramas e Esquemas:** Fluxogramas, processos, ciclos
+2. **Gráficos:** Funções, comparações, variações
+3. **Desenhos Científicos:** Estruturas, organismos, moléculas
+4. **Mapas:** Geográficos, conceituais, mentais
+5. **Linhas do Tempo:** Sequências históricas e eventos
+6. **Comparações Lado a Lado:** Diferenças visuais entre conceitos
 
-Cada conteúdo segue a mesma estrutura, para manter consistência visual e pedagógica em toda a plataforma:
+### Secundários (dentro do texto)
 
-```
-Matéria → Conteúdo → Seções (explicação + ilustração quando ajuda) → Treino (múltipla escolha)
-```
+1. **Ícones simples:** Para destacar pontos importantes
+2. **Setas:** Indicando relações e fluxo
+3. **Destaques em cores:** Enfatizando elementos-chave
+4. **Caixas e bordas:** Agrupando informações relacionadas
 
-Regras seguidas na hora de alimentar o site com conteúdo novo:
+---
 
-- O texto enviado é preservado — nunca reescrito ou resumido para "melhorar".
-- Ilustrações (diagramas, tabelas, fluxogramas) só entram quando ajudam a visualizar o conceito, nunca por decoração.
-- Treino padrão: **11 perguntas** de múltipla escolha (4 alternativas, 1 correta) por conteúdo novo — alguns conteúdos mais antigos têm mais perguntas por terem sido pedidos explicitamente maiores.
-- As perguntas e as alternativas são embaralhadas a cada tentativa, exceto quando o conteúdo marca `noShuffle: true` (usado para listas fixas de exercícios de prova).
+## Regra Crítica: Não Alterar o Conteúdo
+
+❌ **NÃO FAÇA:** Inventar, alterar ou substituir conteúdo original para criar uma ilustração.
+
+✅ **FAÇA:** Represente visualmente exatamente aquilo que já está explicado na matéria.
+
+Se o conteúdo disser "A hipotenusa é o lado oposto ao ângulo reto", a ilustração deve mostrar isso — não crie informações novas.
+
+---
+
+## Checklist Antes de Criar uma Ilustração
+
+- [ ] A ilustração tem função pedagógica clara (não é decorativa)?
+- [ ] Ela facilita a compreensão de um conceito difícil?
+- [ ] Ela segue a identidade visual do site (bege, moderno, mobile-friendly)?
+- [ ] Ela está posicionada próxima ao texto que explica?
+- [ ] Ela não altera o conteúdo original?
+- [ ] Tem legenda quando necessário?
+- [ ] É clara em uma tela de celular?
+- [ ] Usa cores, setas e destaques pedagogicamente?
+
+---
+
+## Exemplos de Aplicação Prática
+
+### ❌ Errado
+
+"Aqui está uma foto bonita de um triângulo para o conteúdo de Triângulo Retângulo."
+
+### ✅ Correto
+
+Um diagrama limpo mostrando:
+- Triângulo retângulo com ângulo reto destacado
+- Hipotenusa identificada com letra "a"
+- Catetos identificados com letras "b" e "c"
+- Altura "h" traçada da hipotenusa ao ângulo reto
+- Projeções "m" e "n" marcadas na hipotenusa
+- Todos os elementos conectados com linhas claras
+
+---
+
+## Resumo
+
+✨ **Qualidade pedagógica sempre.**
+
+📱 **Mobile-first e profissional.**
+
+🎯 **Função explicativa, não decorativa.**
+
+🚫 **Nunca altere o conteúdo.**
+
+📍 **Próxima ao texto que explica.**
+
+🏷️ **Legenda quando necessário.**
