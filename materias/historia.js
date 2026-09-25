@@ -661,11 +661,11 @@ Valorização do conhecimento científico e dos interesses humanos.`,
             { q: "Segundo o conteúdo, o realismo buscado pela Arte Renascentista está associado à união de quais dois elementos centrais do período?", options: ["Arte e ciência", "Religião e política", "Guerra e comércio", "Nobreza e clero"], correct: 0 },
           ],
         },
-        {
+          {
           id: "brasil-colonial",
           title: "Brasil Colonial (1500–1800)",
           sections: [
-    {
+            {
       heading: "Economia e Pacto Colonial",
       body: `A colônia brasileira nasceu com um objetivo claro: gerar riquezas para Portugal. Toda a economia era organizada para servir aos interesses da metrópole.
 
@@ -908,7 +908,7 @@ Apesar das melhorias, os portugueses expulsaram os holandeses em 1654. Pernambuc
       correct: 2
     }
   ]
-}  
-      ],
-    },
-);
+}
+        }
+      ]
+    });
