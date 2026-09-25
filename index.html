@@ -101,6 +101,9 @@
     Revisão de Lucas M — plataforma pessoal de estudos.
   </p>
 </footer>
+
+<script>
+
 <script src="materias/literatura.js"></script>
 <script src="materias/geografia.js"></script>
 <script src="materias/historia.js"></script>
@@ -116,45 +119,9 @@
 <script src="materias/matematica-a.js"></script>
 <script src="materias/matematica-b.js"></script>
 <script src="materias/educacao-financeira.js"></script>
+
 <script>
-/* ============================================================
-   BASE DE CONTEÚDO
-   ------------------------------------------------------------
-   Nenhuma matéria foi enviada ainda. Este objeto é o único
-   lugar do arquivo que deve crescer quando novos conteúdos
-   forem enviados — o restante do código (renderização, rotas,
-   quiz) já está pronto para qualquer matéria futura.
-
-   Estrutura esperada para cada matéria adicionada no futuro:
-
-   {
-     id: "identificador-unico-sem-espaco",
-     name: "Nome da Matéria",
-     emoji: "📘",
-     contents: [
-       {
-         id: "identificador-unico-do-conteudo",
-         title: "Título do conteúdo",
-         sections: [
-           { heading: "Subtítulo opcional", body: "Texto explicativo..." },
-           { heading: "Exemplo", body: "Texto do exemplo..." }
-         ],
-         quiz: [
-           // exatamente 10 perguntas por conteúdo
-           { q: "Pergunta 1?", options: ["A", "B", "C", "D"], correct: 0 }
-         ]
-       }
-     ]
-   }
-   ============================================================ */
 const DB = { subjects: window.DB_SUBJECTS || [] };
-/* Os dados de cada matéria agora vêm dos arquivos em /materias/*.js,
-   carregados acima via <script src="materias/xxx.js"></script>.
-   Cada um desses arquivos empurra seu objeto de matéria para
-   window.DB_SUBJECTS. Para adicionar uma nova matéria, crie um novo
-   arquivo em /materias/ seguindo o mesmo modelo e inclua o <script src>
-   correspondente logo acima deste bloco. Para adicionar conteúdo a uma
-   matéria existente, edite o arquivo daquela matéria em /materias/. */
 
 /* ============================================================
    UTILITÁRIOS
