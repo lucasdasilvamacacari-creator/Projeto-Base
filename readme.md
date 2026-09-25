@@ -1,300 +1,287 @@
-# Guia de Ilustrações Didáticas
+# 📖 Revisão de Lucas M — Plataforma Pessoal de Estudos
 
-## Princípio Fundamental
+Uma plataforma web moderna e responsiva para organizar, estudar e revisar conteúdos de forma interativa. Acesse suas matérias, estude os conteúdos e teste seu conhecimento com quizzes de revisão.
 
-As ilustrações não devem ser **decorativas**. Elas devem ter **função pedagógica** e explicar visualmente aquilo que está sendo estudado. Uma imagem deve fazer o aluno pensar: *"agora eu consigo enxergar o que a matéria está explicando"*.
-
----
-
-## Critérios de Necessidade
-
-Antes de criar uma ilustração, pergunte-se:
-
-- ✅ Isso é difícil de visualizar apenas pelo texto?
-- ✅ Uma representação visual vai aumentar significativamente a compreensão?
-- ✅ O aluno vai memorizar melhor vendo?
-- ❌ É apenas para deixar o site bonito?
-
-**Priorize qualidade em vez de quantidade.** Um conteúdo pode ter várias ilustrações se realmente forem necessárias, enquanto outro pode não precisar de nenhuma.
+**🌐 Acesse em:** [lucasdasilvamacari-creator.github.io/projeto-base-one-vercel.app](seu-link-aqui)
 
 ---
 
-## Padrão Visual das Ilustrações
+## ✨ Características
 
-Todas as ilustrações devem seguir a **identidade visual do site**:
-
-- 🎨 Estética profissional e acadêmica moderna
-- 🟤 Fundo em tons de bege
-- ⚖️ Contraste elegante e bem equilibrado
-- 📱 Ótima adaptação para celular (mobile-first)
-- 🧹 Elementos bem espaçados e bordas suaves
-- 📐 Diagramas limpos e organizados
-
----
-
-## Por Disciplina: O Que Ilustrar
-
-### 📚 Física
-
-Represente visualmente:
-- Movimentos e trajetórias
-- Forças e vetores
-- Gráficos de movimento (posição × tempo, velocidade × tempo)
-- Circuitos elétricos
-- Fenômenos difíceis de imaginar (ondas, campos, radiação)
-- Situações de dinâmica e estática
-
-**Exemplo:** Para "Dinâmica dos movimentos circulares (MCU)", mostre:
-- A trajetória circular
-- Vetor velocidade (tangencial)
-- Vetor aceleração (centrípeta, apontando para o centro)
-- Força resultante
-- Ângulo e raio
+- 📚 **15 matérias** com conteúdos organizados por tema
+- 🧠 **Quizzes interativos** para testar conhecimento
+- 📱 **Totalmente responsivo** — funciona perfeitamente em celular, tablet e desktop
+- 🔄 **Modo offline** — funciona como aplicativo PWA instalável
+- 🎨 **Design moderno** — interface limpa e profissional
+- ⚡ **Rápido** — carregamento otimizado
+- 🏠 **Instalável** — adicione à tela inicial como um app
 
 ---
 
-### 🔢 Matemática
+## 📂 Estrutura do Projeto
 
-Represente visualmente:
-- Triângulos e relações geométricas
-- Gráficos de funções
-- Ângulos e proporções
-- Construções geométricas
-- Etapas de resolução
-- Semelhança entre figuras
-- Projeções e alturas
-
-**Exemplo:** Para "Triângulo Retângulo", mostre claramente:
-- A hipotenusa
-- Os dois catetos
-- A altura relativa à hipotenusa
-- As projeções dos catetos na hipotenusa
-- Use letras (a, b, c, h, m, n) para identificar cada elemento
-- Inclua ângulo reto destacado
-
-**Exemplo:** Para "Função Quadrática", mostre:
-- A parábola
-- Vértice
-- Raízes (zeros)
-- Eixo de simetria
-- Concavidade
-- Ponto de intersecção com o eixo Y
-
----
-
-### 🧪 Química
-
-Represente visualmente:
-- Estruturas moleculares e ligações
-- Modelos atômicos
-- Transformações químicas (antes → depois)
-- Ionização de ácidos/bases
-- Processos de reação
-- Tabelas de classificação
-
-**Exemplo:** Para "Ácidos", mostre:
-- Molécula de HCl
-- Ionização em água: HCl → H⁺ + Cl⁻
-- Formação de H₃O⁺
-- Use cores diferentes para elementos diferentes
-- Setas indicando transformação
-
-**Exemplo:** Para "Estequiometria", mostre:
-- Equação balanceada
-- Proporção molar (reagentes → produtos)
-- Se houver medidas, mostre a correlação visual
-
----
-
-### 🧬 Biologia
-
-Represente visualmente:
-- Estruturas celulares
-- Ciclos biológicos
-- Processos fisiológicos
-- Classificações de organismos
-- Sequências de acontecimentos
-- Relações entre partes
-
-**Exemplo:** Para "Ciclo da Vida", mostre:
-- Representação circular do ciclo completo
-- Cada etapa claramente identificada
-- Setas indicando o fluxo
-- Duração ou características de cada fase
-
-**Exemplo:** Para "Fungos", "Briófitas", "Gimnospermas":
-- Estrutura geral do organismo
-- Partes principais destacadas
-- Exemplos ou silhuetas reconhecíveis
-
----
-
-### 🌍 Geografia
-
-Represente visualmente:
-- Mapas e relevo
-- Circulação atmosférica e de massas de ar
-- Correntes marítimas
-- Fenômenos climáticos e tipos de chuva
-- Movimentos da Terra
-- Processos espaciais
-
-**Exemplo:** Para "Climatologia - Tipos de Chuva":
-
-**Chuva Convectiva:**
-- Sol aquecendo o solo
-- Ar quente subindo (convecção)
-- Resfriamento em altitude
-- Condensação e formação de nuvem
-- Precipitação retornando
-
-**Chuva Orográfica:**
-- Massa de ar úmida se aproximando
-- Encontro com montanha (barlavento)
-- Ar sendo forçado a subir
-- Resfriamento adiabático
-- Condensação e chuva no lado de barlavento
-- Ar seco descendo no outro lado (sotavento)
-
-**Chuva Frontal:**
-- Frente fria encontrando ar quente
-- Ar quente sendo forçado para cima
-- Resfriamento e condensação
-- Precipitação ao longo da frente
-
-**Exemplo:** Para "Relação entre Latitude e Temperatura":
-- Globo terrestre mostrando incidência solar
-- Ângulos diferentes em diferentes latitudes
-- Variação de temperatura com a latitude
-
-**Exemplo:** Para "Continentalidade vs. Maritimidade":
-- Dois gráficos de temperatura ao longo do ano
-- Um local continental (variações extremas)
-- Um local marítimo (variações suaves)
-- Comparação lado a lado
-
----
-
-### 📖 Literatura, História, Filosofia e Sociologia
-
-Represente visualmente:
-- Linhas do tempo
-- Mapas conceituais
-- Relações entre conceitos e pensadores
-- Sequência de acontecimentos
-- Estruturas de movimentos literários
-
-**Exemplo:** Para "Arcadismo":
-- Linha do tempo do período (1768–1836)
-- Autores principais situados no tempo
-- Principais temas representados graficamente
-- Relação com contexto histórico (Inconfidência Mineira)
-
-**Exemplo:** Para "Max Weber":
-- Conceitos-chave conectados
-- Contribuições à Sociologia
-- Contexto histórico
-
----
-
-## Posicionamento e Integração
-
-### Dentro da Explicação
-
-A ilustração deve aparecer **imediatamente próxima** da explicação à qual pertence, para que o aluno consiga ler e visualizar ao mesmo tempo.
-
-**Estrutura ideal:**
 ```
-[Título da seção]
-[Explicação em texto]
-[ILUSTRAÇÃO]
-[Detalhes adicionais ou conclusão]
+plataforma-estudos/
+│
+├── index.html              # Página principal (renderização + lógica)
+├── sw.js                   # Service Worker (funcionalidade offline)
+├── manifest.json           # Configuração PWA
+│
+├── icon-192.png            # Ícone do app (192×192px)
+├── icon-512.png            # Ícone do app (512×512px)
+│
+└── materias/               # Conteúdos por matéria
+    ├── literatura.js
+    ├── geografia.js
+    ├── historia.js
+    ├── analise-linguistica.js
+    ├── filosofia.js
+    ├── sociologia.js
+    ├── biologia-a.js
+    ├── biologia-b.js
+    ├── quimica-a.js
+    ├── quimica-b.js
+    ├── fisica-a.js
+    ├── fisica-b.js
+    ├── matematica-a.js
+    ├── matematica-b.js
+    └── educacao-financeira.js
 ```
 
-### Com Legenda
+---
 
-Quando apropriado, adicione uma **legenda explicativa curta**:
-- Clareza sobre o que se vê
-- Identificação de elementos principais
-- Referência ao conceito explicado
+## 🚀 Como Usar
 
-**Exemplo de legenda:**
-- "Fig. 1: Ionização de um ácido forte (HCl) em água"
-- "Diagrama de circulação: ar quente sobe, resfria e precipita"
+### Acessar Online
+
+Abra o link no navegador: [seu-link-aqui](seu-link-aqui)
+
+### Instalar como Aplicativo (PWA)
+
+1. Abra o site em um navegador moderno (Chrome, Firefox, Safari, Edge)
+2. Clique no ícone de "Instalar" ou no menu do navegador
+3. Selecione "Instalar aplicativo"
+4. O app será adicionado à sua tela inicial
+5. Funciona offline automaticamente ✅
+
+### Rodar Localmente
+
+#### Requisitos
+- Navegador moderno (Chrome, Firefox, Safari, Edge)
+- Opcional: [VS Code](https://code.visualstudio.com/) + extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+#### Passos
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/plataforma-estudos.git
+   cd plataforma-estudos
+   ```
+
+2. **Abra com Live Server:**
+   - Abra a pasta em VS Code
+   - Clique com botão direito em `index.html`
+   - Selecione "Open with Live Server"
+   - Uma aba do navegador abre em `http://localhost:5500`
+
+   **OU use Python:**
+   ```bash
+   # Python 3
+   python -m http.server 8000
+
+   # Python 2
+   python -m SimpleHTTPServer 8000
+   ```
+   Depois acesse `http://localhost:8000`
+
+3. **Pronto!** 🎉 Explore as matérias e teste os quizzes.
 
 ---
 
-## Tipos de Recursos Visuais
+## 📚 Matérias Disponíveis
 
-### Principais
-
-1. **Diagramas e Esquemas:** Fluxogramas, processos, ciclos
-2. **Gráficos:** Funções, comparações, variações
-3. **Desenhos Científicos:** Estruturas, organismos, moléculas
-4. **Mapas:** Geográficos, conceituais, mentais
-5. **Linhas do Tempo:** Sequências históricas e eventos
-6. **Comparações Lado a Lado:** Diferenças visuais entre conceitos
-
-### Secundários (dentro do texto)
-
-1. **Ícones simples:** Para destacar pontos importantes
-2. **Setas:** Indicando relações e fluxo
-3. **Destaques em cores:** Enfatizando elementos-chave
-4. **Caixas e bordas:** Agrupando informações relacionadas
-
----
-
-## Regra Crítica: Não Alterar o Conteúdo
-
-❌ **NÃO FAÇA:** Inventar, alterar ou substituir conteúdo original para criar uma ilustração.
-
-✅ **FAÇA:** Represente visualmente exatamente aquilo que já está explicado na matéria.
-
-Se o conteúdo disser "A hipotenusa é o lado oposto ao ângulo reto", a ilustração deve mostrar isso — não crie informações novas.
+| Matéria | Conteúdos |
+|---------|-----------|
+| 📖 Literatura | Arcadismo, Romantismo |
+| 🌎 Geografia | Climatologia |
+| 🏛️ História | Grandes Navegações, Renascimento Cultural, Reformas Religiosas, Arte Renascentista |
+| 🗣️ Análise Linguística | Figuras de Linguagem, Variação Linguística, Sentido e Signo, Variação de Modalidade |
+| 🏺 Filosofia | Aristóteles |
+| 🧑‍🤝‍🧑 Sociologia | Max Weber |
+| 🧬 Biologia A | Fungos, Briófitas, Ciclo da Vida, Pteridófitas, Gimnospermas |
+| 🧬 Biologia B | Código Genético |
+| 🧪 Química A | Estequiometria |
+| ⚗️ Química B | Ácidos, Bases |
+| 🌀 Física A | Dinâmica dos MCU |
+| ⚙️ Física B | Energia Mecânica e Trabalho |
+| 📊 Matemática A | Funções, Função Quadrática |
+| 📐 Matemática B | Semelhança de Triângulos, Triângulo Retângulo |
+| 💸 Educação Financeira | Crédito e Juros Compostos |
 
 ---
 
-## Checklist Antes de Criar uma Ilustração
+## 🎓 Como Estudar
 
-- [ ] A ilustração tem função pedagógica clara (não é decorativa)?
-- [ ] Ela facilita a compreensão de um conceito difícil?
-- [ ] Ela segue a identidade visual do site (bege, moderno, mobile-friendly)?
-- [ ] Ela está posicionada próxima ao texto que explica?
-- [ ] Ela não altera o conteúdo original?
-- [ ] Tem legenda quando necessário?
-- [ ] É clara em uma tela de celular?
-- [ ] Usa cores, setas e destaques pedagogicamente?
+1. **Escolha uma matéria** na página inicial
+2. **Selecione um conteúdo** para aprender
+3. **Leia as explicações** com seus conceitos e exemplos
+4. **Teste seu conhecimento** respondendo o quiz com 10 questões
+5. **Veja sua pontuação** e revise os pontos com dúvida
+6. **Repita quantas vezes quiser** — o quiz embaralha as questões a cada tentativa
 
 ---
 
-## Exemplos de Aplicação Prática
+## 🔧 Como Adicionar Novo Conteúdo
 
-### ❌ Errado
+### Adicionar Conteúdo a uma Matéria Existente
 
-"Aqui está uma foto bonita de um triângulo para o conteúdo de Triângulo Retângulo."
+1. Abra o arquivo da matéria em `materias/seu-tema.js`
+2. Localize o array `contents`
+3. Adicione um novo objeto no final do array:
 
-### ✅ Correto
+```javascript
+{
+  id: "novo-conteudo",
+  title: "Título do Novo Conteúdo",
+  sections: [
+    {
+      heading: "Subtítulo opcional",
+      body: `Texto explicativo aqui...`
+    },
+    {
+      heading: "Outro tópico",
+      body: `Mais explicações...`
+    }
+  ],
+  quiz: [
+    { q: "Pergunta 1?", options: ["A", "B", "C", "D"], correct: 0 },
+    { q: "Pergunta 2?", options: ["A", "B", "C", "D"], correct: 1 },
+    // ... até 10 perguntas no total
+  ]
+}
+```
 
-Um diagrama limpo mostrando:
-- Triângulo retângulo com ângulo reto destacado
-- Hipotenusa identificada com letra "a"
-- Catetos identificados com letras "b" e "c"
-- Altura "h" traçada da hipotenusa ao ângulo reto
-- Projeções "m" e "n" marcadas na hipotenusa
-- Todos os elementos conectados com linhas claras
+4. **Commit e Push:**
+   ```bash
+   git add .
+   git commit -m "Add: novo conteúdo em tal matéria"
+   git push
+   ```
+
+5. **Aguarde 1-2 minutos** para o GitHub Pages atualizar
+
+### Criar uma Nova Matéria
+
+1. Crie um novo arquivo `materias/novo-tema.js`
+2. Siga o modelo:
+
+```javascript
+window.DB_SUBJECTS = window.DB_SUBJECTS || [];
+window.DB_SUBJECTS.push({
+  id: "novo-tema",
+  name: "Nome da Matéria",
+  emoji: "📚",
+  contents: [
+    {
+      id: "primeiro-conteudo",
+      title: "Título",
+      sections: [
+        { heading: "Conceito", body: "Explicação..." }
+      ],
+      quiz: [
+        { q: "?", options: ["A", "B", "C", "D"], correct: 0 }
+        // ... 10 perguntas
+      ]
+    }
+  ]
+});
+```
+
+3. Abra `index.html` e adicione antes do `<script>` principal:
+   ```html
+   <script src="materias/novo-tema.js"></script>
+   ```
+
+4. Commit, push e aguarde atualização
 
 ---
 
-## Resumo
+## 🛠️ Estrutura Técnica
 
-✨ **Qualidade pedagógica sempre.**
+### Tecnologias
 
-📱 **Mobile-first e profissional.**
+- **HTML5** — Estrutura semântica
+- **CSS3 (Tailwind)** — Estilos responsivos e modernos
+- **JavaScript Vanilla** — Sem dependências externas
+- **Service Worker** — Cache e funcionalidade offline
+- **PWA** — Instalável como aplicativo
 
-🎯 **Função explicativa, não decorativa.**
+### Como Funciona
 
-🚫 **Nunca altere o conteúdo.**
+1. **Renderização:** JavaScript renderiza os conteúdos dinamicamente no navegador
+2. **Rotas:** Navegação via `#hash` (compatível com GitHub Pages)
+3. **Quizzes:** Sistema de perguntas com feedback instantâneo
+4. **Offline:** Service Worker cacheia todos os assets automaticamente
+5. **PWA:** Manifesto permite instalação como app nativo
 
-📍 **Próxima ao texto que explica.**
+---
 
-🏷️ **Legenda quando necessário.**
+## 📱 Compatibilidade
+
+| Navegador | Suporte |
+|-----------|---------|
+| Chrome | ✅ Completo |
+| Firefox | ✅ Completo |
+| Safari | ✅ Completo |
+| Edge | ✅ Completo |
+| Opera | ✅ Completo |
+
+**Recomendado:** Última versão de qualquer navegador moderno
+
+---
+
+## 🔒 Privacidade e Dados
+
+- ✅ **Sem servidor backend** — Tudo roda localmente no navegador
+- ✅ **Sem coleta de dados** — Suas respostas não são enviadas para ninguém
+- ✅ **Sem cookies de rastreamento** — Sua privacidade é respeitada
+- ✅ **Sem publicidades** — Plataforma limpa e focada no aprendizado
+
+---
+
+## 📝 Notas Importantes
+
+- Cada conteúdo deve ter **exatamente 10 questões** no quiz
+- Use a estrutura de pastas: não mude a organização sem atualizar as referências
+- Testar localmente com Live Server antes de fazer commit
+- O site atualiza no GitHub Pages em **1-2 minutos** após o push
+
+---
+
+## 🐛 Reportar Problemas
+
+Se encontrar:
+- Conteúdo com erro
+- Questão do quiz incorreta
+- Bug na interface
+- Problema de compatibilidade
+
+Abra uma [Issue](https://github.com/seu-usuario/plataforma-estudos/issues) descrevendo o problema e como reproduzir.
+
+---
+
+## 📄 Licença
+
+Este projeto é de uso pessoal. Sinta-se livre para estudar, aprender e compartilhar.
+
+---
+
+## 🎯 Objetivo
+
+Uma plataforma simples, rápida e sem distrações para revisar e consolidar conhecimento. Estude quando quiser, onde quiser, como quiser.
+
+**Bom estudo!** 📚✨
+
+---
+
+*Última atualização: Setembro de 2026*
