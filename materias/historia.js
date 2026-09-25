@@ -661,6 +661,254 @@ Valorização do conhecimento científico e dos interesses humanos.`,
             { q: "Segundo o conteúdo, o realismo buscado pela Arte Renascentista está associado à união de quais dois elementos centrais do período?", options: ["Arte e ciência", "Religião e política", "Guerra e comércio", "Nobreza e clero"], correct: 0 },
           ],
         },
+        {
+          id: "brasil-colonial",
+          title: "Brasil Colonial (1500–1800)",
+          sections: [
+    {
+      heading: "Economia e Pacto Colonial",
+      body: `A colônia brasileira nasceu com um objetivo claro: gerar riquezas para Portugal. Toda a economia era organizada para servir aos interesses da metrópole.
+
+O Pacto Colonial era o fundamento dessa relação: a colônia só podia negociar com Portugal, não com outras nações. Tudo que se produzia (açúcar, ouro, tabaco) era exportado para Portugal, que lucrava com a revenda para a Europa. Em troca, a colônia recebia produtos manufaturados (tecidos, ferramentas) a preços muito mais altos.
+
+Essa estrutura criou uma dependência econômica que Portugal explorou ao máximo.`
+    },
+    {
+      heading: "Capitanias Hereditárias (1534)",
+      body: `Para colonizar o imense território, o rei de Portugal dividiu a costa brasileira em enormes faixas de terra: as capitanias hereditárias. Cada uma foi entregue a um donatário (geralmente um nobre português).
+
+Os donatários recebiam poderes para:
+• Administrar a capitania como um senhor feudal
+• Defender o território contra ataques
+• Desenvolver a economia
+
+Parecia uma solução, mas fracassou quase completamente. Os donatários enfrentavam:
+• Falta de recursos financeiros para manter a colonização
+• Ataques constantes de indígenas
+• Grande distância de Portugal, impossível receber ajuda rápida
+• Desinteresse de muitos donatários que preferiam ficar em Portugal
+
+Apenas poucas capitanias prosperaram, como Pernambuco (açúcar) e São Vicente (no Sul).`
+    },
+    {
+      heading: "Comparação: Capitanias vs Governo-Geral",
+      body: `As Capitanias Hereditárias falharam porque o poder estava muito descentralizado. Cada donatário agia isoladamente, sem coordenação. Diante desse fracasso, a Coroa Portuguesa decidiu intervir diretamente.
+
+Em 1549, criou o Governo-Geral: um único representante do rei administrando toda a colônia com autoridade centralizada.
+
+🎯 **Veja a diferença visual:**
+
+CAPITANIAS HEREDITÁRIAS (1534)
+┌─────────────────────────────────────────────┐
+│  Poder Descentralizado = Múltiplos Donatários│
+├─────────────────────────────────────────────┤
+│  [Cap. 1]  [Cap. 2]  [Cap. 3]  [Cap. 4]    │
+│   Isolados   Sem coordenação   Fracos       │
+│   = FRACASSO                                 │
+└─────────────────────────────────────────────┘
+
+GOVERNO-GERAL (1549)
+┌─────────────────────────────────────────────┐
+│  Poder Centralizado = Um Governador         │
+├─────────────────────────────────────────────┤
+│           [SALVADOR - Sede do GG]           │
+│                ↓↓↓                          │
+│  Controla toda a colônia  = ORGANIZAÇÃO    │
+└─────────────────────────────────────────────┘
+
+**Resultado:** Melhor administração, mais segurança, estratégia unificada.`
+    },
+    {
+      heading: "Governo-Geral: Os Principais Governadores",
+      body: `Tomé de Sousa (1549–1553)
+• Primeiro governador-geral, enviado com essa missão clara
+• Fundou Salvador em 1549, que se tornou a primeira capital
+• Organizou a defesa e administração da colônia
+• Criou a base institucional para o Brasil
+
+Duarte da Costa (1553–1558)
+• Enfrentou conflitos violentos com indígenas
+• Combateu a presença de franceses tentando se instalar
+• Período de grande turbulência
+
+Mem de Sá (1558–1572)
+• O mais bem-sucedido dos primeiros governadores
+• Expulsou os franceses que tentavam invadir o Rio de Janeiro
+• Fortaleceu a colonização e a defesa da costa
+• Consolidou a autoridade portuguesa`
+    },
+    {
+      heading: "União Ibérica (1580–1640)",
+      body: `Um dos períodos mais críticos da história brasileira.
+
+O que aconteceu:
+Portugal e Espanha tiveram a mesma monarquia durante 60 anos. O rei espanhol Felipe II herdou o trono português.
+
+Por que foi um desastre para o Brasil:
+
+1. **Inimigos da Espanha atacaram Portugal**
+   Espanha tinha inimigos poderosos: Holanda, Inglaterra, França. Esses países não podiam atacar a Espanha diretamente, mas podiam atacar suas colônias e as colônias do aliado Portugal.
+
+2. **Brasil ficou vulnerável**
+   A Holanda e outros países aproveitaram para invadir e tentar conquistar partes da colônia brasileira.
+
+3. **Portugal não conseguia se defender sozinho**
+   Estava sob o controle espanhol e não tinha recursos suficientes.
+
+Consequência: O Brasil sofreu invasões estrangeiras durante esses 60 anos.`
+    },
+    {
+      heading: "Bandeirantes: Expansão Territorial",
+      body: `Enquanto a costa era colonizada pela plantação de açúcar, algo diferente acontecia no interior.
+
+Bandeirantes eram expedições de colonos (principalmente saindo de São Paulo e do Sul) que penetravam o interior em busca de riquezas.
+
+Objetivos dos Bandeirantes:
+• Capturar indígenas para escravizá-los (apesar de proibido pela Coroa)
+• Procurar ouro e pedras preciosas
+• Destruir quilombos (comunidades de escravizados fugidos)
+• Explorar novos territórios
+
+Consequências:
+✓ Expansão massiva do território: o Brasil cresceu para o interior
+✓ Descoberta de áreas com ouro e diamantes (século XVII)
+✓ Consolidação de nomes: São Paulo ganhou fama por isso
+✓ Conflitos violentos com indígenas que eram capturados ou mortos
+
+📌 **O Brasil de hoje é muito maior do que seria sem os bandeirantes.** O interior do país foi "aberto" por essas expedições.`
+    },
+    {
+      heading: "Brasil Holandês",
+      body: `Durante a União Ibérica, aproveitando a fraqueza portuguesa, a Holanda tentou conquistar partes do Brasil.
+
+Invasão da Bahia (1624–1625)
+• Holandeses invadem Salvador (a capital)
+• Conseguem se manter por pouco tempo (1 ano)
+• Foram expulsos pelos portugueses em 1625
+• A Bahia permaneceu portuguesa
+
+Invasão de Pernambuco (1630–1654)
+• Muito mais séria e duradoura
+• Pernambuco era a região mais rica (açúcar) — era o alvo
+• Os holandeses ocuparam por 24 anos
+• Governado por Maurício de Nassau, um administrador competente
+
+Maurício de Nassau (1637–1644)
+Enquanto controlava Pernambuco, Nassau:
+• Melhorou a infraestrutura urbana (ruas, pontes, portos)
+• Incentivou as artes e ciências
+• Criou biblioteca, museu e observatório
+• Atraiu artistas e cientistas
+• Modernizou a administração
+
+Apesar das melhorias, os portugueses expulsaram os holandeses em 1654. Pernambuco voltou para Portugal, mas o legado cultural e urbano de Nassau permaneceu.
+
+**Resultado Final:** Portugal manteve o Brasil, mas perdeu tempo e recursos. A Holanda fracassou em suas ambições coloniais no Brasil.`
+    }
+  ],
+  quiz: [
+    {
+      q: "Qual era o objetivo principal da economia colonial brasileira?",
+      options: [
+        "Gerar riquezas para Portugal através da exploração",
+        "Desenvolver uma economia independente",
+        "Negociar com todas as nações europeias",
+        "Estabelecer indústrias manufatureiras"
+      ],
+      correct: 0
+    },
+    {
+      q: "Por que as Capitanias Hereditárias fracassaram?",
+      options: [
+        "Tinham muito poder centralizado",
+        "Falta de recursos, ataques indígenas e grande distância de Portugal",
+        "O rei proibiu sua existência",
+        "Pernambuco conquistou todas as outras"
+      ],
+      correct: 1
+    },
+    {
+      q: "Qual foi a principal diferença entre Capitanias Hereditárias e Governo-Geral?",
+      options: [
+        "As Capitanias eram centralizadas, o Governo-Geral era descentralizado",
+        "O Governo-Geral tinha poder descentralizado entre vários governadores",
+        "As Capitanias eram descentralizadas, o Governo-Geral era centralizado",
+        "Não havia diferença, era o mesmo sistema"
+      ],
+      correct: 2
+    },
+    {
+      q: "Qual governador-geral foi responsável por expulsar os franceses e consolidar a colonização?",
+      options: [
+        "Tomé de Sousa",
+        "Duarte da Costa",
+        "Mem de Sá",
+        "Maurício de Nassau"
+      ],
+      correct: 2
+    },
+    {
+      q: "O que foi a União Ibérica e por que foi prejudicial para o Brasil?",
+      options: [
+        "Uma aliança comercial entre Portugal e Espanha que aumentou a riqueza",
+        "Portugal e Espanha tiveram o mesmo rei; inimigos da Espanha atacaram o Brasil",
+        "Uma invasão espanhola que conquistou o Brasil permanentemente",
+        "Um acordo que liberou o comércio brasileiro com outras nações"
+      ],
+      correct: 1
+    },
+    {
+      q: "Qual era o principal objetivo dos bandeirantes?",
+      options: [
+        "Evangelizar os indígenas",
+        "Capturar indígenas, procurar ouro e expandir território",
+        "Defender a costa de invasões estrangeiras",
+        "Criar rotas comerciais com a Europa"
+      ],
+      correct: 1
+    },
+    {
+      q: "Qual consequência dos bandeirantes foi mais importante para a história do Brasil?",
+      options: [
+        "Criaram grandes cidades no interior",
+        "Destruíram completamente todas as tribos indígenas",
+        "Expandiram o território brasileiro para o interior",
+        "Encontraram ouro e mantiveram segredo para Portugal"
+      ],
+      correct: 2
+    },
+    {
+      q: "Qual foi a principal razão para a invasão holandesa de Pernambuco (1630)?",
+      options: [
+        "Conquistar a capital de Portugal",
+        "Interesse na produção de açúcar, a maior riqueza da região",
+        "Expulsar os indígenas de lá",
+        "Estabelecer rotas comerciais diretas com a Ásia"
+      ],
+      correct: 1
+    },
+    {
+      q: "O que Maurício de Nassau fez em Pernambuco enquanto governava?",
+      options: [
+        "Destruiu toda a infraestrutura da região",
+        "Melhorou cidades, incentivou artes e ciências, modernizou administração",
+        "Retornou todo o ouro de açúcar para a Holanda",
+        "Expulsou todos os portugueses do Brasil"
+      ],
+      correct: 1
+    },
+    {
+      q: "Qual foi o resultado final da ocupação holandesa do Brasil?",
+      options: [
+        "Holanda conquistou permanentemente o Brasil",
+        "Portugal perdeu o Brasil para a Holanda",
+        "Portugal expulsou os holandeses; Brasil permaneceu português",
+        "Brasil se tornou independente"
+      ],
+      correct: 2
+    }
+  ]
+}  
       ],
     },
 );
