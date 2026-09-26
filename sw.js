@@ -1,4 +1,4 @@
-const CACHE_NAME = "revisao-lucas-m-v3";
+const CACHE_NAME = "revisao-lucas-m-v4"; // Mudei para v4 para forçar a limpeza do antigo
 
 const ASSETS = [
   "./",
@@ -27,7 +27,6 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
   );
-
   self.skipWaiting();
 });
 
@@ -41,45 +40,51 @@ self.addEventListener("activate", (event) => {
       )
     )
   );
-
   self.clients.claim();
 });
 
 self.addEventListener("fetch", (event) => {
   const request = event.request;
 
-  // Para páginas HTML, sempre tenta buscar a versão mais recente
-  if (request.mode === "navigate") {
+  // 1. Para páginas HTML: Tenta a rede primeiro, se cair a internet, usa o cache.
+  if (request.mode === "navigate" || request.headers.get("accept").includes("text/html")) {
     event.respondWith(
       fetch(request)
         .then((response) => {
           const responseClone = response.clone();
-
           caches.open(CACHE_NAME).then((cache) => {
             cache.put(request, responseClone);
           });
-
           return response;
         })
         .catch(() => caches.match(request))
     );
-
     return;
   }
 
-  // Para os outros arquivos, usa o cache primeiro, mas atualiza o cache
-  // em segundo plano quando busca algo que ainda não estava salvo
+  // 2. Para os outros arquivos (JS, Imagens): Padrão Stale-While-Revalidate
   event.respondWith(
     caches.match(request).then((cached) => {
-      if (cached) return cached;
-
-      return fetch(request).then((response) => {
-        const responseClone = response.clone();
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(request, responseClone);
-        });
-        return response;
+      
+      // A promessa de ir na rede buscar a versão mais nova no GitHub
+      const fetchPromise = fetch(request).then((networkResponse) => {
+        // Só salva no cache se a resposta for de sucesso (código 200)
+        if (networkResponse && networkResponse.status === 200) {
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(request, responseClone);
+          });
+        }
+        return networkResponse;
+      }).catch(() => {
+        // Ignora erros de rede aqui para não quebrar o site offline
       });
+
+      // O PULO DO GATO: 
+      // Se tem no cache, devolve na hora (rápido). 
+      // Enquanto isso, a 'fetchPromise' roda no fundo e atualiza pro futuro.
+      // Se não tem no cache, espera a rede devolver.
+      return cached || fetchPromise;
     })
   );
 });
