@@ -2,8 +2,6 @@
 
 Uma plataforma web moderna e responsiva para organizar, estudar e revisar conteúdos de forma interativa. Acesse suas matérias, estude os conteúdos e teste seu conhecimento com quizzes de revisão.
 
-**🌐 Acesse em:** [lucasdasilvamacari-creator.github.io/projeto-base-one-vercel.app](seu-link-aqui)
-
 ---
 
 ## ✨ Características
